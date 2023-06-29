@@ -1,0 +1,2407 @@
+@charset 'utf-8';
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&display=swap');
+a,article,aside,b,blockquote,body,caption,center,cite,code,dd,div,dl,dt,em,fgroup,fieldset,figcaption,figure,font,footer,form,h1,h2,h3,h4,h5,h6,header,hr,html,i,iframe,img,label,legend,li,main,nav,object,ol,p,pre,q,s,section,small,span,strong,table,tbody,td,tfoot,th,thead,time,tr,ul{font-size:100%;margin:0;padding:0;vertical-align:baseline;border:0;outline:0;background:0 0}
+article,aside,fgroup,figcaption,figure,footer,header,hr,main,nav,section,time{display:block}
+html{-webkit-text-size-adjust:none;-ms-text-size-adjust:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-tap-highlight-color:rgba(0,0,0,.1);height:100%!important;margin:auto;position:relative}
+input::-moz-focus-inner{padding:0;border:0}
+button::-moz-focus-inner{padding:0;border:0}
+button,input,textarea{margin:0;padding:0;border:none;border-radius:0;outline:0;background:0 0;box-shadow:none;-webkit-appearance:none;-moz-appearance:none;-webkit-focus-ring-color:none}
+textarea{overflow:auto}
+blockquote,q{quotes:none}
+blockquote:after,blockquote:before,q:after,q:before{content:''}
+:focus{outline:0}
+:disabled{cursor:default}
+table{border-spacing:0;border-collapse:collapse;margin:0 0 30px}
+*,:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+img{display:block;margin:0 0 33px;-webkit-user-select:none;-ms-user-select:none;user-select:none}
+[type=button],[type=reset],[type=submit],button{cursor:pointer;-webkit-appearance:none;background-color:transparent}
+html.hidden,html.hidden body{height:auto!important;overflow:hidden}
+.desktop.remove-scroll{padding-right:17px}
+.desktop.remove-scroll .popup__mask{right:17px}
+.desktop.remove-scroll .header.scrolled{padding-right:17px}
+.mac.remove-scroll{padding-right:0}
+.mac.remove-scroll .popup__mask{right:0}
+.mac.remove-scroll .header.scrolled{padding-right:0}
+body{min-width:320px;height:100%!important;position:relative;font:16px/27px 'Be Vietnam Pro',sans-serif;background:#fff;color:#444}
+.page-container{min-height:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;overflow:hidden;position:relative}
+.ie .page-container{display:block}
+.wrapper{max-width:1220px;margin:auto;padding:0 40px}
+.title-1{font:400 80px/1 'Josefin Sans',sans-serif;text-transform:capitalize}
+.title-2{font:400 40px/1 'Josefin Sans',sans-serif;text-transform:capitalize}
+.title-3{font:400 32px/38px 'Josefin Sans',sans-serif;text-transform:capitalize}
+.title-4{font:400 28px/31px 'Josefin Sans',sans-serif}
+.title-5{font:400 24px/28px 'Josefin Sans',sans-serif;text-transform:capitalize}
+.title-6{font:400 20px/24px 'Josefin Sans',sans-serif;text-transform:capitalize}
+h1{padding:0 0 30px;font:400 80px/1 'Josefin Sans',sans-serif;color:#000}
+h2{padding:0 0 30px;font:400 40px/1 'Josefin Sans',sans-serif;color:#000}
+h3{padding:0 0 30px;font:400 32px/38px 'Josefin Sans',sans-serif;color:#000}
+h4{padding:0 0 30px;font:400 28px/31px 'Josefin Sans',sans-serif;color:#000}
+h5{padding:0 0 30px;font:400 24px/28px 'Josefin Sans',sans-serif;color:#000}
+h6{padding:0 0 30px;font:400 20px/24px 'Josefin Sans',sans-serif;color:#000}
+ul{padding:0 0 21px}
+ul li{list-style:none}
+ul li:before{content:"• "}
+ol{padding:0 0 22px;list-style:none;counter-reset:item}
+ol li:before{content:counter(item,decimal) ". ";counter-increment:item}
+p{padding:0 0 33px}
+.green{color:#95ccb5}
+.red{color:#ff8e8e}
+.orange{color:#eb9635}
+a{text-decoration:none;color:#ff8e8e;-webkit-transition:.3s ease-out;-ms-transition:.3s ease-out;transition:.3s ease-out}
+.desktop a:hover{color:#000}
+::-moz-placeholder{opacity:.5!important;color:#444!important}
+::-webkit-input-placeholder{line-height:normal;opacity:.5!important;color:#444!important}
+:-ms-input-placeholder{opacity:.5!important;color:#444!important}
+.text-input{width:100%;height:50px;margin:0 0 20px;padding:7px 0 13px;display:block;font:14px/1 'Be Vietnam Pro',sans-serif;background:#fff;color:#000;border-bottom:1px solid rgba(68,68,68,.2);-webkit-transition:.3s ease-out;-ms-transition:.3s ease-out;transition:.3s ease-out}
+.text-input:focus{border-color:#000}
+.textarea{min-width:100%;max-width:100%;height:118px;min-height:118px;margin:0 0 20px;padding:12px 0;display:block;font:14px/24px 'Be Vietnam Pro',sans-serif;color:#000;border-bottom:1px solid rgba(68,68,68,.2);-webkit-transition:.3s ease-out;-ms-transition:.3s ease-out;transition:.3s ease-out;resize:none}
+.textarea:focus{border-color:#000}
+.round-input{width:100%;height:50px;margin:0 0 20px;padding:0 19px;display:block;font:16px/1 'Be Vietnam Pro',sans-serif;background:#fff;color:#000;border-radius:10px}
+blockquote{padding:29px 0 60px 53px;position:relative}
+blockquote:before{content:"";width:120px;height:120px;position:absolute;top:0;left:19px;background:url(../img/svg/quote.svg) 0 0/100% 100% no-repeat}
+blockquote:after{display:none}
+blockquote p{max-width:615px;padding:0 0 13px;position:relative;z-index:1;font:20px/34px 'Be Vietnam Pro',sans-serif;color:#444}
+blockquote p:after,blockquote p:before{content:"“"}
+blockquote footer{position:relative;z-index:1;font:400 20px/24px 'Josefin Sans',sans-serif;text-transform:capitalize;color:#000}
+button{overflow:visible;-webkit-transition:.3s ease-out;-ms-transition:.3s ease-out;transition:.3s ease-out}
+.button{max-width:100%;height:50px;margin:0 0 22px;padding:0 4px 0 0;display:inline-block;vertical-align:top;position:relative;border:none;font:600 16px/52px 'Be Vietnam Pro',sans-serif;color:#fff;text-align:center;-webkit-user-select:none;-ms-user-select:none;user-select:none}
+.button:after{content:"";width:2px;height:100%;position:absolute;top:0;right:0;background:#000;-webkit-transition:.3s ease-out;-ms-transition:.3s ease-out;transition:.3s ease-out}
+.desktop .button:hover{color:#fff;text-decoration:none}
+.desktop .button:hover .button__text,.desktop .button:hover:after{background:#ff8e8e}
+.button__text{height:100%;padding:0 30px;display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;background:#000;-webkit-transition:.3s ease-out;-ms-transition:.3s ease-out;transition:.3s ease-out}
+.button__arrow{width:21px;height:50px;display:block;position:relative}
+.button__arrow:before{content:"";width:21px;height:12px;margin:-6px 0 0;position:absolute;top:50%;left:0;background:url(../img/svg/arrow-button.svg) 0 0/100% 100% no-repeat}
+.close-button{width:22px;height:22px;display:block;border-radius:50%;background:#ff8e8e;-webkit-transition:.3s ease-out;-ms-transition:.3s ease-out;transition:.3s ease-out}
+.close-button:after,.close-button:before{content:"";width:14px;height:2px;position:absolute;top:10px;left:4px;-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg);background:#fff}
+.close-button:after{-webkit-transform:rotate(-45deg);-ms-transform:rotate(-45deg);transform:rotate(-45deg)}
+.desktop .close-button:hover{background:#000}
+.mob-button{width:22px;height:22px;display:block;position:relative}
+.mob-button:after,.mob-button:before,.mob-button__icon:before{content:"";width:100%;position:absolute;top:4px;left:0;border-bottom:2px solid #000;-webkit-transition:.3s ease-out;-ms-transition:.3s ease-out;transition:.3s ease-out}
+.mob-button:after{top:10px}
+.desktop .mob-button:hover .mob-button__icon:before,.desktop .mob-button:hover:after,.desktop .mob-button:hover:before{border-color:#ff8e8e}
+.mob-button__icon:before{top:16px}
+.heart-button{width:20px;height:20px;display:block;position:relative}
+.heart-button:after,.heart-button:before{content:"";width:19px;height:18px;position:absolute;top:0;left:0;-webkit-transition:.3s ease-out;-ms-transition:.3s ease-out;transition:.3s ease-out}
+.heart-button:before{background:url(../img/svg/heart.svg) 0 0/100% 100% no-repeat}
+.heart-button:after{opacity:0;z-index:1;background:url(../img/svg/heart__red.svg) 0 0/100% 100% no-repeat}
+.heart-button.active:before{opacity:0}
+.heart-button.active:after{opacity:1}
+.next-button,.prev-button{width:51px;height:20px;display:block;position:relative;z-index:2;overflow:hidden}
+.next-button:after,.next-button:before,.prev-button:after,.prev-button:before{content:"";width:51px;height:12px;margin:-6px 0 0;position:absolute;top:50%;left:0;-webkit-transition:.3s ease-out;-ms-transition:.3s ease-out;transition:.3s ease-out}
+.prev-button:before{background:url(../img/svg/arrow-prev.svg) 0 0/100% 100% no-repeat}
+.next-button:before{background:url(../img/svg/arrow-next.svg) 0 0/100% 100% no-repeat}
+.prev-button:after{background:url(../img/svg/arrow-prev__red.svg) 0 0/100% 100% no-repeat;opacity:0;z-index:1}
+.next-button:after{background:url(../img/svg/arrow-next__red.svg) 0 0/100% 100% no-repeat;opacity:0;z-index:1}
+.desktop .next-button:hover:before,.desktop .prev-button:hover:before{opacity:0}
+.desktop .next-button:hover:after,.desktop .prev-button:hover:after{opacity:1}
+.next-button_small,.prev-button_small{width:42px}
+.prev-button_small:after,.prev-button_small:before{left:9px}
+.next-button_small:after,.next-button_small:before{left:-9px}
+.read-more{padding:0 0 0 39px;display:inline-block;position:relative;font:600 16px/1 'Be Vietnam Pro',sans-serif;color:#000;text-transform:capitalize}
+.read-more:before{content:"";width:25px;height:2px;position:absolute;top:7px;left:0;background:#000;-webkit-transition:.3s ease-out;-ms-transition:.3s ease-out;transition:.3s ease-out}
+.desktop .read-more:hover{color:#ff8e8e;text-decoration:none}
+.desktop .read-more:hover:before{background:#ff8e8e}
+.deploy-button{padding:0 0 0 30px;display:inline-block;position:relative;font:600 16px/24px 'Be Vietnam Pro',sans-serif;color:#ff8e8e}
+.deploy-button:after,.deploy-button:before{content:"";width:15px;height:9px;position:absolute;top:10px;left:0;-webkit-transition:.3s ease-out;-ms-transition:.3s ease-out;transition:.3s ease-out}
+.deploy-button:before{background:url(../img/svg/arrow-select__red.svg) 0 0/100% 100% no-repeat}
+.deploy-button:after{opacity:0;z-index:1;background:url(../img/svg/arrow-select.svg) 0 0/100% 100% no-repeat}
+.desktop .deploy-button:hover{color:#000;text-decoration:none}
+.desktop .deploy-button:hover:before{opacity:0}
+.desktop .deploy-button:hover:after{opacity:1}
+.deploy-button.active:after,.deploy-button.active:before{top:6px;-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg)}
+.favorite-button{width:50px;height:50px;display:block;position:relative;-webkit-transition:.3s ease-out;-ms-transition:.3s ease-out;transition:.3s ease-out;border-radius:50%;background:#f8f8f8}
+.favorite-button:after,.favorite-button:before{content:"";width:21px;height:17px;margin:-8px 0 0 -10px;position:absolute;top:50%;left:50%;-webkit-transition:.3s ease-out;-ms-transition:.3s ease-out;transition:.3s ease-out}
+.favorite-button:before{background:url(../img/svg/favorite.svg) 0 0/100% 100% no-repeat}
+.favorite-button:after{opacity:0;z-index:1;background:url(../img/svg/favorite__white.svg) 0 0/100% 100% no-repeat}
+.favorite-button.active{background:#ff8e8e}
+.favorite-button.active:before{opacity:0}
+.favorite-button.active:after{opacity:1}
+.reply-button{width:20px;height:20px;display:block;position:relative}
+.reply-button:after,.reply-button:before{content:"";width:20px;height:20px;position:absolute;top:0;left:0;-webkit-transition:.3s ease-out;-ms-transition:.3s ease-out;transition:.3s ease-out}
+.reply-button:before{background:url(../img/svg/review.svg) 0 0/100% 100% no-repeat}
+.reply-button:after{opacity:0;z-index:1;background:url(../img/svg/review__red.svg) 0 0/100% 100% no-repeat}
+.desktop .reply-button:hover:before,.reply-button.active:before{opacity:0}
+.desktop .reply-button:hover:after,.reply-button.active:after{opacity:1}
+.arrow-button{margin:0 0 17px;padding:0 0 0 67px;display:inline-block;vertical-align:top;position:relative;font:600 16px/24px 'Be Vietnam Pro',sans-serif;color:#000;text-transform:capitalize;overflow:hidden}
+.arrow-button:after,.arrow-button:before{content:"";width:51px;height:12px;margin:-6px 0 0;position:absolute;top:50%;left:0;-webkit-transition:.3s ease-out;-ms-transition:.3s ease-out;transition:.3s ease-out}
+.desktop .arrow-button:hover{color:#ff8e8e;text-decoration:none}
+.desktop .arrow-button:hover:before{opacity:0}
+.desktop .arrow-button:hover:after{opacity:1}
+.arrow-button_prev:before{background:url(../img/svg/arrow-prev.svg) 0 0/100% 100% no-repeat}
+.arrow-button_prev:after{background:url(../img/svg/arrow-prev__red.svg) 0 0/100% 100% no-repeat;opacity:0;z-index:1}
+.arrow-button_next{padding:0 67px 0 0}
+.arrow-button_next:before{left:auto;right:0;background:url(../img/svg/arrow-next.svg) 0 0/100% 100% no-repeat}
+.arrow-button_next:after{left:auto;right:0;background:url(../img/svg/arrow-next__red.svg) 0 0/100% 100% no-repeat;opacity:0;z-index:1}
+.add-button{margin:0 0 5px;padding:0 0 0 33px;display:inline-block;vertical-align:top;position:relative;font:600 16px/24px 'Be Vietnam Pro',sans-serif;white-space:nowrap;color:#000;text-transform:capitalize}
+.add-button:after,.add-button:before{content:"";width:21px;height:20px;margin:-10px 0 0;position:absolute;top:50%;left:0;-webkit-transition:.4s ease-out;-ms-transition:.4s ease-out;transition:.4s ease-out}
+.add-button:before{background:url(../img/svg/shopping-bag.svg) 0 0/100% 100% no-repeat}
+.add-button:after{background:url(../img/svg/shopping-bag__red.svg) 0 0/100% 100% no-repeat;opacity:0;z-index:1}
+.desktop .add-button:hover{color:#ff8e8e}
+.desktop .add-button:hover:before{opacity:0}
+.desktop .add-button:hover:after{opacity:1}
+.remove-button{width:25px;height:25px;display:inline-block;vertical-align:top;position:relative;color:rgba(68,68,68,.25)}
+.remove-button:before{content:"X";display:block;font:600 11px/24px 'Be Vietnam Pro',sans-serif;text-align:center;background:#ff000057;color:#fff}
+.desktop .remove-button:hover{border-color:#ff8e8e;background:#ff8e8e;color:#fff}
+.back-button{margin:0 0 17px;padding:0 0 0 47px;display:inline-block;vertical-align:top;position:relative;font:600 16px/24px 'Be Vietnam Pro',sans-serif;color:#000;text-transform:capitalize;overflow:hidden}
+.back-button:after,.back-button:before{content:"";width:31px;height:12px;margin:-6px 0 0;position:absolute;top:50%;left:0;-webkit-transition:.3s ease-out;-ms-transition:.3s ease-out;transition:.3s ease-out}
+.back-button:before{background:url(../img/svg/arrow-back.svg) 0 0/100% 100% no-repeat}
+.back-button:after{background:url(../img/svg/arrow-back__red.svg) 0 0/100% 100% no-repeat;opacity:0;z-index:1}
+.desktop .back-button:hover{color:#ff8e8e;text-decoration:none}
+.desktop .back-button:hover:before{opacity:0}
+.desktop .back-button:hover:after{opacity:1}
+.header{min-width:0;width:100%;position:absolute;top:0;left:0;z-index:50}
+.header.scrolled{position:fixed;background:#fff;box-shadow:0 0 10px rgba(0,0,0,.15)}
+.header.scrolled .header__main{padding-top:27px}
+.header__main{max-width:1920px;margin:auto;padding:47px 60px 2px}
+.header__cols{margin:0 -20px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:space-between;-ms-justify-content:space-between;justify-content:space-between}
+.header__col,.header__left,.header__right{padding:0 20px}
+.logo{height:22px;padding:2px 0 0;display:block}
+.logo__image{top:-7px;position:relative;width:150px;margin:0}
+.logo__nav{display:block;margin:0 auto;width:50%;padding-bottom:1em}
+.header-nav{padding:0 56px}
+.header-nav__list{margin:0 -20px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}
+.header-nav__item{padding:0 20px;position:relative}
+.header-nav__item:before{display:none}
+.header-nav__item.active .header-nav__link{color:#ff8e8e}
+.header-nav__item.active .header-nav__link_arrow:before{opacity:0}
+.header-nav__item.active .header-nav__link_arrow:after{opacity:1}
+.header-nav__link{display:block;position:relative;top:2px;font:500 16px/20px 'Be Vietnam Pro',sans-serif;color:#444}
+.desktop .header-nav__link:hover{color:#ff8e8e;text-decoration:none}
+.header-nav__link_arrow{padding:0 18px 0 0}
+.header-nav__link_arrow:after,.header-nav__link_arrow:before{content:"";width:14px;height:14px;margin:-7px 0 0;position:absolute;top:50%;right:0;-webkit-transition:.3s ease-out;-ms-transition:.3s ease-out;transition:.3s ease-out}
+.header-nav__link_arrow:before{background:url(../img/svg/chevron-down.svg) 0 0/100% 100% no-repeat}
+.header-nav__link_arrow:after{opacity:0;z-index:1;background:url(../img/svg/chevron-down__red.svg) 0 0/100% 100% no-repeat}
+.desktop .header-nav__link_arrow:hover:before{opacity:0}
+.desktop .header-nav__link_arrow:hover:after{opacity:1}
+.hide-nav{margin:-1px 0 0;padding:20px 0 0;display:none;position:absolute;top:100%;left:0}
+.hide-nav__list{padding:0;background:#fff;box-shadow:0 0 10px rgba(0,0,0,.15)}
+.hide-nav__item:before{display:none}
+.hide-nav__item:last-child .hide-nav__link{border:none}
+.hide-nav__link{padding:10px 20px;display:block;color:#000;font:500 14px/22px 'Be Vietnam Pro',sans-serif;border-bottom:1px solid rgba(68,68,68,.1);white-space:nowrap}
+.desktop .hide-nav__link:hover,.hide-nav__item.active .hide-nav__link{color:#ff8e8e}
+.user-nav{margin:0 -20px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}
+.user-nav__item{padding:0 20px}
+.user-nav__item:before{display:none}
+.user-nav__link{height:22px;position:relative;top:2px;white-space:nowrap}
+.desktop .user-nav__link:hover{text-decoration:none;color:#fff}
+.desktop .user-nav__link:hover .user-nav__icon:before{opacity:0}
+.desktop .user-nav__link:hover .user-nav__icon:after{opacity:1}
+.desktop .user-nav__link:hover .user-nav__text{background:#ff8e8e}
+.user-nav__icon{display:inline-block;vertical-align:top;position:relative}
+.user-nav__icon:after,.user-nav__icon:before{content:"";width:100%;height:100%;position:absolute;top:0;left:0;-webkit-transition:.3s ease-out;-ms-transition:.3s ease-out;transition:.3s ease-out}
+.user-nav__icon:after{opacity:0;z-index:1}
+.user-nav__icon_1{width:18px;height:18px;margin:2px 0 0}
+.user-nav__icon_1:before{background:url(../img/svg/search.svg) 0 0/100% 100% no-repeat}
+.user-nav__icon_1:after{background:url(../img/svg/search__red.svg) 0 0/100% 100% no-repeat}
+.user-nav__icon_2{width:20px;height:20px;margin:1px 0 0}
+.user-nav__icon_2:before{background:url(../img/svg/user.svg) 0 0/100% 100% no-repeat}
+.user-nav__icon_2:after{background:url(../img/svg/user__red.svg) 0 0/100% 100% no-repeat}
+.user-nav__icon_3{width:19px;height:18px;margin:2px 0 0}
+.user-nav__icon_3:before{background:url(../img/svg/heart.svg) 0 0/100% 100% no-repeat}
+.user-nav__icon_3:after{background:url(../img/svg/heart__red.svg) 0 0/100% 100% no-repeat}
+.user-nav__icon_4{width:21px;height:20px;margin:1px 0 0}
+.user-nav__icon_4:before{background:url(../img/svg/shopping-bag.svg) 0 0/100% 100% no-repeat}
+.user-nav__icon_4:after{background:url(../img/svg/shopping-bag__red.svg) 0 0/100% 100% no-repeat}
+.user-nav__icon_5{width:19px;height:18px;margin:2px 0 0}
+.user-nav__icon_5:before{background:url(../img/svg/globe.svg) 0 0/100% 100% no-repeat}
+.user-nav__icon_5:after{background:url(../img/svg/globe.svg) 0 0/100% 100% no-repeat}
+.user-nav__text{min-width:18px;height:18px;margin:2px 0 0;padding:0 3px;display:inline-block;vertical-align:top;background:#000;font:bold 13px/18px 'Be Vietnam Pro',sans-serif;color:#fff;text-align:center;-webkit-transition:.2s ease-out;-ms-transition:.2s ease-out;transition:.2s ease-out;border-radius:9px}
+.hide-mob{width:100%;height:100%;display:none;position:fixed;max-height:100%;overflow-y:auto;overflow-x:hidden;z-index:999;background:rgba(0,0,0,.7)}
+.hide-mob.active .hide-mob__bg{left:0}
+.hide-mob__bg{width:270px;min-height:100%;padding:70px 20px 60px;position:relative;left:-271px;background:#fff;-webkit-transition:.3s ease-out;-ms-transition:.3s ease-out;transition:.3s ease-out}
+.hide-mob__mask{width:2000px;height:100%;position:absolute;top:0;left:100%;cursor:default}
+.hide-mob__close{position:absolute;top:20px;right:20px}
+.hide-mob__socials{width:100%;padding:0!important;position:absolute;bottom:10px;left:0}
+.mob-nav{margin:0 -20px}
+.mob-nav__item:before{display:none}
+.mob-nav__link{padding:10px 20px;display:block;font:400 20px/24px 'Josefin Sans',sans-serif;text-align:center;color:#000}
+.desktop .mob-nav__link:hover,.mob-nav__item.active .mob-nav__link{color:#ff8e8e}
+.desktop .mob-nav__link:hover .mob-nav__arrow:before{opacity:0}
+.desktop .mob-nav__link:hover .mob-nav__arrow:after{opacity:1}
+.mob-nav__link.active .mob-nav__arrow:after,.mob-nav__link.active .mob-nav__arrow:before{-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg)}
+.mob-nav__arrow{display:block;position:relative}
+.mob-nav__arrow:after,.mob-nav__arrow:before{content:"";width:15px;height:9px;margin:-3px 0 0;position:absolute;top:50%;right:6px;-webkit-transition:.3s ease-out;-ms-transition:.3s ease-out;transition:.3s ease-out}
+.mob-nav__arrow:before{background:url(../img/svg/arrow-select.svg) 0 0/100% 100% no-repeat}
+.mob-nav__arrow:after{opacity:0;z-index:1;background:url(../img/svg/arrow-select__red.svg) 0 0/100% 100% no-repeat}
+.slide-nav{display:none;overflow:hidden}
+.slide-nav__list{margin:10px 0;padding:0;background:#fafafa}
+.slide-nav__item:before{display:none}
+.slide-nav__item:first-child{border-top:1px solid rgba(68,68,68,.1)}
+.slide-nav__item:first-child .slide-nav__link{padding-top:15px}
+.slide-nav__item:last-child{border-bottom:1px solid rgba(68,68,68,.1)}
+.slide-nav__item:last-child .slide-nav__link{padding-bottom:15px}
+.slide-nav__link{padding:5px 20px;display:block;text-align:center;font:14px/24px 'Be Vietnam Pro',sans-serif;color:#444}
+.desktop .slide-nav__link:hover,.slide-nav__item.active .slide-nav__link{color:#ff8e8e}
+.footer{min-width:0;width:100%;position:relative;z-index:1;-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto}
+.footer:before{content:"";width:100%;height:20px;position:absolute;top:0;left:0;background:#eee}
+.footer__main{padding-top:127px;position:relative}
+.footer__top{padding:0 0 67px}
+.footer__bottom{padding:24px 0;border-top:1px solid rgba(68,68,68,.4)}
+.footer__cols{margin:0 -20px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:space-between;-ms-justify-content:space-between;justify-content:space-between}
+.footer__col,.footer__left,.footer__right{padding:0 20px}
+.footer__col:nth-child(1){width:31.23%;-webkit-flex-grow:0;flex-grow:0;-ms-flex-grow:0;-webkit-flex-shrink:0;flex-shrink:0;-ms-flex-shrink:0}
+.footer__col:nth-child(2){width:100%;min-width:0;max-width:355px;position:relative;right:7px}
+.footer__col:nth-child(3){width:33.86%;-webkit-flex-grow:0;flex-grow:0;-ms-flex-grow:0;-webkit-flex-shrink:0;flex-shrink:0;-ms-flex-shrink:0}
+.footer__bg-left{width:130px;height:130px;margin:0 0 0 -930px;position:absolute;top:50px;left:50%}
+.footer__bg-right{width:290px;height:290px;margin:0 0 0 641px;position:absolute;top:105px;left:50%}
+.footer-logo{margin:0 0 21px}
+.footer-description{padding:0 0 19px;display:block;font:14px/24px 'Be Vietnam Pro',sans-serif}
+.footer-line{margin:5px 0 35px;border-bottom:1px solid rgba(68,68,68,.2)}
+.socials_flex{margin:0 -10px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}
+.socials__col{padding:3px 10px}
+.socials__title{display:block;line-height:20px;font-weight:500;color:#000}
+.socials__text{padding:0 0 17px;display:block;font-weight:500;color:#000}
+.socials__list{margin:0 -15px 0 0;padding:0 0 20px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}
+.socials__list_center{-webkit-justify-content:center;-ms-justify-content:center;justify-content:center}
+.socials__item{margin:0 15px 0 0;padding:0 26px 0 0;position:relative}
+.socials__item:before{display:none}
+.socials__item:after{content:"";width:10px;height:1px;position:absolute;top:50%;right:0;background:#000}
+.socials__item:last-child{padding:0}
+.socials__item:last-child:after{display:none}
+.socials__link{display:block;color:#444;font:600 12px/20px 'Be Vietnam Pro',sans-serif;text-transform:uppercase}
+.desktop .socials__link:hover{color:#ff8e8e;text-decoration:none}
+.footer-title{padding:3px 0 17px;display:block;font:400 20px/24px 'Josefin Sans',sans-serif;text-transform:capitalize;color:#000}
+.footer-nav{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:space-between;-ms-justify-content:space-between;justify-content:space-between;margin:0 -20px}
+.footer-nav__col{padding:0 20px}
+.footer-nav__list{padding:3px 0 8px}
+.footer-nav__item{padding:0 0 12px;position:relative}
+.footer-nav__item:before{display:none}
+.footer-nav__link{padding:0 0 0 15px;display:block;position:relative;font:14px/24px 'Be Vietnam Pro',sans-serif;color:#444}
+.footer-nav__link:before{content:"";width:3px;height:3px;position:absolute;top:10px;left:0;background:#444;-webkit-transition:.3s ease-out;-ms-transition:.3s ease-out;transition:.3s ease-out}
+.desktop .footer-nav__link:hover{color:#ff8e8e;text-decoration:none}
+.desktop .footer-nav__link:hover:before{background:#ff8e8e}
+.subscription{padding:0 0 20px;position:relative}
+.subscription__input{width:100%;height:56px;padding:10px 30px 10px 0;display:block;font:14px/1 'Be Vietnam Pro',sans-serif;color:#000;border-bottom:1px solid rgba(68,68,68,.2);-webkit-transition:.3s ease-out;-ms-transition:.3s ease-out;transition:.3s ease-out}
+.subscription__input:focus{border-color:#000}
+.subscription__button{width:24px;height:24px;position:absolute;top:16px;right:0}
+.subscription__button:after,.subscription__button:before{content:"";width:100%;height:100%;position:absolute;top:0;left:0;-webkit-transition:.3s ease-out;-ms-transition:.3s ease-out;transition:.3s ease-out}
+.subscription__button:before{background:url(../img/svg/send.svg) 0 0/100% 100% no-repeat}
+.subscription__button:after{opacity:0;z-index:1;background:url(../img/svg/send__red.svg) 0 0/100% 100% no-repeat}
+.desktop .subscription__button:hover:before{opacity:0}
+.desktop .subscription__button:hover:after{opacity:1}
+.copyrights{display:block;font:14px/20px 'Be Vietnam Pro',sans-serif}
+.payments{margin:0 -6.5px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}
+.payments__col{padding:0 6.5px}
+.payments__text{display:block;font:14px/20px 'Be Vietnam Pro',sans-serif}
+.payments__list{margin:0 -3.5px;padding:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}
+.payments__item{padding:0 3.5px}
+.payments__item:before{display:none}
+.payments__image{width:34px;height:20px;margin:0}
+.main{min-width:0;width:100%;padding-top:120px;-webkit-flex:1 0 auto;-ms-flex:1 0 auto;flex:1 0 auto}
+.first-screen{max-width:1920px;margin:0 auto 99px;height:800px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}
+.first-screen__left{width:120px;-webkit-flex-grow:0;flex-grow:0;-ms-flex-grow:0;-webkit-flex-shrink:0;flex-shrink:0;-ms-flex-shrink:0;position:relative;z-index:2}
+.first-screen__center{width:100%;min-width:0}
+.first-screen__right{width:240px;-webkit-flex-grow:0;flex-grow:0;-ms-flex-grow:0;-webkit-flex-shrink:0;flex-shrink:0;-ms-flex-shrink:0;position:relative;z-index:2}
+.first-screen__socials{width:100%;position:absolute;top:31.8%;left:0}
+.side-socials__item{margin:0 0 12px;padding:0 0 12px;position:relative}
+.side-socials__item:before{display:none}
+.side-socials__item:after{content:"";width:10px;height:1px;margin:0 0 0 -5px;position:absolute;bottom:0;left:50%;background:#000}
+.side-socials__item:last-child{margin:0;padding:0}
+.side-socials__item:last-child:after{display:none}
+.side-socials__link{display:block;text-align:center;font:600 12px/20px 'Be Vietnam Pro',sans-serif;color:#444}
+.desktop .side-socials__link:hover{color:#ff8e8e;text-decoration:none}
+.slider-count{width:100%;position:absolute;bottom:50px;left:0;text-align:center;font:600 16px/1 'Josefin Sans',sans-serif;color:#000}
+.slider-count__text{display:block}
+.slider-count__text span{font-size:40px}
+.slider-dots{width:142px;position:absolute;right:0;bottom:45.1%}
+.slider-arrows{position:absolute;right:59px;bottom:50px}
+.scroll-down{width:100%;max-width:1040px;position:absolute;bottom:0;left:-98px}
+.scroll-down__icon{height:20px;margin:0 0 0 18px;position:absolute;left:100%;bottom:18px;z-index:2}
+.scroll-down__icon:before{content:"Scroll Down";width:100px;position:absolute;top:-78px;left:-50px;font:500 14px/16px 'Be Vietnam Pro',sans-serif;color:#444;-webkit-transform:rotate(-90deg);-ms-transform:rotate(-90deg);transform:rotate(-90deg);white-space:nowrap}
+.scroll-down__icon:after{content:"";width:2px;height:20px;display:block;position:relative;top:-4px;background:#000;-webkit-animation:1s infinite arrow;animation:1s infinite arrow}
+@-webkit-keyframes arrow {
+0%,90%,to{margin-top:0}
+50%{margin-top:7px}
+}
+@keyframes arrow {
+0%,90%,to{margin-top:0}
+50%{margin-top:7px}
+}
+.category-subtitle{padding:0 0 20px;display:block;font:14px/20px 'Be Vietnam Pro',sans-serif;color:#444;text-transform:uppercase;letter-spacing:.2em}
+.category-subtitle b{font-weight:800}
+.main-slider{position:relative}
+.main-slider__item.active .main-slider__content{right:0;opacity:1;-webkit-transition-delay:0;-ms-transition-delay:0;transition-delay:0}
+.main-slider__item.active .main-slider__image-wrap{left:0;-webkit-transition-delay:0;-ms-transition-delay:0;transition-delay:0}
+.main-slider__list-wrap{margin:0 -150px 0 0}
+.main-slider__list{position:relative;z-index:1;overflow:visible}
+.main-slider__list.loaded{height:800px;overflow:hidden}
+.main-slider__list.loaded .main-slider__content{-webkit-transition:ease-out;-ms-transition:0 ease-out;transition:ease-out;-ms-transition-delay:0}
+.main-slider__list .slick-list,.main-slider__list .slick-track{overflow:visible!important}
+.main-slider__max{max-width:1552px;position:relative}
+.main-slider__row{width:100%;display:table}
+.main-slider__cell{height:800px;display:table-cell;vertical-align:middle}
+.main-slider__image-wrap{width:100%;max-width:1040px;height:100%;position:absolute;top:0;left:-50px;z-index:1;overflow:hidden;-webkit-transition:.8s ease-out .9s;-ms-transition:.8s ease-out;transition:.8s ease-out .9s;-ms-transition-delay:.9s}
+.main-slider__image{width:1040px;height:100%;position:absolute;top:0;left:0;background-position:center center;background-repeat:no-repeat;background-size:cover}
+.main-slider__bg-wrap{width:100%;max-width:1454px;height:100%;position:absolute;top:0;left:98px}
+.main-slider__bg{width:482px;height:482px;margin:30px 0 0;float:right}
+.main-slider__content{padding:0 0 0 670px;position:relative;right:-50px;z-index:2;text-align:left;opacity:0;-webkit-transition:.8s ease-out .9s;-ms-transition:.8s ease-out;transition:.8s ease-out .9s;-ms-transition-delay:.9s}
+.main-slider__subtitle{padding:0 0 32px;text-transform:uppercase}
+.main-slider__title{padding:0 0 33px;display:block;position:relative;right:12px;font:100px/1 'Josefin Sans',sans-serif;line-height:100px;text-transform:capitalize}
+.main-slider__button{margin:0}
+.collection-block{padding-top:101px;padding-bottom:176px;position:relative}
+.collection-block__content{position:relative;z-index:1}
+.collection-block__bg-left{width:482px;height:482px;position:absolute;top:-7px;left:-179px}
+.collection-block__bg-right{width:482px;height:482px;position:absolute;bottom:270px;right:-81px}
+.collection-title{padding:0 0 20px;display:inline-block;position:relative;z-index:1;font:80px/1 'Josefin Sans',sans-serif}
+.collection-title__count{margin:0 -11px 0 0}
+.collection-title__plus{font-size:56px;position:relative;bottom:6px}
+.collection-title__text{display:block;font:28px/48px 'Be Vietnam Pro',sans-serif}
+.collections{max-width:1160px;margin:0 -40px -102px 0;position:relative;right:10px;column-count:2;-webkit-column-count:2;column-gap:0;-webkit-column-gap:0}
+.collections__top{padding:0 40px 121px 8px;break-inside:avoid;-webkit-column-break-inside:avoid;page-break-inside:avoid}
+.collections__bottom{padding:0 12px 0 0;break-inside:avoid;-webkit-column-break-inside:avoid;page-break-inside:avoid;text-align:right}
+.collection{padding:0 40px 152px 0;break-inside:avoid;-webkit-column-break-inside:avoid;page-break-inside:avoid}
+.collection_1{text-align:right}
+.collection_1 .collection__all{max-width:500px;margin-left:40px}
+.collection_1 .collection__content{left:39px}
+.collection_1 .collection__category{width:600px;white-space:nowrap;-webkit-transform:rotate(-90deg);-ms-transform:rotate(-90deg);transform:rotate(-90deg);left:-300px;top:auto;bottom:260px;text-shadow:2px 4px 7px rgba(0,0,0,.15)}
+.collection_2{padding-bottom:171px}
+.collection_2 .collection__image{left:auto;right:0}
+.collection_2 .collection__content{max-width:none;padding-left:14px}
+.collection_2 .collection__category{left:auto;right:0px;text-align:right}
+.collection_3{padding-bottom:114px;text-align:right}
+.collection_3 .collection__all{margin-left:45px}
+.collection_3 .collection__content{left:-1px}
+.collection_3 .collection__category{left:3px}
+.collection_4{padding-top:9px;text-align:right}
+.collection_4 .collection__all{max-width:500px;margin-left:45px}
+.collection_4 .collection__content{left:39px}
+.collection_4 .collection__category{left:-34px}
+.collection__all{width:100%;min-height:560px;display:inline-block;position:relative}
+.desktop .collection__all:hover .collection__image:before{opacity:1}
+.collection__image{width:100%;max-width:427px;height:100%;position:absolute;top:0;left:0;background-position:center center;background-repeat:no-repeat;background-size:cover}
+.collection__image:before{content:"";width:100%;height:100%;position:absolute;top:0;left:0;z-index:1;opacity:0;background:rgba(0,0,0,.2);-webkit-transition:.5s ease-out;-ms-transition:.5s ease-out;transition:.5s ease-out}
+.collection__row{width:100%;display:table;table-layout:fixed}
+.collection__cell{height:560px;display:table-cell;vertical-align:bottom}
+.collection__content{width:100%;max-width:260px;padding:0 0 75px;display:inline-block;position:relative;text-align:left}
+.collection__subtitle{padding:0 0 19px;position:relative;z-index:1}
+.collection__title{padding:0 0 35px;font:400 35px/1 'Josefin Sans',sans-serif;line-height:40px;text-transform:capitalize;position:relative;right:2px;z-index:1}
+.collection__more{position:relative;z-index:3}
+.collection__category{width:100%;margin:-40px 0 0;position:absolute;top:100%;left:0;z-index:1;font:900 80px/1 'Be Vietnam Pro',sans-serif;text-shadow:0 -4px 7px rgba(0,0,0,.15);color:#fff;text-transform:uppercase;text-align:left;text-decoration:none!important}
+.collection__link{width:100%;height:100%;position:absolute;top:0;left:0;z-index:2}
+.season-sale{padding:0 40px 152px 9px;break-inside:avoid;-webkit-column-break-inside:avoid;page-break-inside:avoid}
+.season-sale__all{max-width:488px;min-height:560px;padding:12px;position:relative;background:#000;color:#fff}
+.desktop .season-sale__all:hover .season-sale__image:before{opacity:1}
+.season-sale__image{width:100%;height:100%;padding:10px;position:absolute;top:0;left:0;background-position:center center;background-repeat:no-repeat;background-size:cover}
+.season-sale__image:before{content:"";width:100%;height:100%;position:absolute;top:0;left:0;background:rgba(0,0,0,.2);opacity:0;-webkit-transition:.5s ease-out;-ms-transition:.5s ease-out;transition:.5s ease-out}
+.season-sale__image:after{content:"";height:100%;display:block;position:relative;z-index:1;border:2px solid rgba(255,255,255,.8)}
+.season-sale__row{width:100%;padding:39px;display:table;table-layout:fixed}
+.season-sale__cell{height:458px;display:table-cell;vertical-align:middle;position:relative;top:3px}
+.season-sale__content{position:relative}
+.season-sale__title{padding:0 0 10px;position:relative;z-index:1;font:600 40px/1 'Be Vietnam Pro',sans-serif;text-transform:uppercase;letter-spacing:.41em;color:#fff}
+.season-sale__title span{padding:45px 0;display:block;font:800 79px/1 'Be Vietnam Pro',sans-serif;letter-spacing:normal}
+.season-sale__text{max-width:366px;padding:0 0 25px;position:relative;z-index:1;font:500 20px/30px 'Be Vietnam Pro',sans-serif}
+.season-sale__more{position:relative;z-index:3;color:#fff}
+.season-sale__more:before{background:#fff}
+.season-sale__link{width:100%;height:100%;position:absolute;top:0;left:0;z-index:2}
+.season-sale_small{padding-bottom:126px;padding-left:41px}
+.season-sale_small .season-sale__all{max-width:500px;min-height:280px}
+.season-sale_small .season-sale__row{padding:29px}
+.season-sale_small .season-sale__cell{height:198px}
+.season-sale_small .season-sale__title{padding:0 0 8px;font:600 28px/1 'Be Vietnam Pro',sans-serif}
+.season-sale_small .season-sale__title span{padding:5px 0;font:800 70px/1 'Be Vietnam Pro',sans-serif}
+.season-sale_small .season-sale__text{max-width:250px;padding:0 0 3px;font:500 16px/24px 'Be Vietnam Pro',sans-serif}
+.season-sale_small .season-sale__content{max-width:250px;margin:auto}
+.collections_inner{margin-bottom:-65px}
+.collections_inner .collection_2{padding-top:137px;position:relative;right:7px}
+.collections_inner .collection_3{position:relative;right:7px}
+.main-block{padding-bottom:127px;position:relative}
+.main-block .tabs-nav__list{padding:0 0 8px}
+.main-block:last-child{margin-bottom:51px}
+.main-block__top{padding:0 0 27px;text-align:center}
+.main-block__subtitle{padding:0 0 19px}
+.main-block__title{padding:0 0 20px;font:400 40px/1 'Josefin Sans',sans-serif;text-transform:capitalize}
+.main-block__text{max-width:541px;margin:auto;padding:0 0 24px}
+.load-more{text-align:center}
+.tabs-nav{position:relative}
+.tabs-nav__list{margin:0 -15px;padding:0 0 25px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-justify-content:center;-ms-justify-content:center;justify-content:center}
+.tabs-nav__list_left{-webkit-justify-content:flex-start;-ms-justify-content:flex-start;justify-content:flex-start}
+.tabs-nav__item{margin:0 0 10px;padding:0 15px}
+.tabs-nav__item.active .tabs-nav__link{color:#000}
+.tabs-nav__item:before{display:none}
+.tabs-nav__link{display:block;font:500 16px/24px 'Be Vietnam Pro',sans-serif;color:rgba(0,0,0,.5);text-transform:capitalize}
+.desktop .tabs-nav__link:hover{color:#000;text-decoration:none}
+.tabs-nav__line{height:2px;margin:24px 0 0;position:absolute;background:#000;-webkit-transition:.3s ease-out;-ms-transition:.3s ease-out;transition:.3s ease-out}
+.product-tab{position:relative}
+.main-catalog{position:relative}
+.main-catalog__list{margin:0 -15px;padding:0 0 8px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;position:relative;z-index:1}
+.main-catalog__list .short-item{width:25%}
+.main-catalog__bg{width:322px;height:322px;position:absolute;top:216px;right:-271px}
+.short-item__all{margin:0 15px 47px;position:relative}
+.short-item__top{width:100%;position:absolute;top:17px;z-index:1}
+.short-item__cols{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:space-between;-ms-justify-content:space-between;justify-content:space-between}
+.short-item__col{padding:0 20px}
+.short-item__image-bg{height:360px;margin:0 0 20px;display:block;position:relative;overflow:hidden;background:#f8f8fb}
+.short-item__image-bg:before{content:"";width:100%;height:100%;position:absolute;top:0;left:0;z-index:1;background:rgba(68,68,68,.2);opacity:0;-webkit-transition:.5s ease-out;-ms-transition:.5s ease-out;transition:.5s ease-out}
+.desktop .short-item__image-bg:hover:before{opacity:1}
+.short-item__image{width:100%;height:100%;object-fit:contain}
+.short-item__title{padding:0 0 8px;font:16px/27px 'Be Vietnam Pro',sans-serif}
+.short-item__link{display:block;color:#444}
+.desktop .short-item__link:hover{color:#ff8e8e;text-decoration:none}
+.short-item__price{padding:0 12px 0 0;display:inline-block;vertical-align:top;font:20px/22px 'Josefin Sans',sans-serif;color:#000}
+.short-item__old-price{display:inline-block;vertical-align:top;font:300 16px/22px 'Josefin Sans',sans-serif;color:#444;text-decoration:line-through}
+.item-tag{height:20px;margin:0 1px 5px 0;padding:0 10px;display:inline-block;vertical-align:top;background:#000;font:800 10px/22px 'Be Vietnam Pro',sans-serif;text-transform:uppercase;color:#fff}
+.item-tag_green{background:#95ccb5}
+.item-tag_red{background:#ff8e8e}
+.deal-block{max-width:1920px;margin:51px auto 200px;padding:0 40px}
+.deal-block__cols{max-width:1680px;margin:auto;position:relative;text-align:right}
+.deal-block__image{width:100%;max-width:1040px;height:800px;position:absolute;top:0;right:0;background-position:center center;background-repeat:no-repeat;background-size:cover}
+.deal-block__col{width:100%;max-width:1409px;display:inline-block;vertical-align:top;position:relative;z-index:2;text-align:left}
+.deal-block__content{position:relative;z-index:1}
+.deal-block__row{width:100%;display:table;table-layout:fixed}
+.deal-block__cell{height:800px;display:table-cell;vertical-align:middle}
+.deal-block__subtitle{padding:0 0 32px}
+.deal-block__title{padding:0 0 24px;position:relative;right:11px;font:120px/1 'Josefin Sans',sans-serif;text-transform:capitalize}
+.deal-block__button{margin:0}
+.deal-block__bg{width:482px;height:482px;position:absolute;top:0;left:-361px}
+.syotimer{padding:0 0 60px}
+.syotimer__body{margin:0 -15px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}
+.syotimer-cell{padding:0 15px;text-align:center;position:relative}
+.syotimer-cell_type_minute:after{content:":";position:absolute;top:0;right:-5px;font:36px/26px 'Josefin Sans',sans-serif;color:#000}
+.syotimer-cell_type_second{min-width:76px}
+.syotimer-cell__value{display:block;font:36px/1 'Josefin Sans',sans-serif}
+.syotimer-cell__unit{display:block;font:16px/27px 'Be Vietnam Pro',sans-serif}
+.advantages{padding-bottom:148px}
+.advantages+.newsletter{margin-top:20px}
+.advantages__list{margin:0 -14px 0 -20px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-justify-content:center;-ms-justify-content:center;justify-content:center;position:relative;left:29px}
+.advantage{width:33.333%;padding:0 20px 30px;position:relative}
+.advantage__bg{width:130px;height:130px;position:absolute;top:36px;right:40px}
+.advantage__content{position:relative;z-index:1}
+.advantage__icon-wrap{height:70px;margin:0 0 36px}
+.advantage__icon{width:70px;height:70px;margin:0}
+.advantage__title{padding:0 0 14px;font:400 24px/28px 'Josefin Sans',sans-serif}
+.advantage__line{max-width:300px;height:2px;margin:0 0 27px;background:#000}
+.advantage__text{max-width:300px;padding:0}
+.catalog-slider{position:relative}
+.catalog-slider.loaded{height:300px;overflow:hidden}
+.catalog-slider__cols{margin:0 -30px;padding:0 0 40px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:center;-ms-justify-content:center;justify-content:center;position:relative;z-index:1}
+.catalog-slider__col{padding:0 30px}
+.catalog-slider__list-wrap{margin:0 -15px;position:relative;z-index:1}
+.catalog-slider__bg{width:322px;height:322px;position:absolute;top:184px;right:-240px}
+.blog{margin:0 -15px -10px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}
+.blog .short-post{width:50%;padding:0 15px 107px}
+.short-post{min-height:300px;padding:0 0 107px}
+.short-post__all{position:relative;text-align:right}
+.desktop .short-post__all:hover .short-post__image-link:before{opacity:1}
+.short-post__image-link{width:100%;height:100%;position:absolute;top:0;left:0;z-index:1}
+.short-post__image-link:before{content:"";width:100%;height:100%;position:absolute;top:0;left:0;z-index:1;opacity:0;background:rgba(0,0,0,.2);-webkit-transition:.5s ease-out;-ms-transition:.5s ease-out;transition:.5s ease-out}
+.short-post__image{height:100%;background-position:center center;background-repeat:no-repeat;background-size:cover}
+.short-post__row{width:100%;display:table;table-layout:fixed}
+.short-post__cell{height:300px;display:table-cell;vertical-align:bottom}
+.short-post__bg{width:100%;max-width:319px;padding:33px 0 0 51px;display:inline-block;vertical-align:bottom;position:relative;left:1px;top:1px;z-index:2;background:#fff;text-align:left}
+.short-post__bg:before{content:"";width:226px;height:130px;position:absolute;bottom:-47px;right:0;background:url(../img/svg/vector-short-post.svg) 0 0/100% 100% no-repeat}
+.short-post__content{position:relative;z-index:1}
+.short-post__title-wrap{width:100%;margin:0 0 20px;display:table}
+.short-post__title{height:72px;padding:0;display:table-cell;vertical-align:bottom;font:400 20px/24px 'Josefin Sans',sans-serif;text-transform:capitalize}
+.short-post__link{display:inline-block;color:#000}
+.desktop .short-post__link:hover{color:#ff8e8e;text-decoration:none}
+.short-post__date{padding:0 0 22px;display:block;font:14px/24px 'Be Vietnam Pro',sans-serif;text-transform:capitalize}
+.short-post__more{position:relative;top:13px}
+.short-post_small{width:100%;padding:11px 0 71px}
+@media screen and (min-width:768px) {
+.short-post_small .short-post__cell{height:240px}
+.short-post_small .short-post__bg{max-width:236px;padding:15px 20px 0 30px}
+.short-post_small .short-post__bg:before{width:130px;height:66px;bottom:-49px;background:url(../img/svg/vector-post-small.svg) 0 0/100% 100% no-repeat}
+.short-post_small .short-post__title-wrap{margin:0 0 5px}
+.short-post_small .short-post__title{height:auto;font:400 16px/19px 'Josefin Sans',sans-serif}
+.short-post_small .short-post__date{padding:0}
+.short-post_small .short-post__more{top:10px}
+.short-post_small .short-post__content{top:15px}
+}
+.inner-top{margin-bottom:80px;position:relative}
+.inner-top:after{content:"";width:40px;height:100%;position:absolute;top:0;right:0;z-index:1;background:#fff}
+.inner-top__main{position:relative}
+.inner-top__bg{width:354px;height:322px;position:absolute;top:32px;left:-290px}
+.inner-top__cols{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-ms-align-items:center;align-items:center}
+.inner-top__left{width:610px;padding:34px 40px 0 0;position:relative;z-index:2;-webkit-flex-grow:0;flex-grow:0;-ms-flex-grow:0;-webkit-flex-shrink:0;flex-shrink:0;-ms-flex-shrink:0}
+.inner-top__left:before{content:"";width:10000px;height:2px;position:absolute;bottom:0;right:150px;background:#000}
+.inner-top__right{width:100%;min-width:0}
+.inner-top__image{width:800px;height:400px;background-position:center center;background-repeat:no-repeat;background-size:cover}
+.inner-top__title{padding:0 0 21px;font:400 65px/1 'Josefin Sans',sans-serif}
+.breadcrumbs{padding:0 0 0 13px;position:relative;font:14px/24px 'Be Vietnam Pro',sans-serif}
+.breadcrumbs:before{content:"";width:2px;height:16px;position:absolute;top:4px;left:0;background:#000}
+.breadcrumbs__list{margin:0 -9px 0 0;padding:0 0 22px}
+.breadcrumbs__item{padding:0 9px 0 0;display:inline;color:#ff8e8e}
+.breadcrumbs__item:before{display:none}
+.breadcrumbs__item:last-child .breadcrumbs__link{color:#ff8e8e}
+.breadcrumbs__link{color:#000}
+.desktop .breadcrumbs__link:hover{color:#ff8e8e;text-decoration:none}
+.newsletter{padding:3px 40px 120px}
+.newsletter__banner{max-width:1680px;min-height:450px;margin:auto;background-repeat:no-repeat;background-position:right top;background-size:cover}
+.newsletter__main{max-width:1140px;margin:auto}
+.newsletter__bg{max-width:624px;padding:60px 40px 30px;position:relative;background:#fff}
+.newsletter__vector{width:130px;height:130px;position:absolute;top:-33px;right:30px}
+.newsletter__max{max-width:504px;margin:auto;position:relative;z-index:1}
+.newsletter__title{padding:0 0 16px;font:400 32px/38px 'Josefin Sans',sans-serif}
+.newsletter__text{padding:0 0 40px;font:14px/24px 'Be Vietnam Pro',sans-serif}
+.newsletter-form{padding:0 0 20px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}
+.newsletter-form__left{width:100%;min-width:0;padding:0 30px 10px 0}
+.newsletter-form__right{padding:0 0 10px;-webkit-flex-grow:0;flex-grow:0;-ms-flex-grow:0;-webkit-flex-shrink:0;flex-shrink:0;-ms-flex-shrink:0}
+.newsletter-form__button,.newsletter-form__input{margin:0}
+.brands-block{padding-bottom:70px}
+.brands{max-width:1139px;margin:0 -8px;padding:0 0 30px 18px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:space-between;-ms-justify-content:space-between;justify-content:space-between;position:relative}
+.brands__item{min-width:0;padding:0 8px 20px;position:relative}
+.brands__item:before{display:none}
+.brands__link{height:116px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-justify-content:center;-ms-justify-content:center;justify-content:center;-webkit-align-items:center;-ms-align-items:center;align-items:center;opacity:.5;-webkit-transition:.3s ease-out;-ms-transition:.3s ease-out;transition:.3s ease-out}
+.desktop .brands__link:hover{opacity:1}
+.brands__logo{max-width:100%;max-height:116px;margin:0}
+.brands__logo_1{width:184px;height:76px}
+.brands__logo_2{width:159px;height:85px}
+.brands__logo_3{width:138px;height:116px}
+.brands__logo_4{width:188px;height:104px}
+.brands__logo_5{width:161px;height:82px}
+.about-company{padding-top:121px;padding-bottom:141px}
+.about-company__top{padding:0 0 41px}
+.about-company__title{padding:0 0 20px;font:400 40px/1 'Josefin Sans',sans-serif}
+.about-company__text{max-width:475px;padding:0 0 20px;font:20px/34px 'Be Vietnam Pro',sans-serif}
+.about-company__cols{margin:0 -15px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-justify-content:space-between;-ms-justify-content:space-between;justify-content:space-between}
+.about-company__col{width:50%;max-width:576px;padding:0 15px 38px;position:relative}
+.about-company__col:nth-child(4){left:10px}
+.about-stats{padding:0 0 38px 12px;position:relative;text-align:center}
+.about-stats_bottom{padding:108px 12px 0 0}
+.about-stats_bottom .about-stats__vector{left:0;top:9px}
+.about-stats_bottom .collection-title{text-align:right}
+.about-stats__vector{width:322px;height:322px;position:absolute;top:-98px;left:9px}
+.about-section{padding:0 0 0 67px;position:relative;z-index:1}
+.about-section__title{margin:0 0 0 -67px;padding:0 0 21px;font:400 24px/28px 'Josefin Sans',sans-serif}
+.about-section__text{max-width:470px;padding:0 0 20px}
+.about-section__year{width:200px;padding:0 0 0 40px;position:absolute;bottom:116px;left:-93px;-webkit-transform:rotate(-90deg);-ms-transform:rotate(-90deg);transform:rotate(-90deg);white-space:nowrap;font:500 14px/1 'Be Vietnam Pro',sans-serif}
+.about-section__year:before{content:"";width:20px;height:2px;position:absolute;top:7px;left:0;background:#000}
+.inner-deal{max-width:1920px;margin:0 auto 200px;position:relative}
+.inner-deal:before{content:"";width:40px;height:100%;position:absolute;top:0;left:0;z-index:2;background:#fff}
+.inner-deal__cols{position:relative;z-index:1;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-ms-align-items:center;align-items:center}
+.inner-deal__left{width:100%;min-width:0}
+.inner-deal__right{width:532px;-webkit-flex-grow:0;flex-grow:0;-ms-flex-grow:0;-webkit-flex-shrink:0;flex-shrink:0;-ms-flex-shrink:0;position:relative;z-index:1}
+.inner-deal__image{height:800px;margin:0 -162px 0 -270px;background-position:center center;background-repeat:no-repeat;background-size:cover}
+.inner-deal__subtitle{padding:0 0 32px}
+.inner-deal__title{padding:0 0 20px;font:70px/1 'Josefin Sans',sans-serif;text-transform:capitalize}
+.inner-deal__text{max-width:500px;padding:0 0 54px}
+.inner-deal__button{margin:0}
+.inner-deal__bg{width:482px;height:482px;position:absolute;top:0;left:-361px}
+.shop{padding-top:103px;padding-bottom:135px}
+.shop__cols{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}
+.shop__left{width:294px;padding:0 52px 0 0;-webkit-flex-grow:0;flex-grow:0;-ms-flex-grow:0;-webkit-flex-shrink:0;flex-shrink:0;-ms-flex-shrink:0;-webkit-box-ordinal-group:1;-webkit-order:1;-ms-flex-order:1;order:1}
+.shop__right{width:100%;padding:8px 0 0;-webkit-box-ordinal-group:2;-webkit-order:2;-ms-flex-order:2;order:2}
+.filters{padding:0 0 53px}
+.apply-button{width:100%;margin:3px 0 20px;display:block}
+.search-form{margin:0 0 31px;padding:0 0 20px;position:relative}
+.search-form__input{width:100%;height:56px;padding:10px 30px 10px 0;display:block;font:14px/1 'Be Vietnam Pro',sans-serif;color:#000;border-bottom:1px solid rgba(68,68,68,.2);-webkit-transition:.3s ease-out;-ms-transition:.3s ease-out;transition:.3s ease-out}
+.search-form__input:focus{border-color:#000}
+.search-form__button{width:18px;height:24px;position:absolute;top:16px;right:0}
+.search-form__button:after,.search-form__button:before{content:"";width:18px;height:18px;margin:-9px 0 0 -9px;position:absolute;top:50%;left:50%;-webkit-transition:.3s ease-out;-ms-transition:.3s ease-out;transition:.3s ease-out}
+.search-form__button:before{background:url(../img/svg/search.svg) 0 0/100% 100% no-repeat}
+.search-form__button:after{opacity:0;z-index:1;background:url(../img/svg/search__red.svg) 0 0/100% 100% no-repeat}
+.desktop .search-form__button:hover:before{opacity:0}
+.desktop .search-form__button:hover:after{opacity:1}
+.widget{padding:0 0 30px}
+.widget__title{margin:0 0 19px;padding:0 0 14px;font:400 24px/28px 'Josefin Sans',sans-serif;border-bottom:2px solid #000;color:#000}
+.widget__button{margin:0 0 19px;padding:0 30px 14px 0;display:none;position:relative;font:400 24px/28px 'Josefin Sans',sans-serif;text-transform:capitalize;border-bottom:2px solid #000;color:#000}
+.widget__button:after,.widget__button:before{content:"";width:15px;height:9px;position:absolute;top:10px;right:0;-webkit-transition:.3s ease-out;-ms-transition:.3s ease-out;transition:.3s ease-out}
+.widget__button:before{background:url(../img/svg/arrow-select.svg) 0 0/100% 100% no-repeat}
+.widget__button:after{opacity:0;z-index:1;background:url(../img/svg/arrow-select__red.svg) 0 0/100% 100% no-repeat}
+.desktop .widget__button:hover{color:#000;text-decoration:none}
+.desktop .widget__button:hover:before{opacity:0}
+.desktop .widget__button:hover:after{opacity:1}
+.widget__button.active:after,.widget__button.active:before{-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg)}
+.side-nav{padding:0 20px 25px;-webkit-user-select:none;-ms-user-select:none;user-select:none}
+.side-nav__item:before{display:none}
+.side-nav__item.active .side-nav__link{padding-left:38px;color:#ff8e8e}
+.side-nav__item.active .side-nav__link:before{opacity:0}
+.side-nav__item.active .side-nav__link:after{opacity:1}
+.side-nav__link{padding:6px 0 5px 17px;display:block;position:relative;font:16px/28px 'Be Vietnam Pro',sans-serif;color:#444}
+.side-nav__link:before{content:"";width:5px;height:5px;position:absolute;top:17px;left:0;background:#444;-webkit-transition:.3s ease-out;-ms-transition:.3s ease-out;transition:.3s ease-out}
+.side-nav__link:after{content:"";width:25px;height:2px;position:absolute;top:19px;left:0;background:#ff8e8e;-webkit-transition:.3s ease-out;-ms-transition:.3s ease-out;transition:.3s ease-out;opacity:0}
+.desktop .side-nav__link:hover{color:#ff8e8e;text-decoration:none}
+.desktop .side-nav__link:hover:before{background:#ff8e8e}
+.range{padding:38px 0 24px}
+.checkboxes{padding:10px 20px 28px}
+.checkboxes .checkbox{display:none}
+.checkboxes .checkbox:nth-child(1),.checkboxes .checkbox:nth-child(2),.checkboxes .checkbox:nth-child(3),.checkboxes .checkbox:nth-child(4),.checkboxes .checkbox:nth-child(5),.widget.opened .checkbox{display:block}
+.checkbox{margin:0 0 24px;-webkit-user-select:none;-ms-user-select:none;user-select:none}
+.checkbox__label{padding:0 0 0 30px;display:block;position:relative;font:14px/16px 'Be Vietnam Pro',sans-serif;color:#444;cursor:pointer}
+.desktop .checkbox__label:hover .checkbox__icon{border-color:#ff8e8e}
+.checkbox__input{display:none}
+.checkbox__input:checked+.checkbox__icon:after{opacity:1}
+.checkbox__icon{width:16px;height:16px;position:absolute;top:0;left:0;border:1px solid rgba(68,68,68,.2);-webkit-transition:.3s ease-out;-ms-transition:.3s ease-out;transition:.3s ease-out}
+.checkbox__icon:after{content:"";width:10px;height:8px;position:absolute;top:3px;left:2px;background:url(../img/svg/check.svg) 0 0/100% 100% no-repeat;opacity:0}
+.short-reviews{padding:11px 0 0}
+.reviewed{padding:0 0 20px}
+.reviewed__cols{margin:0 -8px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-ms-align-items:center;align-items:center}
+.reviewed__left,.reviewed__right{padding:0 8px}
+.reviewed__image-bg{width:75px;height:85px;display:block;position:relative;background:#f8f8fb}
+.reviewed__image-bg:before{content:"";width:100%;height:100%;position:absolute;top:0;left:0;opacity:0;background:rgba(68,68,68,.2);-webkit-transition:.5s ease-out;-ms-transition:.5s ease-out;transition:.5s ease-out}
+.desktop .reviewed__image-bg:hover:before{opacity:1}
+.reviewed__image{width:100%;height:100%;margin:0;object-fit:contain}
+.reviewed__title{padding:0 0 2px;font:14px/20px 'Be Vietnam Pro',sans-serif}
+.reviewed__link{color:#444}
+.desktop .reviewed__link:hover{color:#ff8e8e;text-decoration:none}
+.reviewed__price{padding:0 6px 0 0;display:inline-block;vertical-align:top;font:14px/20px 'Josefin Sans',sans-serif;color:#000}
+.reviewed__old-price{display:inline-block;vertical-align:top;font:12px/20px 'Josefin Sans',sans-serif;color:#444;text-decoration:line-through}
+@media screen and (min-width:1101px) {
+.short-reviews_full .reviewed__cols{margin:0 -12px}
+.short-reviews_full .reviewed__left,.short-reviews_full .reviewed__right{padding:0 12px}
+.short-reviews_full .reviewed__title{padding:0 0 4px;font:16px/27px 'Be Vietnam Pro',sans-serif}
+.short-reviews_full .reviewed__price{padding:0 12px 0 0;font:20px/24px 'Josefin Sans',sans-serif}
+.short-reviews_full .reviewed__old-price{font:300 16px/24px 'Josefin Sans',sans-serif}
+.sale-banner_changed .sale-banner__title{font-size:28px}
+.sale-banner_changed .sale-banner__title span{font-size:70px}
+.sale-banner_changed .sale-banner__content{max-width:248px}
+}
+.sale-banner{margin:0 0 40px;position:relative;overflow:hidden}
+.desktop .sale-banner:hover .sale-banner__image:before{opacity:1}
+.sale-banner__all{min-height:400px;padding:12px;position:relative;background:#000;color:#fff;overflow:hidden}
+.sale-banner__image{width:548px;height:100%;margin:0 0 0 -274px;padding:10px;position:absolute;top:0;left:50%;background-position:center center;background-repeat:no-repeat;background-size:cover}
+.sale-banner__image:before{content:"";width:100%;height:100%;position:absolute;top:0;left:0;opacity:0;background:rgba(0,0,0,.2);-webkit-transition:.5s ease-out;-ms-transition:.5s ease-out;transition:.5s ease-out}
+.sale-banner__row{width:100%;padding:39px 12px 39px 39px;display:table;table-layout:fixed}
+.sale-banner__cell{height:298px;display:table-cell;vertical-align:middle;position:relative;top:3px}
+.sale-banner__content{max-width:270px;margin:auto}
+.sale-banner__title{padding:0 0 24px;position:relative;z-index:1;font:600 24px/1 'Be Vietnam Pro',sans-serif;text-transform:uppercase;letter-spacing:.41em;color:#fff}
+.sale-banner__title span{padding:6px 0;display:block;font:800 60px/1 'Be Vietnam Pro',sans-serif;letter-spacing:normal}
+.sale-banner__text{padding:0 0 25px;position:relative;z-index:1;font:500 14px/21px 'Be Vietnam Pro',sans-serif}
+.sale-banner__more{position:relative;z-index:3;color:#fff}
+.sale-banner__more:before{background:#fff}
+.sale-banner__link{width:100%;height:100%;position:absolute;top:0;left:0;z-index:2}
+.sale-banner__border{width:100%;height:100%;padding:10px;position:absolute;top:0;left:0;z-index:1}
+.sale-banner__border:before{content:"";height:100%;display:block;border:2px solid rgba(255,255,255,.8)}
+.sale-banner_changed .sale-banner__image{width:100%;margin:0;left:0}
+.shop-panel{margin:0 -15px;padding:0 0 11px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:space-between;-ms-justify-content:space-between;justify-content:space-between}
+.shop-panel__left{padding:8px 15px 0}
+.shop-panel__right{width:292px;padding:0 15px}
+.shop-panel__text{padding:0 0 20px;display:block}
+.shop-panel__text b{font-weight:600}
+.inner-catalog{margin:0 -15px;padding:0 0 2px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}
+.inner-catalog .short-item{width:33.333%}
+.page-nav{margin:0 -15px;padding:0 0 50px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:center;-ms-justify-content:center;justify-content:center}
+.page-nav__col{padding:0 15px}
+.page-nav__list{margin:0 -10px;padding:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-justify-content:center;-ms-justify-content:center;justify-content:center}
+.page-nav__item{padding:0 10px 10px;font:16px/28px 'Be Vietnam Pro',sans-serif}
+.page-nav__item.active{font-weight:600}
+.page-nav__item.active .page-nav__link{min-width:22px;color:#000}
+.page-nav__item.active .page-nav__link:after{background:#000}
+.page-nav__item:before{display:none}
+.page-nav__link{padding:0 1px;display:block;position:relative;color:rgba(0,0,0,.5);text-align:center}
+.page-nav__link:after{content:"";width:100%;height:3px;position:absolute;bottom:0;left:0;background:#b3b3b3;border-radius:2px}
+.desktop .page-nav__link:hover{color:#000;text-decoration:none}
+.page-nav__button{margin:6px 0 0}
+.product{padding-top:120px;padding-bottom:26px;position:relative}
+.product__vector{width:354px;height:322px;position:absolute;bottom:-77px;right:-69px}
+.product__cols{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}
+.product__left{width:56.14%;position:relative;z-index:2}
+.product__right{width:43.86%;padding:0 0 0 43px;position:relative;z-index:2}
+.product__content{min-height:449px}
+.product__title{padding:0 0 20px;font:400 40px/1 'Josefin Sans',sans-serif;text-transform:capitalize}
+.product__top{padding:0 0 23px}
+.product__text{padding:0 0 15px}
+.product__prices{padding:0 0 37px}
+.product__price{padding:3px 16px 3px 0;display:inline-block;vertical-align:middle;font:30px/1 'Josefin Sans',sans-serif;color:#000}
+.product__old-price{padding:3px 0;display:inline-block;position:relative;vertical-align:middle;font:300 20px/1 'Josefin Sans',sans-serif;color:#444}
+.product__old-price:before{content:"";width:100%;height:1px;position:absolute;top:50%;left:0;background:#444}
+.product-rating{margin:0 -10px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-ms-align-items:center;align-items:center}
+.product-rating__col{padding:0 10px}
+.product-rating__text{display:block;font:12px/20px 'Be Vietnam Pro',sans-serif;color:#999}
+.product-rating__stars{margin-bottom:0!important}
+.chars{width:100%;padding:0 0 29px;display:table;font:500 14px/24px 'Be Vietnam Pro',sans-serif}
+.chars__item{display:table-row}
+.chars__item:before{display:none}
+.chars__name{width:100px;padding:0 14px 4px 0;display:table-cell;vertical-align:top}
+.chars__text{padding:0 0 4px;display:table-cell;vertical-align:top}
+.chars__status{text-transform:uppercase;font-weight:600;font-size:12px;color:#95ccb5}
+.size{margin:0 -5px;padding:0 0 35px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}
+.size__item{padding:0 5px 10px}
+.size__item:before{display:none}
+.size__label{min-width:40px;height:40px;display:block;position:relative;cursor:pointer}
+.desktop .size__label:hover .size__bg{background:rgba(0,0,0,.1)}
+.size__input{display:none}
+.size__input:checked+.size__bg{background:#000!important}
+.size__input:checked+.size__bg+.size__text{color:#fff!important}
+.size__bg{width:100%;height:100%;position:absolute;top:0;left:0;-webkit-transition:.3s ease-out;-ms-transition:.3s ease-out;transition:.3s ease-out;background:#f8f8fb}
+.size__text{padding:0 5px;display:block;position:relative;z-index:1;font:12px/40px 'Be Vietnam Pro',sans-serif;text-align:center;text-transform:uppercase;color:#444;-webkit-transition:.3s ease-out;-ms-transition:.3s ease-out;transition:.3s ease-out}
+.count{width:109px;height:50px;position:relative}
+.count__input{width:100%;height:50px;padding:0 36px;display:block;background:#f8f8fb;font:16px/1 'Be Vietnam Pro',sans-serif;color:#000;text-align:center}
+.count__button{width:36px;height:100%;position:absolute;top:0;left:0;z-index:1;cursor:pointer}
+.count__button:after,.count__button:before{content:"";width:10px;height:2px;margin:-1px 0 0;position:absolute;top:50%;left:20px;background:#444;-webkit-transition:.3s ease-out;-ms-transition:.3s ease-out;transition:.3s ease-out}
+.count__button:after{-webkit-transform:rotate(90deg);-ms-transform:rotate(90deg);transform:rotate(90deg)}
+.desktop .count__button:hover:after,.desktop .count__button:hover:before{background:#ff8e8e}
+.count__button_minus:after{display:none}
+.count__button_plus{left:auto;right:0}
+.count__button_plus:after,.count__button_plus:before{margin-left:-15px}
+.product-add{margin:0 -15px;padding:0 0 10px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}
+.product-add__col{padding:0 15px 20px}
+.product-add__button,.product-add__count{margin:0}
+.product-gallery{position:relative}
+.product-gallery__top{width:100%;position:absolute;top:0;left:0;z-index:1}
+.product-gallery__cols{max-width:661px;margin:0 -15px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:space-between;-ms-justify-content:space-between;justify-content:space-between}
+.product-gallery__col{padding:0 15px}
+.product-gallery__tag{height:25px}
+.product-gallery__list{position:relative;z-index:1}
+.product-slider.loaded{height:500px;overflow:hidden}
+.product-slider__link{height:500px;display:block}
+.product-slider__image{width:100%;height:100%;margin:0;object-fit:contain}
+.product-tabs{padding-bottom:178px}
+.product-tabs+.main-block:last-child{margin-bottom:0}
+.product-tab{padding-top:17px;display:none}
+.product-tab.active{display:block}
+.product-tab__cols{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}
+.product-tab__left{width:56.14%}
+.product-tab__right{width:43.86%;padding:0 0 0 43px}
+.product-description p:last-child{padding:0 0 10px}
+.review{margin:0 0 20px;padding:40px 40px 37px;background:#f8f8f8}
+.review_reply{margin-left:40px;background:#f5faf8}
+.review__top{margin:0 -15px 20px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:space-between;-ms-justify-content:space-between;justify-content:space-between}
+.review__left,.review__right{padding:0 15px}
+.review__cols{margin:0 -20px 0 0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}
+.review__col{margin:0 20px 0 0;padding:0 22px 0 0;position:relative}
+.review__col:after{content:"";width:2px;height:2px;position:absolute;top:12px;right:0;background:#999}
+.review__col:last-child{padding-right:0}
+.review__col:last-child:after{display:none}
+.review__author{padding:0;font:400 20px/24px 'Josefin Sans',sans-serif;text-transform:capitalize;color:#000}
+.review__date{display:block;font:14px/24px 'Be Vietnam Pro',sans-serif;white-space:nowrap}
+.review__rating{margin-top:6px!important;margin-bottom:0!important}
+.review__button{bottom:2px}
+.review__text{padding:0}
+.add-review__top{padding:0 0 31px}
+.add-review__title{padding:0 0 16px;font:400 32px/38px 'Josefin Sans',sans-serif}
+.add-review__text{padding:0 0 19px}
+.add-review__button{margin-top:10px}
+.blog-page{padding-top:116px;padding-bottom:140px}
+.blog-nav__list{padding-bottom:22px}
+.blog-tab{display:none}
+.blog-tab.active{display:block}
+.blog+.page-nav,.blog-tab+.page-nav{padding-top:5px}
+.post-page{padding-top:117px;padding-bottom:112px}
+.post-page__cols{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:space-between;-ms-justify-content:space-between;justify-content:space-between}
+.post-page__left{width:100%;min-width:0;max-width:760px;padding:18px 40px 0 0}
+.post-page__right{width:360px;-webkit-flex-grow:0;flex-grow:0;-ms-flex-grow:0;-webkit-flex-shrink:0;flex-shrink:0;-ms-flex-shrink:0}
+.post-header__subtitle{padding:0 0 31px}
+.post-header__title{padding:0 0 60px;font:400 40px/1 'Josefin Sans',sans-serif}
+.post-header__banner{width:100%;margin:0 0 44px}
+.post-info{margin:0 0 40px;padding:0 0 10px;border-bottom:1px solid rgba(68,68,68,.2)}
+.post-info__cols{margin:0 -20px 0 0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}
+.post-info__col{margin:0 20px 0 0;padding:0 22px 0 0;position:relative}
+.post-info__col:after{content:"";width:2px;height:2px;position:absolute;top:12px;right:0;background:#999}
+.post-info__col:last-child{padding-right:0}
+.post-info__col:last-child:after{display:none}
+.post-info__author{padding:0;position:relative;bottom:2px;font:500 16px/24px 'Be Vietnam Pro',sans-serif;color:#000}
+.post-info__date{display:block;font:14px/24px 'Be Vietnam Pro',sans-serif;white-space:nowrap}
+.post-stats{margin:0 -8px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}
+.post-stats__col{padding:0 8px}
+.stats-icon{padding:0 0 0 22px;display:block;position:relative;font:14px/24px 'Be Vietnam Pro',sans-serif;color:#444}
+.stats-icon:before{content:"";position:absolute;left:0}
+.stats-icon_1:before{width:12px;height:13px;top:5px;background:url(../img/svg/comment.svg) 0 0/100% 100% no-repeat}
+.stats-icon_2:before{width:13px;height:10px;top:6px;background:url(../img/svg/eye.svg) 0 0/100% 100% no-repeat}
+.post-content{padding:0 0 23px}
+.post-content img{max-width:100%;margin:26px auto 59px}
+.post-bottom{margin:0 0 60px;padding:0;border-bottom:1px solid rgba(68,68,68,.2)}
+.post-bottom__cols{margin:0 -15px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:space-between;-ms-justify-content:space-between;justify-content:space-between}
+.post-bottom__col{padding:0 15px}
+.post-bottom .socials__list{padding:0}
+.post-nav{margin:0 -25px 0 0;padding:0 0 9px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}
+.post-nav__item{padding:3px 25px 3px 8px;position:relative;font:500 14px/20px 'Be Vietnam Pro',sans-serif;color:#ff8e8e}
+.post-nav__item:before{content:"";height:16px;position:absolute;top:5px;left:0;border-left:1px solid #ff8e8e}
+.post-nav__link{display:block;color:#ff8e8e}
+.desktop .post-nav__link:hover{color:#000;text-decoration:none}
+.about-author{margin:0 0 56px;padding:38px 40px 17px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;background:#f8f8fb}
+.about-author__left{width:140px;padding:0 40px 0 0;-webkit-flex-grow:0;flex-grow:0;-ms-flex-grow:0;-webkit-flex-shrink:0;flex-shrink:0;-ms-flex-shrink:0}
+.about-author__right{width:100%;min-width:0}
+.about-author__title{padding:0 0 20px;font:400 20px/24px 'Josefin Sans',sans-serif;text-transform:capitalize}
+.about-author__text{padding:0 0 31px}
+.about-author__photo{width:100%;max-width:100px;margin:0}
+.prev-next{margin:0 0 56px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}
+.prev-next__left{width:50%;min-height:80px;position:relative}
+.prev-next__right{width:50%;text-align:right}
+.prev-next__right .post-mini{-webkit-justify-content:flex-end;-ms-justify-content:flex-end;justify-content:flex-end;border-left:1px solid rgba(68,68,68,.1)}
+.prev-next__right .post-mini__left{padding:0 0 0 20px;-webkit-box-ordinal-group:2;-webkit-order:2;-ms-flex-order:2;order:2}
+.prev-next__right .post-mini__right{padding:0 0 0 20px;-webkit-box-ordinal-group:1;-webkit-order:1;-ms-flex-order:1;order:1}
+.post-mini{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-ms-align-items:center;align-items:center;text-align:left}
+.post-mini__left{width:100px;padding:0 20px 0 0;-webkit-flex-grow:0;flex-grow:0;-ms-flex-grow:0;-webkit-flex-shrink:0;flex-shrink:0;-ms-flex-shrink:0}
+.post-mini__right{width:100%;max-width:170px;min-width:0;padding:0 20px 0 0}
+.post-mini__title{padding:0;font:300 14px/17px 'Josefin Sans',sans-serif;text-transform:capitalize;text-shadow:0 0}
+.post-mini__link{display:block;color:#000}
+.desktop .post-mini__link:hover{color:#ff8e8e;text-decoration:none}
+.post-mini__image{height:80px;display:block;position:relative;background-position:center center;background-repeat:no-repeat;background-size:cover}
+.post-mini__image:before{content:"";width:100%;height:100%;position:absolute;top:0;left:0;opacity:0;background:rgba(0,0,0,.2);-webkit-transition:.5s ease-out;-ms-transition:.5s ease-out;transition:.5s ease-out}
+.desktop .post-mini__image:hover:before{opacity:1}
+.add-comment{padding:65px 0}
+.add-comment__title{padding:0 0 15px;font:400 40px/1 'Josefin Sans',sans-serif;text-transform:capitalize}
+.add-comment__text{padding:0 0 27px}
+.add-comment__cols{margin:0 -15px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}
+.add-comment__col{width:50%;padding:0 15px}
+.add-comment__button{margin-top:12px}
+.popular-posts{padding:11px 0 0}
+.popular{padding:0 0 30px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-ms-align-items:center;align-items:center}
+.popular:last-child{padding:0 0 21px}
+.popular__left{width:160px;padding:0 20px 0 0;-webkit-flex-grow:0;flex-grow:0;-ms-flex-grow:0;-webkit-flex-shrink:0;flex-shrink:0;-ms-flex-shrink:0}
+.popular__right{width:100%;min-width:0}
+.popular__title{padding:0 0 4px;font:16px/19px 'Josefin Sans',sans-serif;text-transform:capitalize}
+.popular__link{display:block;color:#000}
+.desktop .popular__link:hover{color:#ff8e8e;text-decoration:none}
+.popular__date{padding:0 0 15px;display:block;font:14px/24px 'Be Vietnam Pro',sans-serif;color:#444}
+.popular__image{height:140px;display:block;position:relative;background-position:center center;background-repeat:no-repeat;background-size:cover}
+.popular__image:before{content:"";width:100%;height:100%;position:absolute;top:0;left:0;opacity:0;background:rgba(0,0,0,.2);-webkit-transition:.5s ease-out;-ms-transition:.5s ease-out;transition:.5s ease-out}
+.desktop .popular__image:hover:before{opacity:1}
+.newsletter-block{margin:0 0 50px;padding:59px 54px 37px;background:#fff;border:1px solid rgba(68,68,68,.1)}
+.newsletter-block__title{padding:0 0 16px;font:400 32px/38px 'Josefin Sans',sans-serif;text-transform:capitalize}
+.newsletter-block__text{margin:0 -5px 0 0;padding:0 0 20px;font:14px/24px 'Be Vietnam Pro',sans-serif}
+.newsletter-block__input{margin:0 0 30px}
+.faq-page{padding-top:80px;padding-bottom:150px}
+.faq-page__cols{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:space-between;-ms-justify-content:space-between;justify-content:space-between}
+.faq-page__left{width:100%;min-width:0;max-width:760px;padding:0 40px 0 0}
+.faq-page__right{width:360px;padding:40px 0 0;-webkit-flex-grow:0;flex-grow:0;-ms-flex-grow:0;-webkit-flex-shrink:0;flex-shrink:0;-ms-flex-shrink:0}
+.faq-page__right .sale-banner{margin-bottom:51px}
+.faq__item.active .faq__title:before{height:2px;background:#000;-webkit-transition:.3s ease-out;-ms-transition:.3s ease-out;transition:.3s ease-out}
+.faq__item.active .faq__button:after,.faq__item.active .faq__button:before{-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg)}
+.faq__title{padding:0;font:400 20px/24px 'Josefin Sans',sans-serif;text-transform:capitalize;position:relative}
+.faq__title:before{content:"";width:100%;height:1px;margin:-1px 0 0;position:absolute;top:100%;left:0;background:rgba(0,0,0,.1)}
+.faq__button{padding:40px 50px 40px 0;display:block;position:relative;z-index:1;color:#000}
+.faq__button:after,.faq__button:before{content:"";width:15px;height:9px;margin:-1px 0 0;position:absolute;top:50%;right:0;-webkit-transition:.3s ease-out;-ms-transition:.3s ease-out;transition:.3s ease-out}
+.faq__button:before{background:url(../img/svg/arrow-select.svg) 0 0/100% 100% no-repeat}
+.faq__button:after{opacity:0;z-index:1;background:url(../img/svg/arrow-select__red.svg) 0 0/100% 100% no-repeat}
+.desktop .faq__button:hover{color:#ff8e8e;text-decoration:none}
+.desktop .faq__button:hover:before{opacity:0}
+.desktop .faq__button:hover:after{opacity:1}
+.faq__hide{display:none;border-bottom:1px solid rgba(0,0,0,.1)}
+.faq__content{max-width:600px;margin:auto;padding:40px 0 1px}
+.login-page{max-width:1760px;margin:auto;padding:120px 40px}
+.login-page__all{min-height:500px;padding:0 0 120px;position:relative}
+.login-page__banner{width:100%;height:500px;position:absolute;bottom:0;left:0;background-position:center center;background-repeat:no-repeat;background-size:cover}
+.login-page__main{max-width:1140px;margin:auto;position:relative}
+.login-page__vector{width:130px;height:130px;position:absolute;top:-23px;right:40px}
+.login-form{max-width:600px;min-height:420px;padding:59px;position:relative;z-index:1;background:#fff;border:1px solid #ededed}
+.login-form_reg{max-width:740px;padding-right:48px}
+.login-form__top{padding:0 0 24px}
+.login-form__title{padding:0 0 16px;font:400 40px/1 'Josefin Sans',sans-serif}
+.login-form__text{padding:0 0 16px}
+.login-form__bottom{margin:0 -15px;padding:4px 0 32px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:space-between;-ms-justify-content:space-between;justify-content:space-between;font:14px/16px 'Be Vietnam Pro',sans-serif}
+.login-form__bottom .login-form__col{width:auto}
+.login-form__cols{margin:0 -15px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}
+.login-form__col{width:50%;padding:0 15px}
+.login-form__checkbox{margin:0 0 15px;padding:0}
+.login-form__small-text{padding:0 0 12px;display:block;font:14px/16px 'Be Vietnam Pro',sans-serif}
+.login-form__button{margin:0}
+.login-form__label{padding:10px 0 5px;display:block;font:14px/24px 'Be Vietnam Pro',sans-serif;color:#000}
+.socials-nav{margin:0 -5px;padding:0 0 10px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}
+.socials-nav__item{padding:0 5px 10px}
+.socials-nav__item:before{display:none}
+.socials-nav__link{width:40px;height:40px;display:block;position:relative;background:#f8f8f8}
+.socials-nav__link:after,.socials-nav__link:before{content:"";position:absolute;top:50%;left:50%;-webkit-transition:.3s ease-out;-ms-transition:.3s ease-out;transition:.3s ease-out}
+.socials-nav__link:after{opacity:0;z-index:1}
+.desktop .socials-nav__link:hover{background:#ff8e8e}
+.desktop .socials-nav__link:hover:before{opacity:0}
+.desktop .socials-nav__link:hover:after{opacity:1}
+.socials-nav__link_icon-1:before{width:8px;height:12px;margin:-6px 0 0 -4px;background:url(../img/svg/fb.svg) 0 0/100% 100% no-repeat}
+.socials-nav__link_icon-1:after{width:8px;height:12px;margin:-6px 0 0 -4px;background:url(../img/svg/fb__white.svg) 0 0/100% 100% no-repeat}
+.socials-nav__link_icon-2:before{width:12px;height:11px;margin:-6px 0 0 -5.5px;background:url(../img/svg/twitter.svg) 0 0/100% 100% no-repeat}
+.socials-nav__link_icon-2:after{width:12px;height:11px;margin:-6px 0 0 -5.5px;background:url(../img/svg/twitter__white.svg) 0 0/100% 100% no-repeat}
+.socials-nav__link_icon-3:before{width:12px;height:12px;margin:-6px 0 0 -6px;background:url(../img/svg/instagram.svg) 0 0/100% 100% no-repeat}
+.socials-nav__link_icon-3:after{width:12px;height:12px;margin:-6px 0 0 -6px;background:url(../img/svg/instagram__white.svg) 0 0/100% 100% no-repeat}
+.socials-nav__link_icon-4:before{width:14px;height:10px;margin:-5px 0 0 -7px;background:url(../img/svg/google.svg) 0 0/100% 100% no-repeat}
+.socials-nav__link_icon-4:after{width:14px;height:10px;margin:-5px 0 0 -7px;background:url(../img/svg/google__white.svg) 0 0/100% 100% no-repeat}
+.page-404{padding-top:31px;padding-bottom:100px}
+.page-404__main{position:relative}
+.page-404__vector{position:absolute;top:67px;right:40px;z-index:1}
+.page-404__cols{padding:0 105px 69px 0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:space-between;-ms-justify-content:space-between;justify-content:space-between}
+.page-404__left{width:100%;min-width:0;max-width:458px;padding:0;position:relative;z-index:1}
+.page-404__left .search-form{padding:0}
+.page-404__right{width:450px;padding:13px 0 0;-webkit-flex-grow:0;flex-grow:0;-ms-flex-grow:0;-webkit-flex-shrink:0;flex-shrink:0;-ms-flex-shrink:0}
+.page-404__image{width:100%;max-width:450px;margin:auto}
+.page-404__title{padding:0 0 10px;font:120px/1 'Josefin Sans',sans-serif}
+.page-404__subtitle{padding:0 0 20px;font:400 40px/1 'Josefin Sans',sans-serif;text-transform:capitalize}
+.page-404__text{padding:0 0 37px;font:20px/34px 'Be Vietnam Pro',sans-serif}
+.contacts-page{max-width:1680px;margin:auto;padding:120px 0;position:relative}
+.contacts-page__main{margin:0 auto -93px;position:relative;z-index:2}
+.contacts-page__vector{width:194px;height:194px;position:absolute;top:-9px;right:40px}
+.contacts-page__cols{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:space-between;-ms-justify-content:space-between;justify-content:space-between;-webkit-align-items:flex-end;-ms-align-items:flex-end;align-items:flex-end;position:relative;z-index:1}
+.contacts-page__left{width:100%;min-width:0;max-width:670px;padding:0 40px 0 0}
+.contacts-page__right{padding:0 0 133px;-webkit-flex-grow:0;flex-grow:0;-ms-flex-grow:0;-webkit-flex-shrink:0;flex-shrink:0;-ms-flex-shrink:0}
+.contacts-page__map{height:600px;position:relative;z-index:1;background:#ccc}
+.contacts-form{padding:60px 59px 59px;background:#fff;border:1px solid #ededed}
+.contacts-form__top{padding:0 0 12px}
+.contacts-form__title{padding:0 0 16px;font:400 40px/1 'Josefin Sans',sans-serif}
+.contacts-form__text{padding:0 0 16px}
+.contacts-form__cols{margin:0 -15px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}
+.contacts-form__col{width:50%;padding:0 15px}
+.contacts-form__button{margin:10px 0 0}
+.contacts{width:100%;display:table;color:#000}
+.contacts__item{display:table-row}
+.contacts__left{width:113px;padding:0 28px 30px 0;display:table-cell;vertical-align:top;text-align:right}
+.contacts__right{padding:0 0 30px;display:table-cell;vertical-align:top}
+.contacts__title{padding:0;display:block;font:400 20px/24px 'Josefin Sans',sans-serif}
+.contacts__number{margin:0 0 10px;display:inline-block;font-weight:600;color:#000}
+.desktop .contacts__number:hover{color:#ff8e8e}
+.contacts__link{color:#000}
+.desktop .contacts__link:hover{color:#ff8e8e}
+.contacts__text{display:block}
+.contacts__socials{padding:2px 0 0}
+.map{height:100%}
+a[href^="http://maps.google.com/maps"],a[href^="https://maps.google.com/maps"]{display:none!important}
+.gm-style-cc{display:none}
+.gm-bundled-control,.gm-fullscreen-control{display:none!important}
+.collections-page{padding-top:120px;padding-bottom:140px}
+.wishlist-page{padding-top:120px;padding-bottom:177px}
+.wishlist-page__bottom{margin:0 -30px 0 0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-ms-align-items:center;align-items:center;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}
+.wishlist-page__col{padding:0 30px 20px 0}
+.wishlist-page__button,.wishlist-page__checkbox{margin:0}
+.wishlist{padding:0 0 59px}
+.wishlist__item{margin:0 0 50px;padding:0 0 30px;border-bottom:1px solid rgba(68,68,68,.1)}
+.wishlist__item:last-child{margin:0}
+.wishlist__cols{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}
+.wishlist__left{width:162px;-webkit-flex-grow:0;flex-grow:0;-ms-flex-grow:0;-webkit-flex-shrink:0;flex-shrink:0;-ms-flex-shrink:0}
+.wishlist__right{width:100%;min-width:0}
+.wishlist__image-link{width:130px;height:140px;display:block;position:relative;background:#f8f8fb}
+.wishlist__image-link:before{content:"";width:100%;height:100%;position:absolute;top:0;left:0;z-index:1;opacity:0;background:rgba(68,68,68,.2);-webkit-transition:.5s ease-out;-ms-transition:.5s ease-out;transition:.5s ease-out}
+.desktop .wishlist__image-link:hover:before{opacity:1}
+.wishlist__image{width:100%;height:100%;margin:0;object-fit:contain}
+.wishlist__top{min-height:84px;margin:0 -10px;padding:20px 0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:space-between;-ms-justify-content:space-between;justify-content:space-between}
+.wishlist__top_cart{min-height:73px}
+.wishlist__bottom{margin:0 -10px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:space-between;-ms-justify-content:space-between;justify-content:space-between}
+.wishlist__bottom .wishlist__col:nth-child(1){width:53%;-webkit-flex-grow:0;flex-grow:0;-ms-flex-grow:0;-webkit-flex-shrink:0;flex-shrink:0;-ms-flex-shrink:0}
+.wishlist__bottom .wishlist__col:nth-child(2){width:100%;min-width:0}
+.wishlist__bottom .wishlist__col:nth-child(3){width:150px;-webkit-flex-grow:0;flex-grow:0;-ms-flex-grow:0;-webkit-flex-shrink:0;flex-shrink:0;-ms-flex-shrink:0;text-align:right}
+.wishlist__bottom_cart{-webkit-align-items:center;-ms-align-items:center;align-items:center}
+.wishlist__col{padding:0 10px}
+.wishlist__title{padding:0;font:400 20px/24px 'Josefin Sans',sans-serif;text-transform:capitalize}
+.wishlist__link{color:#000}
+.desktop .wishlist__link:hover{color:#ff8e8e}
+.wishlist__old-price{padding:0 7px 5px 0;display:inline-block;vertical-align:top;font:300 16px/20px 'Josefin Sans',sans-serif;text-decoration:line-through}
+.wishlist__price{padding:0 0 5px;display:inline-block;vertical-align:top;font:20px/20px 'Josefin Sans',sans-serif}
+.wishlist__price_small{font-size:16px}
+.wishlist__remove{position:relative;bottom:19px}
+.wishlist__add{margin:0 6px 5px 0}
+.wishlist__cart-col{padding:0 10px}
+.wishlist__cart-col:nth-child(1){width:149px;-webkit-flex-grow:0;flex-grow:0;-ms-flex-grow:0;-webkit-flex-shrink:0;flex-shrink:0;-ms-flex-shrink:0}
+.wishlist__cart-col:nth-child(2){width:100%;min-width:0}
+.wishlist__cart-col:nth-child(3){min-width:90px;-webkit-flex-grow:0;flex-grow:0;-ms-flex-grow:0;-webkit-flex-shrink:0;flex-shrink:0;-ms-flex-shrink:0;text-align:right}
+.wishlist__count{padding:0;position:relative;bottom:3px}
+.wishlist-info{margin:0 -21px 0 0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;font:500 12px/20px 'Be Vietnam Pro',sans-serif;color:#999}
+.wishlist-info__col{margin:0 21px 5px 0;padding:0 19px 0 0;position:relative}
+.wishlist-info__col:after{content:"";height:20px;position:absolute;top:0;right:0;border-right:1px solid rgba(68,68,68,.2)}
+.wishlist-info__col:last-child{padding:0}
+.wishlist-info__col:last-child:after{display:none}
+.wishlist-info__label{padding:0 8px 0 0;font-size:14px}
+.wishlist-info__text{text-transform:uppercase}
+.wishlist-info__text span{font-weight:600}
+.profile-page{padding-top:116px;padding-bottom:150px}
+.profile-page__cols{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:space-between;-ms-justify-content:space-between;justify-content:space-between}
+.profile-page__left{width:100%;min-width:0;max-width:760px;padding:0 40px 0 0}
+.profile-page__right{width:360px;padding:56px 0 0;-webkit-flex-grow:0;flex-grow:0;-ms-flex-grow:0;-webkit-flex-shrink:0;flex-shrink:0;-ms-flex-shrink:0}
+.profile-nav__list{padding:0}
+.profile-tab{display:none}
+.profile-tab.active{display:block}
+.profile-tab__bottom{margin:0 -30px 0 0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-ms-align-items:center;align-items:center;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}
+.profile-tab__col{padding:0 30px 20px 0}
+.profile-tab__button,.profile-tab__checkbox{margin:0}
+.orders{padding:0 0 61px}
+.order.active .order__top:before{height:2px;background:#000;-webkit-transition:.3s ease-out;-ms-transition:.3s ease-out;transition:.3s ease-out}
+.order.active .order__button:after,.order.active .order__button:before{-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg)}
+.order__top{position:relative}
+.order__top:before{content:"";width:100%;height:1px;margin:-1px 0 0;position:absolute;top:100%;left:0;background:rgba(0,0,0,.1)}
+.order__button{padding:19px 30px 16px 0;display:block;position:relative;z-index:1;color:#000}
+.order__button:after,.order__button:before{content:"";width:15px;height:9px;margin:-3px 0 0;position:absolute;top:50%;right:0;-webkit-transition:.3s ease-out;-ms-transition:.3s ease-out;transition:.3s ease-out}
+.order__button:before{background:url(../img/svg/arrow-select.svg) 0 0/100% 100% no-repeat}
+.order__button:after{opacity:0;z-index:1;background:url(../img/svg/arrow-select__red.svg) 0 0/100% 100% no-repeat}
+.desktop .order__button:hover{text-decoration:none}
+.desktop .order__button:hover:before{opacity:0}
+.desktop .order__button:hover:after{opacity:1}
+.order__hide{display:none;border-bottom:2px solid #000}
+.order__content{padding:21px 0 0}
+.order-header{margin:0 -20px 0 0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}
+.order-header__col{margin:0 20px 0 0;padding:2px 22px 2px 0;position:relative}
+.order-header__col:after{content:"";width:2px;height:2px;position:absolute;top:12px;right:0;background:#999}
+.order-header__col:last-child{padding-right:0}
+.order-header__col:last-child:after{display:none}
+.order-header__number{padding:0;display:block;font:500 16px/24px 'Be Vietnam Pro',sans-serif;color:#000}
+.order-header__date{display:block;font:14px/24px 'Be Vietnam Pro',sans-serif;white-space:nowrap}
+.order-status{height:24px;display:block;position:relative;font:600 16px/24px 'Be Vietnam Pro',sans-serif;white-space:nowrap}
+.order-status__cols{margin:0 -10px 0 0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-ms-align-items:center;align-items:center}
+.order-status__col{padding:0 10px 0 0}
+.order-status__icon{margin:0;position:relative;bottom:2px}
+.order-table{padding:0 0 9px}
+.order-table__item{margin:0 0 17px;padding:0 0 14px;border-bottom:1px solid rgba(68,68,68,.1);font:16px/24px 'Be Vietnam Pro',sans-serif}
+.order-table__cols{margin:0 -20px 0 0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-ms-align-items:center;align-items:center}
+.order-table__col{padding:0 20px 0 0}
+.order-table__col:nth-child(1){-webkit-flex-grow:0;flex-grow:0;-ms-flex-grow:0;-webkit-flex-shrink:0;flex-shrink:0;-ms-flex-shrink:0}
+.order-table__col:nth-child(2){width:100%;min-width:0}
+.order-table__col:nth-child(3){-webkit-flex-grow:0;flex-grow:0;-ms-flex-grow:0;-webkit-flex-shrink:0;flex-shrink:0;-ms-flex-shrink:0}
+.order-table__image-link{width:50px;height:56px;display:block;position:relative;background:#f8f8fb}
+.order-table__image-link:before{content:"";width:100%;height:100%;position:absolute;top:0;left:0;z-index:1;opacity:0;background:rgba(68,68,68,.2);-webkit-transition:.5s ease-out;-ms-transition:.5s ease-out;transition:.5s ease-out}
+.desktop .order-table__image-link:hover:before{opacity:1}
+.order-table__image{width:100%;height:100%;margin:0;object-fit:contain}
+.order-table__title{padding:0 6px 0 0;display:inline;vertical-align:top;font:16px/24px 'Be Vietnam Pro',sans-serif}
+.order-table__link{color:#000}
+.desktop .order-table__link:hover{color:#ff8e8e}
+.order-table__text{display:inline;vertical-align:top;color:#444}
+.order-table__price{display:inline-block;vertical-align:top;font:300 16px/24px 'Josefin Sans',sans-serif;text-shadow:0 0}
+.order-total{padding:0 0 20px}
+.order-total__item{margin:0 -7.5px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:space-between;-ms-justify-content:space-between;justify-content:space-between;line-height:26px}
+.order-total__col{padding:0 7.5px 1px}
+.order-total__col:last-child{text-align:right}
+.order-total__title{display:block;color:#999;white-space:nowrap}
+.order-total__price{display:block;font:20px/26px 'Josefin Sans',sans-serif;color:#000}
+.cart-page{padding-top:119px;padding-bottom:227px}
+.cart-page__cols{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:space-between;-ms-justify-content:space-between;justify-content:space-between}
+.cart-page__left{width:100%;min-width:0;max-width:760px;padding:0 40px 0 0}
+.cart-page__right{width:360px;-webkit-flex-grow:0;flex-grow:0;-ms-flex-grow:0;-webkit-flex-shrink:0;flex-shrink:0;-ms-flex-shrink:0}
+.cart-table{margin:0 0 60px;padding:0 0 8px;border-bottom:2px solid #000}
+.promo{padding:0 0 10px}
+.promo__top{padding:0 0 20px}
+.promo__title{padding:0 0 20px;font:400 32px/38px 'Josefin Sans',sans-serif}
+.promo__text{padding:0 0 20px}
+.promo-form{max-width:334px;padding:0 0 30px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}
+.promo-form__left{width:100%;min-width:0;padding:0 30px 0 0}
+.promo-form__right{-webkit-flex-grow:0;flex-grow:0;-ms-flex-grow:0;-webkit-flex-shrink:0;flex-shrink:0;-ms-flex-shrink:0}
+.promo-form__button,.promo-form__input{margin:0}
+.promo-form__button .button__text{padding:0 15px}
+.your-order{padding:39px 40px 20px;background:#fff;border:1px solid rgba(68,68,68,.1)}
+.your-order__title{padding:0;font:400 28px/38px 'Josefin Sans',sans-serif}
+.your-order__list{padding:0;overflow:hidden}
+.your-order__item{margin:0 -7.5px;padding:20px 0 14px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:space-between;-ms-justify-content:space-between;justify-content:space-between;border-bottom:1px solid rgba(68,68,68,.1)}
+.your-order__item:before{display:none}
+.your-order__item:last-child{border-bottom:2px solid #000}
+.your-order__bottom{margin:0 -7.5px;padding:21px 0 23px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:space-between;-ms-justify-content:space-between;justify-content:space-between}
+.your-order__col{padding:0 7.5px}
+.your-order__col:last-child{text-align:right}
+.your-order__text{display:block}
+.your-order__text span{display:inline-block;font-size:14px}
+.your-order__price{display:block;position:relative;top:3px;font-size:20px;font-family:'Josefin Sans',sans-serif}
+.your-order__button{width:100%;margin:0 0 20px;display:block}
+.your-order__bottom-text{display:block;font:18px/28px 'Be Vietnam Pro',sans-serif}
+.your-order__bottom-price{display:block;position:relative;top:2px;font:20px/28px 'Josefin Sans',sans-serif;color:#000}
+.checkout-page{padding-top:124px;padding-bottom:182px}
+.checkout-page__cols{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:space-between;-ms-justify-content:space-between;justify-content:space-between}
+.checkout-page__left{width:100%;min-width:0;max-width:760px;padding:0 40px 0 0}
+.checkout-page__right{width:360px;-webkit-flex-grow:0;flex-grow:0;-ms-flex-grow:0;-webkit-flex-shrink:0;flex-shrink:0;-ms-flex-shrink:0}
+.checkout-page__right_more{width:500px}
+.checkout-page__right_more .your-order__title{margin-bottom:20px}
+.checkout-page__right_more .your-order__bottom{margin-bottom:7px}
+.checkout-nav{padding:0 0 61px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}
+.checkout-nav__item{width:100%;padding:4px 60px;position:relative;text-align:center;font:400 20px/24px 'Josefin Sans',sans-serif;text-transform:capitalize;color:rgba(0,0,0,.5);border-bottom:2px solid rgba(68,68,68,.1)}
+.checkout-nav__item:after{content:"";width:50px;height:39px;display:none;position:absolute;bottom:-2px;right:0;background:url(../img/svg/car.svg) 0 0/100% 100% no-repeat}
+.checkout-nav__item.active{color:#95ccb5;border-color:#95ccb5}
+.checkout-nav__item.current:after{display:block}
+.side-cart{padding:20px 0 0}
+.side-cart__item{margin:0 0 20px;padding:0 0 19px;border-bottom:1px solid rgba(68,68,68,.1);font:14px/20px 'Be Vietnam Pro',sans-serif}
+.side-cart__item:last-child{margin:0}
+.side-cart__cols{margin:0 -10px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-ms-align-items:center;align-items:center}
+.side-cart__left{padding:0 10px;-webkit-flex-grow:0;flex-grow:0;-ms-flex-grow:0;-webkit-flex-shrink:0;flex-shrink:0;-ms-flex-shrink:0}
+.side-cart__right{width:100%;min-width:0;padding:0 10px}
+.side-cart__image-link{width:53px;height:60px;display:block;position:relative;background:#f8f8fb}
+.side-cart__image-link:before{content:"";width:100%;height:100%;position:absolute;top:0;left:0;z-index:1;opacity:0;background:rgba(68,68,68,.2);-webkit-transition:.5s ease-out;-ms-transition:.5s ease-out;transition:.5s ease-out}
+.desktop .side-cart__image-link:hover:before{opacity:1}
+.side-cart__image{width:100%;height:100%;margin:0;object-fit:contain}
+.side-cart__title{padding:0 2px 0 0;display:inline;vertical-align:top;font:14px/20px 'Be Vietnam Pro',sans-serif}
+.side-cart__link{color:#000}
+.desktop .side-cart__link:hover{color:#ff8e8e}
+.side-cart__text{display:inline;vertical-align:top;color:#444}
+.side-cart__prices{padding:3px 0 0}
+.side-cart__price{padding:0 8px 0 0;display:inline-block;vertical-align:top;font:14px/20px 'Josefin Sans',sans-serif;color:#000}
+.side-cart__old-price{display:inline-block;vertical-align:top;font:300 12px/20px 'Josefin Sans',sans-serif;text-shadow:0 0;text-decoration:line-through;color:#444}
+.checkout-form{padding:0 0 15px}
+.checkout-form__title{padding:0 0 30px;font:400 40px/1 'Josefin Sans',sans-serif}
+.checkout-form__cols{margin:0 -15px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}
+.checkout-form__col{width:50%;padding:0 15px}
+.checkout-form__checkboxes{margin:0 -25px;padding:24px 0 31px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}
+.checkout-form__checkbox{margin:0;padding:0 25px 20px}
+.checkout-form__buttons{margin:0 -15px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-align-items:center;-ms-align-items:center;align-items:center}
+.checkout-form__button-col{padding:0 15px 15px}
+.checkout-form__back{margin:0 0 5px;position:relative;top:2px}
+.checkout-form__button{margin:0 0 5px}
+.checkout-form__textarea{height:109px;min-height:109px}
+.checkout-form__textarea+.checkout-form__checkboxes{padding-top:18px}
+.captcha{padding:0 0 36px}
+.captcha img{margin:0}
+.radio{padding:0 0 20px;-webkit-user-select:none;-ms-user-select:none;user-select:none}
+.radio__label{min-height:24px;padding:0 0 0 31px;display:block;position:relative;font:20px/24px 'Josefin Sans',sans-serif;color:rgba(0,0,0,.5);text-transform:capitalize;cursor:pointer;-webkit-transition:.3s ease-out;-ms-transition:.3s ease-out;transition:.3s ease-out}
+.desktop .radio__label:hover{color:#000}
+.radio__input{display:none}
+.radio__input:checked+.radio__icon:after{opacity:1}
+.radio__input:checked+.radio__icon+.radio__text{color:#000}
+.radio__icon{width:16px;height:16px;padding:2px;position:absolute;top:4px;left:0;border:1px solid rgba(68,68,68,.2);-webkit-transition:.3s ease-out;-ms-transition:.3s ease-out;transition:.3s ease-out;border-radius:50%}
+.radio__icon:after{content:"";height:100%;display:block;opacity:0;background:#000;border-radius:50%}
+.payment{margin:0 0 60px;padding:30px 0 0;border-bottom:1px solid rgba(68,68,68,.1)}
+.payment__list{margin:0 -25px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}
+.payment__radio{padding:0 25px 20px}
+.card{max-width:645px;height:316px;margin:0 0 60px;padding:0 195px 0 0;position:relative;overflow:hidden}
+.card__left{width:100%;max-width:450px;min-height:256px;padding:39px 39px 9px;position:relative;z-index:1;background:#fff;border:1px solid rgba(68,68,68,.1);border-radius:10px}
+.card__right{width:100%;max-width:450px;height:256px;padding:73px 65px 0 0;position:absolute;bottom:0;right:0;background:#000;border-radius:10px;text-align:right}
+.card-form__cols{margin:0 -15px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}
+.card-form__col{width:50%;padding:0 15px}
+.card-form__label{padding:0 0 10px;display:block;text-align:left}
+.card-form__label_grey{color:#999}
+.card-form__code{width:100%;max-width:109px;display:inline-block}
+.card-form__input{height:36px;margin:0 0 30px;font-size:16px}
+.card-form__cvv{margin-top:5px}
+.thanks__title{padding:0 0 20px;font:400 40px/1 'Josefin Sans',sans-serif}
+.thanks__top{padding:0 0 43px}
+.thanks__top-text{padding:0 0 20px;font:20px/34px 'Be Vietnam Pro',sans-serif}
+.thanks__text{padding:0 0 24px}
+.slick-slider{position:relative;display:block;box-sizing:border-box;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-touch-callout:none;-khtml-user-select:none;-ms-touch-action:pan-y;touch-action:pan-y;-webkit-tap-highlight-color:transparent}
+.slick-list{position:relative;display:block;overflow:hidden;margin:0;padding:0}
+.slick-list:focus{outline:0}
+.slick-list.dragging{cursor:pointer}
+.slick-slider .slick-list,.slick-slider .slick-track{-webkit-transform:none;-moz-transform:none;-ms-transform:none;-o-transform:none;transform:none}
+.slick-track{position:relative;top:0;left:0;display:block}
+.slick-track:after,.slick-track:before{display:table;content:''}
+.slick-track:after{clear:both}
+.slick-loading .slick-track{visibility:hidden}
+.slick-slide{display:none;float:left;height:100%;min-height:1px;border:none!important}
+[dir=rtl] .slick-slide{float:right}
+.slick-slide.dragging img{pointer-events:none}
+.slick-initialized .slick-slide{display:block}
+.slick-loading .slick-slide{visibility:hidden}
+.slick-vertical .slick-slide{display:block;height:auto;border:1px solid transparent}
+.slick-arrow.slick-hidden{display:none}
+.slick-next,.slick-prev{position:relative}
+.dots-1 .slick-dots{padding:0;text-align:center}
+.dots-1 .slick-dots li{height:23px}
+.dots-1 .slick-dots li.slick-active button:after,.dots-1 .slick-dots li.slick-active button:before{width:12px;background:#000}
+.dots-1 .slick-dots li:before{display:none}
+.dots-1 .slick-dots li button{width:22px;height:13px;display:inline-block;vertical-align:top;position:relative}
+.dots-1 .slick-dots li button:after,.dots-1 .slick-dots li button:before{content:"";width:6px;height:3px;margin:-1.5px -1px 0 0;position:absolute;top:50%;right:50%;background:#b3b3b3;-webkit-transition:.3s ease-out;-ms-transition:.3s ease-out;transition:.3s ease-out;border-radius:1px}
+.dots-1 .slick-dots li button:after{margin:-1.5px 0 0 -1px;right:auto;left:50%;border-radius:1px}
+.desktop .dots-1 .slick-dots li button:hover:after,.desktop .dots-1 .slick-dots li button:hover:before{background:#000}
+.dots-2{padding:8px 0 0}
+.dots-2 .slick-dots{margin:0 -10px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-justify-content:center;-ms-justify-content:center;justify-content:center}
+.dots-2 .slick-dots li{padding:0 10px 10px}
+.dots-2 .slick-dots li:before{display:none}
+.dots-2 .slick-dots li.slick-active button{width:21px;background:#000}
+.dots-2 .slick-dots li button{width:10px;height:3px;display:block;background:#b3b3b3;-webkit-transition:.5s ease-out;-ms-transition:.5s ease-out;transition:.5s ease-out;border-radius:1px}
+.desktop .dots-2 .slick-dots li button:hover{background:#000}
+.dots-left .slick-dots{-webkit-justify-content:flex-start;-ms-justify-content:flex-start;justify-content:flex-start}
+.arrows-1{width:132px;overflow:hidden}
+.arrows-1 .slick-next,.arrows-1 .slick-prev{width:51px;height:20px;display:block;float:left;position:relative;z-index:2}
+.arrows-1 .slick-next:after,.arrows-1 .slick-next:before,.arrows-1 .slick-prev:after,.arrows-1 .slick-prev:before{content:"";width:51px;height:12px;margin:-6px 0 0;position:absolute;top:50%;left:0;-webkit-transition:.3s ease-out;-ms-transition:.3s ease-out;transition:.3s ease-out}
+.arrows-1 .slick-prev:before{background:url(../img/svg/arrow-prev.svg) 0 0/100% 100% no-repeat}
+.arrows-1 .slick-next:before{background:url(../img/svg/arrow-next.svg) 0 0/100% 100% no-repeat}
+.arrows-1 .slick-prev:after{background:url(../img/svg/arrow-prev__red.svg) 0 0/100% 100% no-repeat;opacity:0;z-index:1}
+.arrows-1 .slick-next:after{background:url(../img/svg/arrow-next__red.svg) 0 0/100% 100% no-repeat;opacity:0;z-index:1}
+.desktop .arrows-1 .slick-next:hover:before,.desktop .arrows-1 .slick-prev:hover:before{opacity:0}
+.desktop .arrows-1 .slick-next:hover:after,.desktop .arrows-1 .slick-prev:hover:after{opacity:1}
+.arrows-1 .slick-next{float:right}
+.jq-select-multiple,.jq-selectbox{-webkit-user-select:none;-ms-user-select:none;user-select:none}
+.jq-select-multiple select,.jq-selectbox select{position:absolute;top:0;left:0;width:100%;height:100%;margin:0;padding:0;opacity:0}
+.jq-selectbox{width:100%;position:absolute;top:0;left:0;z-index:10}
+.jq-selectbox__select{position:relative;cursor:pointer;overflow:hidden}
+.jq-selectbox__select-text{width:100%;display:block;-webkit-user-select:none;-ms-user-select:none;user-select:none;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}
+.jq-selectbox__dropdown{position:relative;top:auto!important;bottom:auto!important;left:auto!important;right:auto!important;min-width:100%;height:auto!important}
+.jq-selectbox__search input{-webkit-appearance:textfield;width:100%;height:30px;padding:0 10px;font:14px/1 Arial;color:#000;border:1px solid #000}
+.jq-selectbox__search input::-webkit-search-cancel-button,.jq-selectbox__search input::-webkit-search-decoration{-webkit-appearance:none}
+.jq-selectbox__dropdown ul{position:relative;overflow:auto;overflow-x:hidden;list-style:none;-webkit-overflow-scrolling:touch}
+.jq-select-multiple li,.jq-selectbox__dropdown li{cursor:pointer}
+.jq-select-multiple li:before,.jq-selectbox__dropdown li:before{display:none}
+.jq-select-multiple li.disabled,.jq-selectbox__dropdown li.disabled{opacity:.5;cursor:default}
+.jq-select-multiple li.optgroup,.jq-selectbox__dropdown li.optgroup{cursor:default}
+.jq-select-multiple{border:1px solid #000;background:#fff;font:14px/1.5 Arial}
+.jq-select-multiple ul{position:relative;overflow-x:hidden;-webkit-overflow-scrolling:touch}
+.jq-selectbox.opened .jq-selectbox__dropdown{display:block!important}
+.jq-selectbox .placeholder{opacity:.5}
+.jq-selectbox.disabled .jq-selectbox__select-text{color:#bdbdbd}
+.jq-selectbox.disabled *{cursor:default}
+.jq-selectbox__search{margin:10px 10px 0}
+.jq-selectbox__not-found{padding:0 10px}
+.select{text-align:left;position:relative;-webkit-user-select:none;-ms-user-select:none;user-select:none}
+.desktop .select select{visibility:hidden}
+.select li.optgroup{font-weight:700}
+.select li.option{padding-left:15px}
+.select .jq-selectbox.opened .jq-selectbox__select:before{-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg)}
+.select_1{width:100%;height:50px;margin:0 0 20px}
+.select_1 li{max-width:100%;margin:0;padding:3px 20px;display:block;font:14px/24px 'Be Vietnam Pro',sans-serif;overflow:hidden;color:#000;word-break:break-all;-webkit-transition:.3s ease-out;-ms-transition:.3s ease-out;transition:.3s ease-out}
+.desktop .select_1 li:hover{color:#ff8e8e}
+.select_1 li.sel,.select_1 li.selected{display:none}
+.select_1 .jq-selectbox{min-height:50px;position:relative!important;top:auto!important;right:auto!important;background:#fff}
+.select_1 .jq-selectbox.opened .jq-selectbox__select-text{border-color:#000}
+.select_1 .jq-selectbox.opened .jq-selectbox__select-text:after,.select_1 .jq-selectbox.opened .jq-selectbox__select-text:before{-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg)}
+.select_1 .jq-selectbox__select{display:block!important;position:relative;z-index:1}
+.select_1 .jq-selectbox__select-text{height:50px;padding:0 30px 0 0;display:block;position:relative;font:14px/40px 'Be Vietnam Pro',sans-serif;color:#000;border-bottom:1px solid rgba(68,68,68,.2);-webkit-transition:.3s ease-out;-ms-transition:.3s ease-out;transition:.3s ease-out}
+.select_1 .jq-selectbox__select-text:after,.select_1 .jq-selectbox__select-text:before{content:"";width:15px;height:9px;position:absolute;top:16px;right:0;-webkit-transition:.3s ease-out;-ms-transition:.3s ease-out;transition:.3s ease-out}
+.select_1 .jq-selectbox__select-text:before{background:url(../img/svg/arrow-select.svg) 0 0/100% 100% no-repeat}
+.select_1 .jq-selectbox__select-text:after{opacity:0;z-index:1;background:url(../img/svg/arrow-select__red.svg) 0 0/100% 100% no-repeat}
+.desktop .select_1 .jq-selectbox__select-text:hover{color:#ff8e8e}
+.desktop .select_1 .jq-selectbox__select-text:hover:before{opacity:0}
+.desktop .select_1 .jq-selectbox__select-text:hover:after{opacity:1}
+.select_1 .jq-selectbox__dropdown{width:100%!important;min-width:0;margin:0!important;position:absolute!important;top:100%!important;left:0!important;right:auto!important;bottom:auto!important;background:#fff;box-shadow:0 0 10px rgba(0,0,0,.15)}
+.select_1 .jq-selectbox__dropdown ul{max-height:156px!important;margin:0;padding:10px 0}
+.desktop .jq-selectbox__dropdown ul{overflow:hidden}
+.noUi-target,.noUi-target *{-webkit-touch-callout:none;-webkit-tap-highlight-color:transparent;-webkit-user-select:none;-ms-touch-action:none;touch-action:none;-ms-user-select:none;-moz-user-select:none;user-select:none;-moz-box-sizing:border-box;box-sizing:border-box}
+.noUi-target{position:relative;background:#eee}
+.noUi-base,.noUi-connects{width:100%;height:100%;position:relative;z-index:1}
+.noUi-connects{overflow:hidden;z-index:0}
+.noUi-connect,.noUi-origin{will-change:transform;position:absolute;z-index:1;top:0;right:0;-ms-transform-origin:0 0;-webkit-transform-origin:0 0;-webkit-transform-style:preserve-3d;transform-origin:0 0;transform-style:flat}
+.noUi-connect{height:100%;width:100%;background:#ff8e8e}
+.noUi-origin{height:10%;width:10%}
+.noUi-txt-dir-rtl.noUi-horizontal .noUi-origin{left:0;right:auto}
+.noUi-vertical .noUi-origin{width:0}
+.noUi-horizontal .noUi-origin{height:0}
+.noUi-touch-area{height:100%;width:100%}
+.noUi-state-tap .noUi-connect,.noUi-state-tap .noUi-origin{-webkit-transition:transform .3s;transition:transform .3s}
+.noUi-state-drag *{cursor:inherit!important}
+.noUi-horizontal{height:2px}
+.noUi-horizontal .noUi-handle{width:12px;height:12px;right:-6px;top:-5px}
+.noUi-vertical{width:18px}
+.noUi-vertical .noUi-handle{right:-12px;top:-12px}
+.noUi-txt-dir-rtl.noUi-horizontal .noUi-handle{left:-8px;right:auto}
+.noUi-draggable{cursor:ew-resize}
+.noUi-vertical .noUi-draggable{cursor:ns-resize}
+.noUi-handle{-webkit-backface-visibility:hidden;backface-visibility:hidden;position:absolute;background-clip:padding-box;-webkit-background-clip:padding-box;background-color:#ff8e8e;cursor:pointer}
+.noUi-target.grabbed .noUi-handle{border-color:#ff8e8e}
+[disabled] .noUi-connect{background:#b8b8b8}
+[disabled] .noUi-handle,[disabled].noUi-handle,[disabled].noUi-target{cursor:not-allowed}
+.noUi-pips,.noUi-pips *{-moz-box-sizing:border-box;box-sizing:border-box}
+.noUi-pips{position:absolute;color:#999}
+.noUi-value{position:absolute;white-space:nowrap;text-align:center}
+.noUi-value-sub{color:#ccc;font-size:10px}
+.noUi-marker{position:absolute;background:#ccc}
+.noUi-marker-large,.noUi-marker-sub{background:#aaa}
+.noUi-pips-horizontal{padding:10px 0;height:80px;top:100%;left:0;width:100%}
+.noUi-value-horizontal{-webkit-transform:translate(-50%,50%);transform:translate(-50%,50%)}
+.noUi-rtl .noUi-value-horizontal{-webkit-transform:translate(50%,50%);transform:translate(50%,50%)}
+.noUi-marker-horizontal.noUi-marker{margin-left:-1px;width:2px;height:5px}
+.noUi-marker-horizontal.noUi-marker-sub{height:10px}
+.noUi-marker-horizontal.noUi-marker-large{height:15px}
+.noUi-pips-vertical{padding:0 10px;height:100%;top:0;left:100%}
+.noUi-value-vertical{-webkit-transform:translate(0,-50%);transform:translate(0,-50%);padding-left:25px}
+.noUi-rtl .noUi-value-vertical{-webkit-transform:translate(0,50%);transform:translate(0,50%)}
+.noUi-marker-vertical.noUi-marker{width:5px;height:2px;margin-top:-1px}
+.noUi-marker-vertical.noUi-marker-sub{width:10px}
+.noUi-marker-vertical.noUi-marker-large{width:15px}
+.noUi-tooltip{display:block;position:absolute;padding:8px;text-align:center;white-space:nowrap;color:#000;font:12px/1 'Josefin Sans',sans-serif}
+.noUi-horizontal .noUi-tooltip{-webkit-transform:translate(-50%,0);transform:translate(-50%,0);left:50%;bottom:120%}
+.noUi-vertical .noUi-tooltip{-webkit-transform:translate(0,-50%);transform:translate(0,-50%);top:50%;right:120%}
+.rating{height:14px;margin:0 -4px 7px;white-space:nowrap}
+.rating_small{height:12px;margin:0 -2px 20px}
+.rating_small .star-rating{width:14px!important}
+.rating_small .star-rating a{width:14px!important;height:12px}
+.rating_small .star-rating a:before{width:8px;height:8px;margin:-4px 0 0 -4px}
+.rating_medium{height:12px;margin:0 -3px 20px}
+.rating_medium .star-rating{width:17px!important}
+.rating_medium .star-rating a{width:17px!important;height:12px}
+.rating_medium .star-rating a:before{width:11px;height:11px;margin:-5.5px 0 0 -5.5px}
+.star-rating{width:24px!important;cursor:pointer;display:inline-block;vertical-align:top;position:relative;background:0 0!important;overflow:hidden!important}
+.star-rating a{width:24px!important;height:14px;display:block;text-indent:-9999px;border:none;color:#ededed}
+.star-rating a:before{content:"";width:14px;height:14px;margin:-7px 0 0 -7px;position:absolute;top:50%;left:50%;background:url(../img/svg/star.svg) 0 0/100% 100% no-repeat}
+.desktop .star-rating-hover a:before,.star-rating-on a:before{background:url(../img/svg/star-active.svg) 0 0/100% 100% no-repeat}
+.star-rating-readonly a{cursor:default}
+.rating-cancel{display:none!important}
+body.compensate-for-scrollbar{overflow:hidden}
+body.compensate-for-scrollbar .header{padding-right:17px}
+.fancybox-active{height:auto}
+.mob .fancybox-active{overflow:hidden!important}
+.fancybox-is-hidden{left:-9999px;margin:0;position:absolute!important;top:-9999px;visibility:hidden}
+.fancybox-container{-webkit-backface-visibility:hidden;height:100%;left:0;outline:0;position:fixed;-webkit-tap-highlight-color:transparent;top:0;-ms-touch-action:manipulation;touch-action:manipulation;transform:translateZ(0);width:100%;z-index:99992}
+.fancybox-container *{box-sizing:border-box}
+.fancybox-bg,.fancybox-inner,.fancybox-outer,.fancybox-stage{bottom:0;left:0;position:absolute;right:0;top:0}
+.fancybox-outer{-webkit-overflow-scrolling:touch;overflow-y:auto}
+.fancybox-bg{background:rgba(0,0,0,.7);opacity:0;transition-duration:inherit;transition-property:opacity}
+.fancybox-is-open .fancybox-bg{opacity:1}
+.fancybox-caption,.fancybox-infobar,.fancybox-navigation .fancybox-button,.fancybox-toolbar{direction:ltr;opacity:0;position:absolute;transition:opacity .25s,visibility .25s;visibility:hidden;z-index:99997}
+.fancybox-show-caption .fancybox-caption,.fancybox-show-infobar .fancybox-infobar,.fancybox-show-nav .fancybox-navigation .fancybox-button,.fancybox-show-toolbar .fancybox-toolbar{opacity:1;transition:opacity .25s,visibility;visibility:visible}
+.fancybox-infobar{color:#ccc;font-size:13px;-webkit-font-smoothing:subpixel-antialiased;height:44px;left:0;line-height:44px;min-width:44px;mix-blend-mode:difference;padding:0 10px;pointer-events:none;top:0;-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+.fancybox-toolbar{right:0;top:0}
+.fancybox-stage{direction:ltr;overflow:visible;transform:translateZ(0);z-index:99994}
+.fancybox-is-open .fancybox-stage{overflow:hidden}
+.fancybox-slide{-webkit-backface-visibility:hidden;display:none;height:100%;left:0;outline:0;overflow:auto;-webkit-overflow-scrolling:touch;padding:0;position:absolute;text-align:center;top:0;transition-property:transform,opacity;white-space:normal;width:100%;z-index:99994}
+.fancybox-slide::before{content:'';display:inline-block;font-size:0;height:100%;vertical-align:middle;width:0}
+.fancybox-is-sliding .fancybox-slide,.fancybox-slide--current,.fancybox-slide--next,.fancybox-slide--previous{display:block}
+.fancybox-slide--image{overflow:hidden;padding:44px 0}
+.fancybox-slide--image::before{display:none}
+.fancybox-slide--html{padding:85px 42px 40px}
+.fancybox-content{display:inline-block;margin:0;width:100%;overflow:visible;-webkit-overflow-scrolling:touch;position:relative;text-align:left;vertical-align:middle}
+.fancybox-slide--image .fancybox-content{animation-timing-function:cubic-bezier(.5,0,.14,1);-webkit-backface-visibility:hidden;background:0 0/100% 100% no-repeat;left:0;max-width:none;overflow:visible;padding:0;position:absolute;top:0;-ms-transform-origin:top left;transform-origin:top left;transition-property:transform,opacity;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;z-index:99995}
+.fancybox-can-zoomOut .fancybox-content{cursor:zoom-out}
+.fancybox-can-zoomIn .fancybox-content{cursor:zoom-in}
+.fancybox-can-pan .fancybox-content,.fancybox-can-swipe .fancybox-content{cursor:-webkit-grab;cursor:grab}
+.fancybox-is-grabbing .fancybox-content{cursor:-webkit-grabbing;cursor:grabbing}
+.fancybox-container [data-selectable=true]{cursor:text}
+.fancybox-image,.fancybox-spaceball{background:0 0;border:0;height:100%;left:0;margin:0;max-height:none;max-width:none;padding:0;position:absolute;top:0;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;width:100%}
+.fancybox-spaceball{z-index:1}
+.fancybox-slide--iframe .fancybox-content,.fancybox-slide--map .fancybox-content,.fancybox-slide--pdf .fancybox-content,.fancybox-slide--video .fancybox-content{height:100%;overflow:visible;padding:0;width:100%}
+.fancybox-slide--video .fancybox-content{background:#000;max-width:800px;max-height:500px}
+.fancybox-slide--map .fancybox-content{background:#e5e3df}
+.fancybox-slide--iframe .fancybox-content{background:#fff}
+.fancybox-iframe,.fancybox-video{background:0 0;border:0;display:block;height:100%;margin:0;overflow:hidden;padding:0;width:100%}
+.fancybox-iframe{left:0;position:absolute;top:0}
+.fancybox-error{background:#fff;cursor:default;max-width:400px;padding:40px;width:100%}
+.fancybox-error p{color:#444;font-size:16px;line-height:20px;margin:0;padding:0}
+.fancybox-button{background:rgba(30,30,30,.6);border:0;border-radius:0;box-shadow:none;cursor:pointer;display:inline-block;height:44px;margin:0;padding:10px;position:relative;transition:color .2s;vertical-align:top;visibility:inherit;width:44px}
+.fancybox-button,.fancybox-button:link,.fancybox-button:visited{color:#ccc}
+.fancybox-button:hover{color:#fff}
+.fancybox-button:focus{outline:0}
+.fancybox-button.fancybox-focus{outline:dotted 1px}
+.fancybox-button[disabled],.fancybox-button[disabled]:hover{color:#888;cursor:default;outline:0}
+.fancybox-button--zoom{display:none!important}
+.fancybox-button div{height:100%}
+.fancybox-button svg{display:block;height:100%;overflow:visible;position:relative;width:100%}
+.fancybox-button svg path{fill:currentColor;stroke-width:0}
+.fancybox-button--fsenter svg:nth-child(2),.fancybox-button--fsexit svg:nth-child(1),.fancybox-button--pause svg:nth-child(1),.fancybox-button--play svg:nth-child(2){display:none}
+.fancybox-progress{background:#ff5268;height:2px;left:0;position:absolute;right:0;top:0;-ms-transform:scaleX(0);transform:scaleX(0);-ms-transform-origin:0;transform-origin:0;transition-property:transform;transition-timing-function:linear;z-index:99998}
+.fancybox-close-small{background:0 0;border:0;border-radius:0;color:#ccc;cursor:pointer;opacity:.8;padding:8px;position:absolute;right:-12px;top:-44px;z-index:401}
+.fancybox-close-small:hover{color:#fff;opacity:1}
+.fancybox-slide--html .fancybox-close-small{color:currentColor;padding:10px;right:0;top:0}
+.fancybox-slide--image.fancybox-is-scaling .fancybox-content{overflow:hidden}
+.fancybox-is-scaling .fancybox-close-small,.fancybox-is-scaling .fancybox-next,.fancybox-is-scaling .fancybox-prev,.fancybox-is-zoomable.fancybox-can-pan .fancybox-close-small,.fancybox-is-zoomable.fancybox-can-pan .fancybox-next,.fancybox-is-zoomable.fancybox-can-pan .fancybox-prev{display:none!important}
+.fancybox-navigation .fancybox-button{background-clip:content-box;height:100px;opacity:0;position:absolute;top:50%;width:70px;margin:-50px 0 0}
+.fancybox-navigation .fancybox-button div{padding:7px}
+.fancybox-navigation .fancybox-button--arrow_left{left:0;padding:31px 26px 31px 6px}
+.fancybox-navigation .fancybox-button--arrow_right{padding:31px 6px 31px 26px;right:0}
+.fancybox-caption{background:linear-gradient(to top,rgba(0,0,0,.85) 0,rgba(0,0,0,.3) 50%,rgba(0,0,0,.15) 65%,rgba(0,0,0,.075) 75.5%,rgba(0,0,0,.037) 82.85%,rgba(0,0,0,.019) 88%,rgba(0,0,0,0) 100%);bottom:0;color:#eee;font-size:14px;font-weight:400;left:0;line-height:1.5;padding:75px 44px 25px;pointer-events:none;right:0;text-align:center;z-index:99996}
+.fancybox-caption--separate{margin-top:-50px}
+.fancybox-caption__body{max-height:50vh;overflow:auto;pointer-events:all}
+.fancybox-caption a,.fancybox-caption a:link,.fancybox-caption a:visited{color:#ccc;text-decoration:none}
+.fancybox-caption a:hover{color:#fff;text-decoration:underline}
+.fancybox-loading{animation:1s linear infinite fancybox-rotate;background:0 0;border:4px solid #888;border-bottom-color:#fff;border-radius:50%;height:50px;left:50%;margin:-25px 0 0 -25px;opacity:.7;padding:0;position:absolute;top:50%;width:50px;z-index:99999}
+@keyframes fancybox-rotate {
+100%{transform:rotate(360deg)}
+}
+.fancybox-animated{transition-timing-function:cubic-bezier(0,0,.25,1)}
+.fancybox-fx-slide.fancybox-slide--previous{opacity:0;transform:translate3d(-100%,0,0)}
+.fancybox-fx-slide.fancybox-slide--next{opacity:0;transform:translate3d(100%,0,0)}
+.fancybox-fx-slide.fancybox-slide--current{opacity:1;transform:translate3d(0,0,0)}
+.fancybox-fx-fade.fancybox-slide--next,.fancybox-fx-fade.fancybox-slide--previous{opacity:0;transition-timing-function:cubic-bezier(.19,1,.22,1)}
+.fancybox-fx-fade.fancybox-slide--current{opacity:1}
+.fancybox-fx-zoom-in-out.fancybox-slide--previous{opacity:0;transform:scale3d(1.5,1.5,1.5)}
+.fancybox-fx-zoom-in-out.fancybox-slide--next{opacity:0;transform:scale3d(.5,.5,.5)}
+.fancybox-fx-zoom-in-out.fancybox-slide--current{opacity:1;transform:scale3d(1,1,1)}
+.fancybox-fx-rotate.fancybox-slide--previous{opacity:0;-ms-transform:rotate(-360deg);transform:rotate(-360deg)}
+.fancybox-fx-rotate.fancybox-slide--next{opacity:0;-ms-transform:rotate(360deg);transform:rotate(360deg)}
+.fancybox-fx-rotate.fancybox-slide--current{opacity:1;-ms-transform:rotate(0);transform:rotate(0)}
+.fancybox-fx-circular.fancybox-slide--previous{opacity:0;transform:scale3d(0,0,0) translate3d(-100%,0,0)}
+.fancybox-fx-circular.fancybox-slide--next{opacity:0;transform:scale3d(0,0,0) translate3d(100%,0,0)}
+.fancybox-fx-circular.fancybox-slide--current{opacity:1;transform:scale3d(1,1,1) translate3d(0,0,0)}
+.fancybox-fx-tube.fancybox-slide--previous{transform:translate3d(-100%,0,0) scale(.1) skew(-10deg)}
+.fancybox-fx-tube.fancybox-slide--next{transform:translate3d(100%,0,0) scale(.1) skew(10deg)}
+.fancybox-fx-tube.fancybox-slide--current{transform:translate3d(0,0,0) scale(1)}
+@media all and (max-height:576px) {
+.fancybox-slide--image{padding:6px 0}
+.fancybox-close-small{right:-6px}
+.fancybox-slide--image .fancybox-close-small{background:#4e4e4e;color:#f2f4f6;height:36px;opacity:1;padding:6px;right:0;top:0;width:36px}
+.fancybox-caption{padding-left:12px;padding-right:12px}
+}
+.fancybox-share{background:#f4f4f4;border-radius:3px;max-width:90%;padding:30px;text-align:center}
+.fancybox-share h1{color:#222;font-size:35px;font-weight:700;margin:0 0 20px}
+.fancybox-share p{margin:0;padding:0}
+.fancybox-share__button{border:0;border-radius:3px;display:inline-block;font-size:14px;font-weight:700;line-height:40px;margin:0 5px 10px;min-width:130px;padding:0 15px;text-decoration:none;transition:.2s;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;white-space:nowrap}
+.fancybox-share__button:link,.fancybox-share__button:visited{color:#fff}
+.fancybox-share__button:hover{text-decoration:none}
+.fancybox-share__button--fb{background:#3b5998}
+.fancybox-share__button--fb:hover{background:#344e86}
+.fancybox-share__button--pt{background:#bd081d}
+.fancybox-share__button--pt:hover{background:#aa0719}
+.fancybox-share__button--tw{background:#1da1f2}
+.fancybox-share__button--tw:hover{background:#0d95e8}
+.fancybox-share__button svg{height:25px;margin-right:7px;position:relative;top:-1px;vertical-align:middle;width:25px}
+.fancybox-share__button svg path{fill:#fff}
+.fancybox-share__input{background:0 0;border:0;border-bottom:1px solid #d7d7d7;border-radius:0;color:#5d5b5b;font-size:14px;margin:10px 0 0;outline:0;padding:10px 15px;width:100%}
+.fancybox-thumbs{background:#ddd;bottom:0;display:none;margin:0;-webkit-overflow-scrolling:touch;-ms-overflow-style:-ms-autohiding-scrollbar;padding:2px 2px 4px;position:absolute;right:0;-webkit-tap-highlight-color:transparent;top:0;width:212px;z-index:99995}
+.fancybox-thumbs-x{overflow-x:auto;overflow-y:hidden}
+.fancybox-show-thumbs .fancybox-thumbs{display:block}
+.fancybox-show-thumbs .fancybox-inner{right:212px}
+.fancybox-thumbs__list{font-size:0;height:100%;list-style:none;margin:0;overflow-x:hidden;overflow-y:auto;padding:0;position:relative;white-space:nowrap;width:100%}
+.fancybox-thumbs-x .fancybox-thumbs__list{overflow:hidden}
+.fancybox-thumbs-y .fancybox-thumbs__list::-webkit-scrollbar{width:7px}
+.fancybox-thumbs-y .fancybox-thumbs__list::-webkit-scrollbar-track{background:#fff;border-radius:10px;box-shadow:inset 0 0 6px rgba(0,0,0,.3)}
+.fancybox-thumbs-y .fancybox-thumbs__list::-webkit-scrollbar-thumb{background:#2a2a2a;border-radius:10px}
+.fancybox-thumbs__list a{-webkit-backface-visibility:hidden;backface-visibility:hidden;background-color:rgba(0,0,0,.1);background-position:center center;background-repeat:no-repeat;background-size:cover;cursor:pointer;float:left;height:75px;margin:2px;max-height:calc(100% - 8px);max-width:calc(50% - 4px);outline:0;overflow:hidden;padding:0;position:relative;-webkit-tap-highlight-color:transparent;width:100px}
+.fancybox-thumbs__list a::before{border:6px solid #ff5268;bottom:0;content:'';left:0;opacity:0;position:absolute;right:0;top:0;transition:.2s cubic-bezier(.25,.46,.45,.94);z-index:99991}
+.fancybox-thumbs__list a:focus::before{opacity:.5}
+.fancybox-thumbs__list a.fancybox-thumbs-active::before{opacity:1}
+@media all and (max-width:576px) {
+.fancybox-thumbs{width:110px}
+.fancybox-show-thumbs .fancybox-inner{right:110px}
+.fancybox-thumbs__list a{max-width:calc(100% - 10px)}
+}
+.selectize-control.plugin-drag_drop.multi>.selectize-input>div.ui-sortable-placeholder{visibility:visible!important;background:rgba(0,0,0,.06)!important;border:0!important;-webkit-box-shadow:inset 0 0 12px 4px #fff;box-shadow:inset 0 0 12px 4px #fff}
+.selectize-control.plugin-drag_drop .ui-sortable-placeholder::after{content:'!';visibility:hidden}
+.selectize-control.plugin-drag_drop .ui-sortable-helper{-webkit-box-shadow:0 2px 5px rgba(0,0,0,.2);box-shadow:0 2px 5px rgba(0,0,0,.2)}
+.selectize-dropdown-header{position:relative;padding:5px 8px;border-bottom:1px solid #d0d0d0;background:#f8f8f8;-webkit-border-radius:3px 3px 0 0;-moz-border-radius:3px 3px 0 0;border-radius:3px 3px 0 0}
+.selectize-dropdown-header-close{position:absolute;right:8px;top:50%;color:#303030;opacity:.4;margin-top:-12px;line-height:20px;font-size:20px!important}
+.selectize-dropdown-header-close:hover{color:#000}
+.selectize-dropdown.plugin-optgroup_columns .optgroup{border-right:1px solid #f2f2f2;border-top:0;float:left;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+.selectize-dropdown.plugin-optgroup_columns .optgroup:last-child{border-right:0}
+.selectize-dropdown.plugin-optgroup_columns .optgroup:before{display:none}
+.selectize-dropdown.plugin-optgroup_columns .optgroup-header{border-top:0}
+.selectize-control.plugin-remove_button [data-value]{position:relative;padding-right:24px!important}
+.selectize-control.plugin-remove_button [data-value] .remove{z-index:1;position:absolute;top:0;right:0;bottom:0;width:17px;text-align:center;font-weight:700;font-size:12px;color:inherit;text-decoration:none;vertical-align:middle;display:inline-block;padding:2px 0 0;border-left:1px solid #d0d0d0;-webkit-border-radius:0 2px 2px 0;-moz-border-radius:0 2px 2px 0;border-radius:0 2px 2px 0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+.selectize-control.plugin-remove_button [data-value] .remove:hover{background:rgba(0,0,0,.05)}
+.selectize-control.plugin-remove_button [data-value].active .remove{border-left-color:#cacaca}
+.selectize-control.plugin-remove_button .disabled [data-value] .remove:hover{background:0 0}
+.selectize-control.plugin-remove_button .disabled [data-value] .remove{border-left-color:#fff}
+.selectize-control.plugin-remove_button .remove-single{position:absolute;right:0;top:0;font-size:23px}
+.selectize-control{position:relative}
+.selectize-dropdown,.selectize-input,.selectize-input input{color:#303030;font-family:inherit;font-size:13px;line-height:18px;-webkit-font-smoothing:inherit}
+.selectize-control.single .selectize-input.input-active,.selectize-input{cursor:text;display:inline-block}
+.selectize-input.disabled,.selectize-input.disabled *{cursor:default!important}
+.selectize-input>input::-ms-clear{display:none}
+.selectize-dropdown{position:absolute;z-index:10}
+.selectize-dropdown [data-selectable]{cursor:pointer;overflow:hidden}
+.selectize-dropdown [data-selectable] .highlight{background:rgba(125,168,208,.2);-webkit-border-radius:1px;-moz-border-radius:1px;border-radius:1px}
+.selectize-dropdown .option,.selectize-dropdown [data-disabled],.selectize-dropdown [data-disabled] [data-selectable].option{cursor:inherit;opacity:.5}
+.selectize-dropdown [data-selectable].option{opacity:1}
+.selectize-dropdown .optgroup:first-child .optgroup-header{border-top:0}
+.selectize-dropdown .optgroup-header{color:#303030;background:#fff;cursor:default}
+.selectize-dropdown .active.create{color:#495c68}
+.selectize-dropdown .create{color:rgba(48,48,48,.5)}
+.selectize-dropdown-content{overflow-y:auto;overflow-x:hidden;max-height:200px;-webkit-overflow-scrolling:touch}
+.selectize-control.single .selectize-input,.selectize-control.single .selectize-input input{cursor:pointer}
+.selectize-control.single .selectize-input.input-active,.selectize-control.single .selectize-input.input-active input{cursor:text}
+.selectize-control .selectize-input.disabled{opacity:.5;background-color:#fafafa}
+.selectize{height:50px;margin:0 0 20px;display:block;text-align:left}
+.selectize .selectize-control{display:block}
+.selectize .selectize-control.opened .selectize-input{border-color:#000}
+.selectize .selectize-input{width:100%;max-width:100%;height:49px!important;padding:0 30px 10px 0 !important;display:block;position:relative;border-bottom:1px solid rgba(68,68,68,.2);-webkit-transition:.3s ease-out;-ms-transition:.3s ease-out;transition:.3s ease-out;font:14px/40px 'Be Vietnam Pro',sans-serif;color:#000}
+.selectize .selectize-input.input-active:after,.selectize .selectize-input.input-active:before{-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg)}
+.selectize .selectize-input.has-items{padding:0}
+.selectize .selectize-input:after,.selectize .selectize-input:before{content:"";width:15px;height:9px;position:absolute;top:16px;right:0;-webkit-transition:.3s ease-out;-ms-transition:.3s ease-out;transition:.3s ease-out}
+.selectize .selectize-input:before{background:url(../img/svg/arrow-select.svg) 0 0/100% 100% no-repeat}
+.selectize .selectize-input:after{opacity:0;z-index:1;background:url(../img/svg/arrow-select__red.svg) 0 0/100% 100% no-repeat}
+.selectize .selectize-input input{max-width:100%;height:40px;display:inline-block;vertical-align:top;position:relative;font:14px/1 'Be Vietnam Pro',sans-serif;color:#000}
+.selectize .selectize-input .item{max-width:100%;height:40px;display:inline-block;vertical-align:top;position:relative;font:14px/40px 'Be Vietnam Pro',sans-serif;color:#000}
+.selectize .selectize-dropdown{position:relative!important;top:auto!important;left:auto!important;bottom:auto!important;right:auto!important;z-index:20!important;background:#fff;box-shadow:0 0 10px rgba(0,0,0,.15)}
+.selectize .selectize-dropdown-content{max-height:168px;padding:10px 0}
+.selectize .selectize-dropdown-content .option{max-width:100%;margin:0;padding:3px 20px;display:block;font:14px/24px 'Be Vietnam Pro',sans-serif;overflow:hidden;color:#000;word-break:break-all;-webkit-transition:.3s ease-out;-ms-transition:.3s ease-out;transition:.3s ease-out;cursor:pointer}
+.desktop .selectize .selectize-dropdown-content .option:hover{color:#ff8e8e}
+@media screen and (max-width:1700px) {
+.main-slider__title{font-size:110px}
+.inner-top__left{width:500px}
+.inner-top__left:before{right:40px}
+}
+@media screen and (max-width:1599px) {
+.main-slider__title{font-size:85px;right:10px}
+.inner-deal__image{margin:0 -162px 0 -200px}
+}
+@media screen and (max-width:1450px) {
+.first-screen,.main-slider__cell,.main-slider__list.loaded{height:650px}
+.main-slider__image-wrap{max-width:900px}
+.main-slider__image{width:900px}
+.main-slider__content{padding:0 0 0 610px}
+.main-slider__title{font-size:70px;right:8px}
+.collections{margin-right:0;right:auto}
+.collection_3 .collection__content{left:auto}
+.deal-block__image{max-width:905px}
+.inner-deal__image{margin:0 -162px 0 -100px}
+}
+@media screen and (max-width:1279px) {
+.header__main{padding:47px 40px 2px}
+.header-nav{padding:0 40px}
+.header-nav__list{margin:0 -15px}
+.header-nav__item{padding:0 15px}
+.user-nav{margin:0 -15px}
+.user-nav__item{padding:0 15px}
+.user-nav__link{top:auto}
+.footer__main{padding-top:90px}
+.footer__top{padding:0 0 45px}
+.first-screen{margin:0 auto 55px;padding:0 40px;height:auto;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}
+.first-screen__left{width:100%;padding:20px 0 0;-webkit-box-ordinal-group:2;-webkit-order:2;-ms-flex-order:2;order:2}
+.first-screen__center{width:100%;-webkit-box-ordinal-group:1;-webkit-order:1;-ms-flex-order:1;order:1}
+.first-screen__right{display:none}
+.first-screen__socials{width:auto;position:static;top:auto;left:auto}
+.first-screen__mob-cols{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:space-between;-ms-justify-content:space-between;justify-content:space-between;-webkit-align-items:center;-ms-align-items:center;align-items:center;overflow:hidden}
+.first-screen__mob-col:nth-child(1),.first-screen__mob-col:nth-child(3){width:150px;-webkit-flex-grow:0;flex-grow:0;-ms-flex-grow:0;-webkit-flex-shrink:0;flex-shrink:0;-ms-flex-shrink:0}
+.first-screen__mob-col:nth-child(2){width:100%;min-width:0}
+.side-socials{margin:0 -15px 0 0;padding:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-justify-content:center;-ms-justify-content:center;justify-content:center}
+.side-socials__item{margin:0 15px 0 0;padding:0 26px 0 0}
+.side-socials__item:before{content:"";width:10px;height:1px;display:block;position:absolute;top:50%;right:0;background:#000}
+.side-socials__item:after{display:none}
+.side-socials__item:last-child{margin-right:15px}
+.side-socials__item:last-child:before{display:none}
+.slider-count{position:static}
+.slider-count__text{text-align:left}
+.slider-count__text span{font-size:40px}
+.slider-dots{display:none}
+.slider-arrows{right:auto;position:static;float:right}
+.scroll-down{max-width:none;top:100%;bottom:auto;left:0}
+.main-slider__list-wrap{margin:0}
+.main-slider__max{padding:0 40px;text-align:right}
+.main-slider__image-wrap{max-width:none}
+.main-slider__image{width:100%;min-width:850px;left:auto;right:0}
+.main-slider__bg-wrap{display:none}
+.main-slider__content{width:100%;max-width:290px;padding:0;display:inline-block}
+.main-slider__title{font-size:45px;right:6px}
+.collection-block{padding-top:70px;padding-bottom:95px}
+.collection-block__bg-right{bottom:115px}
+.collections{margin-bottom:-40px}
+.collections__top{padding-bottom:70px}
+.collection{padding-bottom:110px}
+.collection_1 .collection__content{left:20px}
+.collection_2,.collection_3{padding-bottom:110px}
+.collection_3 .collection__all{margin-left:20px}
+.collection__image{max-width:370px}
+.season-sale{padding-bottom:110px;padding-left:0}
+.season-sale__all{max-width:440px;min-height:520px}
+.season-sale__cell{height:418px}
+.collections_inner{margin-bottom:-30px}
+.collections_inner .collection_2{padding-top:160px;right:auto}
+.collections_inner .collection_3{right:auto}
+.main-block{padding-bottom:45px}
+.main-block .tabs-nav__list{padding:0 0 18px}
+.main-block:last-child{margin-bottom:60px}
+.load-more .button{margin-bottom:5px}
+.deal-block{margin:50px auto 100px}
+.deal-block__image{max-width:800px;height:600px}
+.deal-block__cell{height:600px}
+.deal-block__subtitle{padding:0 0 32px}
+.deal-block__title{right:8px;font-size:70px}
+.deal-block__bg{display:none}
+.syotimer{padding:0 0 40px}
+.advantages{padding-bottom:65px}
+.advantages__list{margin:0 -20px;left:auto}
+.catalog-slider__cols{padding:0 0 25px}
+.blog{margin:0 -15px -10px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}
+.short-post__cell{height:270px}
+.short-post__bg{max-width:280px;padding:33px 0 0 32px}
+.short-post__title{height:48px}
+.short-post__date{padding:0 0 12px}
+.inner-top{margin-bottom:45px}
+.inner-top__left{width:420px;padding-top:0}
+.inner-top__image{width:100%;height:360px}
+.inner-top__title{font-size:70px}
+.inner-top__bg{top:50%;margin:-162px 0 0}
+.newsletter{padding-bottom:80px}
+.brands-block{padding-bottom:30px}
+.brands{padding-left:0}
+.brands__item{left:auto!important;right:auto!important}
+.about-company{padding-top:20px;padding-bottom:90px}
+.inner-deal{margin:0 0 100px}
+.inner-deal__right{width:460px}
+.inner-deal__image{height:600px;margin:0 -150px 0 -50px}
+.inner-deal__title{font-size:60px}
+.shop{padding-top:0;padding-bottom:80px}
+.shop__left{width:282px;padding:0 40px 0 0}
+.filters{padding:0 0 45px}
+.product{padding-top:20px}
+.product-tabs{padding-bottom:60px}
+.product-tab{padding-top:5px}
+.blog-page{padding-top:20px;padding-bottom:60px}
+.post-page{padding-top:20px;padding-bottom:40px}
+.post-header__subtitle{padding:0 0 20px}
+.post-header__title{padding:0 0 35px}
+.post-header__banner{margin:0 0 35px}
+.add-comment{padding:20px 0 50px}
+.faq-page{padding-top:0;padding-bottom:60px}
+.login-page{padding-top:30px;padding-bottom:80px}
+.login-page__all{min-height:420px;padding:0 0 80px}
+.login-page__banner{height:420px}
+.login-form{max-width:560px;padding:55px 40px 60px}
+.login-form_reg{max-width:700px}
+.page-404{padding-top:20px;padding-bottom:40px}
+.page-404__cols{padding-bottom:40px}
+.contacts-page{padding-top:30px;padding-bottom:80px}
+.contacts-page__main{margin-bottom:-80px}
+.contacts-page__left{max-width:640px}
+.contacts-page__right{width:310px}
+.contacts-page__map{height:480px}
+.contacts-form{padding:55px 40px 60px}
+.collections-page{padding-top:30px;padding-bottom:40px}
+.wishlist-page{padding-top:30px;padding-bottom:90px}
+.wishlist{padding:0 0 50px}
+.wishlist__item{margin:0 0 30px}
+.wishlist__left{width:160px}
+.profile-page{padding-top:20px;padding-bottom:80px}
+.cart-page{padding-top:20px;padding-bottom:70px}
+.checkout-page{padding-top:20px;padding-bottom:80px}
+.checkout-nav{padding:0 0 50px}
+.thanks__top{padding:0 0 15px}
+.thanks__title{padding:0 0 20px}
+.checkout-form{padding:0 0 10px}
+.checkout-form__title{padding:0 0 20px}
+.checkout-form__checkboxes{padding:14px 0 21px}
+.payment{margin:0 0 50px;padding:10px 0 8px}
+.payment__list{margin:0 -15px}
+.payment__radio{padding:0 15px 12px}
+.card{margin:0 0 50px}
+}
+@media screen and (max-width:1200px) {
+.short-item__image-bg{height:330px}
+.inner-top__left{width:340px}
+.inner-top__image{height:320px}
+.inner-top__title{font-size:60px}
+.inner-deal__image{height:700px;margin:0 -150px 0 0}
+}
+@media screen and (max-width:1100px) {
+.short-item__image-bg{height:300px}
+.collection-block{padding-top:50px}
+.collection-block__bg-left{top:-7px;left:-179px}
+.collection-block__bg-right{bottom:150px;right:-250px}
+.collection-title{padding:0 0 20px;font:70px/1 'Josefin Sans',sans-serif}
+.collection-title__plus{font-size:50px}
+.collection-title__text{font:22px/42px 'Be Vietnam Pro',sans-serif}
+.collections{margin:0 -30px 0 0}
+.collections_inner{margin-bottom:30px}
+.collections__top{padding:30px 30px 30px 8px}
+.collections__bottom{padding:40px 30px 30px 0}
+.collection__mob-image{max-width:343px;margin:0 auto 40px;position:relative}
+.collection{padding:40px 30px 30px 0}
+.collection_1 .collection__category{-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0)}
+.collection__all{max-width:none!important;min-height:0;margin:0!important;padding:0!important}
+.collection__image{width:auto;max-width:none;height:450px;margin:auto;display:block;position:relative;top:auto;left:auto!important;right:auto!important}
+.collection__row{width:auto;display:block}
+.collection__cell{height:auto;display:block;text-align:center}
+.collection__content{width:auto;max-width:250px;padding:0!important;left:auto!important}
+.collection__title{padding:0 0 25px;font-size:32px;line-height:34px}
+.collection__category{width:100%!important;margin:0 0 -20px;top:auto!important;bottom:100%!important;left:0!important;right:auto!important;font:900 40px/1 'Be Vietnam Pro',sans-serif;text-shadow:0 2px 7px rgba(0,0,0,.15)!important;text-align:center!important}
+.season-sale{padding:30px 30px 30px 0}
+.season-sale__all{max-width:400px;min-height:450px;margin:auto}
+.season-sale__row{padding:20px}
+.season-sale__cell{height:410px;top:auto}
+.season-sale__content{max-width:280px;margin:auto}
+.season-sale__title{padding:0 0 17px;font:600 32px/1 'Be Vietnam Pro',sans-serif}
+.season-sale__title span{padding:6px 0;font:800 80px/1 'Be Vietnam Pro',sans-serif}
+.season-sale__text{max-width:280px;padding:0 0 25px;font:500 16px/27px 'Be Vietnam Pro',sans-serif}
+.main-block__title{font-size:32px;line-height:34px}
+.deal-block__image{max-width:600px;height:520px}
+.deal-block__cell{height:520px}
+.newsletter__title{font-size:28px;line-height:34px}
+.about-company__title{font-size:32px;line-height:34px}
+.about-company__text{max-width:450px;font-size:18px;line-height:30px}
+.inner-deal__right{width:420px}
+.inner-deal__image{height:550px;margin:0 -190px 0 0}
+.inner-deal__title{font-size:45px}
+.inner-deal__text{padding:0 0 35px}
+.product__title{font-size:32px;line-height:34px}
+.product__right{padding-left:30px}
+.product__vector{right:-200px}
+.product-add{margin:0 -10px}
+.product-add__col{padding:0 10px 20px}
+.product-tab__right{padding-left:30px}
+.add-review__title{font-size:28px;line-height:34px}
+.review{padding:30px 30px 27px}
+.review_reply{margin-left:30px}
+.review__author{font:400 20px/24px 'Josefin Sans',sans-serif;text-transform:capitalize}
+.post-page__right{width:260px}
+.post-header__title{font-size:32px;line-height:34px}
+.newsletter-block{padding:39px 30px 20px}
+.newsletter-block__title{font-size:28px;line-height:34px}
+.sale-banner_changed .sale-banner__row{padding-left:30px;padding-right:20px}
+.popular{padding:0 0 30px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-ms-align-items:center;align-items:center}
+.popular:last-child{padding:0 0 21px}
+.popular__left{width:100px;padding:0 20px 0 0;-webkit-flex-grow:0;flex-grow:0;-ms-flex-grow:0;-webkit-flex-shrink:0;flex-shrink:0;-ms-flex-shrink:0}
+.popular__right{width:100%;min-width:0}
+.popular__title{padding:0;font:300 14px/17px 'Josefin Sans',sans-serif;text-shadow:0 0}
+.popular__link{display:block;color:#000}
+.desktop .popular__link:hover{color:#ff8e8e;text-decoration:none}
+.popular__date{padding:0;font-size:12px;line-height:20px}
+.popular__image{height:80px;display:block;background-position:center center;background-repeat:no-repeat;background-size:cover}
+.add-comment__title{font-size:32px;line-height:34px}
+.post-bottom__cols{display:block}
+.post-bottom .socials__list{padding:0 0 20px}
+.about-author{padding:28px 30px 10px}
+.about-author__left{width:100px;padding:0 20px 0 0}
+.about-author__title{padding:0 0 12px}
+.about-author__text{padding:0 0 20px}
+.faq-page__right{width:260px;padding:28px 0 0}
+.faq__button{padding:30px 40px 30px 0}
+.faq__content{padding-top:35px}
+.page-404__right{padding:0}
+.page-404__title{font-size:70px}
+.page-404__subtitle{font-size:32px;line-height:34px}
+.page-404__text{font-size:18px;line-height:30px}
+.login-form__title{font-size:32px;line-height:34px}
+.collections-page{padding-top:0}
+.profile-page__right{width:260px}
+.cart-page__right{width:290px}
+.cart-table{margin:0 0 50px}
+.promo__title{font-size:28px;line-height:34px}
+.your-order{padding:39px 30px 20px}
+.your-order__title{font-size:28px;line-height:34px}
+.checkout-page__right{width:290px}
+.thanks__title{font-size:32px;line-height:34px}
+.thanks__top-text{max-width:370px;font-size:18px;line-height:30px}
+.checkout-form__title{font-size:32px;line-height:34px}
+.card__left{padding:39px 30px 9px}
+}
+@media screen and (max-width:1024px) {
+blockquote{padding:20px 0 40px 20px;position:relative}
+blockquote:before{width:100px;height:100px;left:0}
+blockquote:after{display:none}
+blockquote p{max-width:590px;font:18px/32px 'Be Vietnam Pro',sans-serif}
+.main-catalog__list{margin:0 -10px;padding:0 0 15px}
+.short-item__all{margin:0 10px 40px}
+.catalog-slider__list-wrap{margin:0 -10px}
+.newsletter__bg{max-width:500px;padding:60px 40px 30px 0;position:relative;background:#fff}
+.shop-panel{margin:0 -10px;padding:0 0 11px}
+.shop-panel__left{width:50%;padding:8px 10px 0}
+.shop-panel__right{width:50%;padding:0 10px}
+.shop-panel__text{font:14px/24px 'Be Vietnam Pro',sans-serif}
+.inner-catalog{margin:0 -10px}
+}
+@media screen and (max-width:991px) {
+.add-button{padding-left:28px;font-size:15px}
+.header__col_hide-mob{display:none}
+.footer__col:nth-child(1){width:37%}
+.footer__col:nth-child(2){width:auto;right:auto}
+.footer__col:nth-child(3){width:37%}
+.footer-description br{display:none}
+.footer-nav{display:block}
+.footer-nav__list{padding:0 0 12px}
+.footer-nav__item{padding:0 0 8px}
+.main-slider__max{padding:0 20px}
+.main-catalog__list .short-item{width:33.333%}
+.short-item__image-bg{height:360px}
+.deal-block__image{max-width:440px;height:500px}
+.deal-block__cell{height:500px}
+.syotimer__body{margin:0 -7px}
+.syotimer-cell{padding:0 7px}
+.syotimer-cell_type_minute:after{right:-8px}
+.advantages__list{margin:0 -15px}
+.advantage{padding:0 15px 30px}
+.advantage__bg{width:110px;height:110px;top:26px;right:0}
+.advantage__content{position:relative;z-index:1}
+.advantage__icon-wrap{height:55px;margin:0 0 26px}
+.advantage__icon{width:55px;height:60px;margin:0}
+.advantage__title{padding:0 0 16px;font-size:18px;line-height:22px}
+.inner-top__bg{display:none}
+.inner-top__cols{display:block}
+.inner-top__left{width:auto;padding:0}
+.inner-top__left:before{bottom:0;right:-40px}
+.inner-top__right{display:none}
+.inner-top__title{padding:0 0 12px;font-size:50px}
+.newsletter__banner{min-height:360px}
+.newsletter__bg{max-width:400px;padding:0 40px 10px 0}
+.newsletter__text{padding:0 0 30px;font:14px/24px 'Be Vietnam Pro',sans-serif}
+.newsletter-form__left{padding:0 20px 10px 0}
+.brands{margin:0 -5px}
+.brands__item{padding:0 5px 20px}
+.brands__link{height:82px}
+.brands__logo{max-height:82px}
+.brands__logo_1{width:145px;height:60px}
+.brands__logo_2{width:123px;height:66px}
+.brands__logo_3{width:98px;height:82px}
+.brands__logo_4{width:134px;height:74px}
+.brands__logo_5{width:130px;height:66px}
+.about-company{padding-top:10px;padding-bottom:70px}
+.about-company__top{padding:0 0 30px}
+.about-company__cols{margin:0 -10px}
+.about-company__col{padding:0 10px 32px}
+.about-stats__vector{top:-40px}
+.about-section{padding:0 0 0 35px}
+.about-section__title{margin:0 0 0 -35px}
+.inner-deal__right{width:290px}
+.inner-deal__image{margin:0 -185px 0 -80px}
+.inner-deal__title{font-size:38px}
+.inner-deal__text{font-size:15px}
+.inner-catalog .short-item{width:50%}
+.product{padding-top:10px}
+.product__left,.product__right{width:50%}
+.product__vector{right:-232px;bottom:-45px}
+.product-slider.loaded,.product-slider__link{height:475px}
+.product-tab__cols{display:block}
+.product-tab__left{width:auto;padding:0 0 20px}
+.product-tab__right{width:auto;padding:0}
+.add-review__rating{margin-bottom:0}
+.blog-page{padding-top:10px}
+.arrow-button{font-size:14px}
+.post-mini__left{display:none}
+.login-page__all{min-height:0;padding:0}
+.login-page__banner,.login-page__vector{display:none}
+.login-form{max-width:none}
+.page-404{padding-bottom:30px}
+.page-404__cols{margin-right:-60px;padding-bottom:20px;padding-right:0}
+.page-404__right{position:relative;right:15px}
+.page-404__vector{display:none}
+.contacts-page{padding-bottom:0}
+.contacts-page__map{height:420px}
+.contacts-page__right{width:300px}
+.contacts__left{width:100px;padding:0 20px 30px 0}
+.collections-page{margin-top:-10px;padding-top:0}
+.wishlist-page{padding-top:10px;padding-bottom:80px}
+.wishlist{padding:0 0 50px}
+.wishlist__item{margin:0 0 30px}
+.wishlist__left{width:130px}
+.wishlist__bottom .wishlist__col:nth-child(1){width:51.5%}
+.wishlist__bottom .wishlist__col:nth-child(3){width:132px}
+.wishlist__old-price,.wishlist__price{position:relative;top:2px}
+.wishlist__image-link{width:110px;height:125px}
+.wishlist-info{margin:0 -15px 0 0}
+.wishlist-info__col{margin:0 15px 5px 0;padding:0 15px 0 0}
+.wishlist__top_cart{min-height:0;padding:0 0 10px}
+.wishlist__top_cart .wishlist__remove{bottom:auto}
+.wishlist__bottom_cart{-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}
+.wishlist__cart-col:nth-child(1){width:auto;-webkit-box-ordinal-group:1;-webkit-order:1;-ms-flex-order:1;order:1}
+.wishlist__cart-col:nth-child(2){padding-top:11px;-webkit-box-ordinal-group:3;-webkit-order:3;-ms-flex-order:3;order:3}
+.wishlist__cart-col:nth-child(3){min-width:0;-webkit-box-ordinal-group:2;-webkit-order:2;-ms-flex-order:2;order:2}
+.wishlist__count{bottom:auto}
+.order-header{margin:0 -15px 0 0}
+.order-header__col{margin:0 11px 0 0;padding:2px 13px 2px 0}
+.order-header__col:after{top:13px}
+.order-total{font-size:15px}
+.order-total__price{font-size:18px}
+.cart-page__right{width:260px}
+.your-order__text span{margin:0}
+.checkout-page{padding-top:10px}
+.checkout-page__right{width:260px}
+.checkout-nav__item{font-size:18px;padding-left:20px;padding-right:20px}
+.checkout-nav__item.current{padding-right:50px}
+.checkout-form__cols{margin:0 -10px}
+.checkout-form__col{padding:0 10px}
+.checkout-form__checkboxes{margin:0 -10px}
+.checkout-form__checkbox{padding:0 10px 20px}
+.card{max-width:450px;height:auto;padding:0}
+.card__left{min-height:256px;margin:0 0 20px}
+.card__right{height:auto;padding:35px 65px 25px;position:static;bottom:auto;right:auto}
+}
+@media screen and (max-width:900px) {
+.short-item__image-bg{height:330px}
+.contacts-form__col{width:100%}
+}
+@media screen and (max-width:800px) {
+.short-item__image-bg{height:300px}
+}
+@media screen and (min-width:768px) {
+.widget__hide{display:block!important}
+}
+@media screen and (max-width:767px) {
+body{font-size:15px;line-height:25px}
+.wrapper{padding-left:20px;padding-right:20px}
+.main{padding-top:95px}
+.textarea{height:90px;min-height:90px}
+blockquote{padding:20px 0 35px 20px;position:relative}
+blockquote:before{width:80px;height:80px;left:0}
+blockquote p{max-width:none;font:16px/27px 'Be Vietnam Pro',sans-serif}
+blockquote footer{font-size:18px}
+.read-more{font-size:15px}
+.read-more:before{top:6px}
+.header.scrolled .header__main{height:62px;padding-top:20px}
+.header__main{padding:37px 20px 2px}
+.header__cols{margin:0 -10px}
+.header__col,.header__left,.header__right{padding:0 10px}
+.header-nav{padding:0 20px}
+.header-nav__list{margin:0 -10px}
+.header-nav__item{padding:0 10px}
+.user-nav{margin:0 -10px}
+.user-nav__item{padding:0 10px}
+.hide-mob__bg{padding-top:60px}
+.footer__main{padding-top:65px}
+.footer__top{padding:0 0 25px}
+.footer__cols{margin:0 -10px;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}
+.footer__col,.footer__left,.footer__right{padding:0 10px}
+.footer__col:nth-child(1){width:50%;-webkit-box-ordinal-group:1;-webkit-order:1;-ms-flex-order:1;order:1}
+.footer__col:nth-child(2){width:100%;max-width:none;padding-top:11px;-webkit-box-ordinal-group:3;-webkit-order:3;-ms-flex-order:3;order:3}
+.footer__col:nth-child(3){width:50%;-webkit-box-ordinal-group:2;-webkit-order:2;-ms-flex-order:2;order:2}
+.footer-line{margin-bottom:30px}
+.footer-nav{margin:0 -10px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}
+.footer-nav .footer-title{padding:0 0 12px}
+.footer-nav__col{width:50%;padding:0 10px}
+.subscription{margin-top:-10px}
+.first-screen{margin:0 auto 40px;padding:0 20px}
+.main-slider__list.loaded{height:400px}
+.main-slider__cell{height:320px}
+.main-slider__image{min-width:520px;height:165%;top:auto;bottom:-65%;background-position:left top}
+.main-slider__image:before{content:"";width:100%;height:100%;position:absolute;top:0;left:0}
+.main-slider__image:after{content:"";width:100%;height:100%;position:absolute;top:0;left:0;background:rgba(204,204,204,.35)}
+.main-slider__subtitle{padding:0 0 25px;color:#000;font-weight:500}
+.main-slider__max{padding:40px 30px;text-align:left}
+.main-slider__title{padding:0 0 30px;font-size:35px;right:2px}
+.collection-block{padding-top:0;padding-bottom:60px}
+.collection-block__bg-left{top:-7px;left:-266px}
+.collection-block__bg-right{bottom:96px;right:-394px}
+.collection-title{padding:0 0 20px;display:inline-block;font:60px/1 'Josefin Sans',sans-serif;text-align:left}
+.collection-title__plus{font-size:45px}
+.collection-title__text{font:18px/32px 'Be Vietnam Pro',sans-serif}
+.collections{margin-bottom:0;column-count:auto;-webkit-column-count:auto;column-gap:normal;-webkit-column-gap:normal;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-justify-content:center;-ms-justify-content:center;justify-content:center}
+.collections__top{width:100%;padding:30px 30px 45px 0;text-align:center;-webkit-box-ordinal-group:1;-webkit-order:1;-ms-flex-order:1;order:1}
+.collections__bottom{width:100%;padding:10px 30px 30px 0;text-align:center;-webkit-box-ordinal-group:6;-webkit-order:6;-ms-flex-order:6;order:6}
+.collection{width:50%;padding:10px 30px 40px 0 !important}
+.collection:nth-child(2){-webkit-box-ordinal-group:2;-webkit-order:2;-ms-flex-order:2;order:2}
+.collection:nth-child(4),.collection_4{-webkit-box-ordinal-group:3;-webkit-order:3;-ms-flex-order:3;order:3}
+.collection:nth-child(5){-webkit-box-ordinal-group:4;-webkit-order:4;-ms-flex-order:4;order:4}
+.collection__mob-image{max-width:320px;margin:0 auto 30px}
+.collection__category{margin:0 0 -18px;font:900 36px/1 'Be Vietnam Pro',sans-serif}
+.collection__title{padding:0 0 15px;font-size:28px;line-height:32px}
+.collection__image{height:360px}
+.season-sale{width:100%;padding:0 30px 50px 0;-webkit-box-ordinal-group:5;-webkit-order:5;-ms-flex-order:5;order:5}
+.season-sale__all{max-width:440px;min-height:380px}
+.season-sale__cell{height:338px}
+.season-sale__title{font:600 28px/1 'Be Vietnam Pro',sans-serif}
+.season-sale__title span{font:800 70px/1 'Be Vietnam Pro',sans-serif}
+.season-sale_small .season-sale__text{padding:0 0 8px}
+.main-block{padding-bottom:35px}
+.main-block .tabs-nav__list{padding:0 0 10px}
+.main-block:last-child{margin-bottom:30px}
+.main-block__title{font-size:32px;line-height:34px}
+.main-block__text{padding:0 0 16px}
+.tabs-nav{margin-top:-5px;margin-bottom:10px}
+.short-item__all{margin-bottom:30px}
+.deal-block{margin:30px auto 60px;padding:0 20px}
+.deal-block__cols{text-align:center}
+.deal-block__image{max-width:none;height:450px;margin:0 0 40px;position:static}
+.deal-block__row{width:auto;display:block}
+.deal-block__cell{height:auto;display:block;text-align:center}
+.deal-block__subtitle{padding:0 0 22px}
+.deal-block__title{padding:0 0 30px;font-size:40px;right:5px}
+.syotimer{padding:0 0 32px}
+.syotimer__body{-webkit-justify-content:center;-ms-justify-content:center;justify-content:center}
+.advantages{padding-bottom:25px}
+.advantages+.newsletter{margin-top:10px}
+.advantage{width:50%}
+.catalog-slider__cols{padding:0}
+.catalog-slider__bg{display:none}
+.blog{margin:0 -10px -10px}
+.blog .short-post{padding:0 10px 82px}
+.short-post{padding:0 0 82px}
+.short-post_small{padding-top:12px;padding-bottom:77px}
+.short-post__title{font:16px/20px 'Josefin Sans',sans-serif}
+.popular-posts{padding-bottom:5px}
+.inner-top{margin-bottom:45px;padding-top:5px}
+.inner-top__right{display:none}
+.inner-top__title{padding:0 0 12px;font-size:35px}
+.inner-top__bg{display:none}
+.newsletter{padding:0 20px 30px}
+.newsletter__banner{min-height:0;background:0 0!important}
+.newsletter__max{max-width:none}
+.newsletter__bg{max-width:100%;padding:0}
+.newsletter__vector{width:110px;height:110px;position:absolute;top:-33px;right:10px}
+.newsletter__title{padding:0 0 16px;font-size:26px;line-height:32px}
+.brands-block{padding-bottom:15px}
+.brands__link{height:56px}
+.brands__logo{max-height:56px}
+.brands__logo_1{width:97px;height:40px}
+.brands__logo_2{width:86px;height:46px}
+.brands__logo_3{width:67px;height:56px}
+.brands__logo_4{width:90px;height:50px}
+.brands__logo_5{width:90px;height:46px}
+.about-company{padding-top:0;padding-bottom:50px}
+.about-company__top{padding:0 0 16px}
+.about-company__title{padding:0 0 16px;font-size:28px;line-height:32px}
+.about-company__text{font-size:17px;line-height:28px}
+.about-company__cols{margin:0}
+.about-company__col{width:100%;max-width:none;padding:0 0 20px}
+.about-company__col:nth-child(1){-webkit-box-ordinal-group:1;-webkit-order:1;-ms-flex-order:1;order:1}
+.about-company__col:nth-child(2){-webkit-box-ordinal-group:3;-webkit-order:3;-ms-flex-order:3;order:3}
+.about-company__col:nth-child(3){-webkit-box-ordinal-group:4;-webkit-order:4;-ms-flex-order:4;order:4}
+.about-company__col:nth-child(4){-webkit-box-ordinal-group:2;-webkit-order:2;-ms-flex-order:2;order:2}
+.about-section__title{font-size:20px;line-height:24px}
+.about-section__text{max-width:none}
+.about-section__year{bottom:120px}
+.about-stats{padding:38px 0 0}
+.about-stats_bottom{padding:0 0 20px}
+.about-stats_bottom .about-stats__vector{display:none}
+.about-stats .collection-title{text-align:center}
+.about-stats__vector{margin:0 0 0 -156px;top:-10px;left:50%}
+.inner-deal{margin:0 auto 60px}
+.inner-deal:before{display:none}
+.inner-deal__cols{display:block;text-align:center}
+.inner-deal__left,.inner-deal__right{width:auto}
+.inner-deal__image{height:450px;margin:0 0 40px}
+.inner-deal__subtitle{padding:0 0 22px}
+.inner-deal__title{padding:0 0 20px;font-size:32px;line-height:34px}
+.inner-deal__text{margin:auto;padding:0 0 30px}
+.shop{padding-top:0;padding-bottom:35px}
+.shop__cols{display:block}
+.shop__left{width:auto;padding:0}
+.shop__right{width:auto}
+.search-form{margin-top:-15px;padding:0 0 5px}
+.filters{padding:0 0 5px}
+.widget__title_hide-mob{display:none}
+.widget__button{display:block}
+.widget__hide{display:none}
+.widget{padding:0 0 10px}
+.widget__title{margin:0 0 15px;padding:0 0 14px;font-size:20px;line-height:24px}
+.widget__button{margin:0 0 15px;padding:0 30px 14px 0;font-size:20px;line-height:24px}
+.widget__deploy{margin:0 0 20px}
+.range{padding:38px 0 28px}
+.checkboxes{padding:15px 20px 10px}
+.side-nav{padding:0 20px 15px}
+.apply-button{margin-top:5px}
+.short-reviews{padding:15px 0}
+.sale-banner__row{padding-left:30px;padding-right:30px}
+.sale-banner__image{width:100%;margin:0;left:0}
+.desktop-items .side-items{display:none}
+.inner-catalog{padding:0}
+.inner-catalog .short-item{width:33.333%}
+.shop-panel__right{width:282px}
+.page-nav{padding:0 0 45px}
+.product{padding-top:0}
+.product__cols{display:block}
+.product__left{width:auto}
+.product__right{width:auto;padding:0}
+.product__mob{padding:0 0 10px}
+.product__title{padding:0 0 10px;font-size:28px;line-height:32px}
+.product__content{min-height:0}
+.product__prices{padding:0 0 22px}
+.product__price{font:26px/1 'Josefin Sans',sans-serif}
+.product__old-price{font:300 18px/1 'Josefin Sans',sans-serif}
+.chars{padding:0 0 20px}
+.size{padding:0 0 22px}
+.product-add{margin:0 -7.5px}
+.product-add__col{padding:0 7.5px 15px}
+.product-gallery__cols{max-width:none}
+.product-slider.loaded,.product-slider__link{height:360px}
+.product-tabs{padding-bottom:40px}
+.product-nav__list{padding:0 0 15px;-webkit-justify-content:center;-ms-justify-content:center;justify-content:center}
+.product-tab{padding-top:0}
+.add-review{text-align:center}
+.add-review__title{padding:0 0 13px;font-size:26px;line-height:32px}
+.add-review__top{padding:0 0 22px}
+.review{padding:30px 20px 27px}
+.review_reply{margin-left:20px;background:#f5faf8}
+.review__top{margin-bottom:15px}
+.blog-page{padding-top:0;padding-bottom:15px}
+.blog-nav__list{padding:0 0 12px;-webkit-justify-content:center;-ms-justify-content:center;justify-content:center;margin:0 -10px}
+.blog-nav__list .tabs-nav__item{padding:0 10px}
+.post-page{padding-top:0;padding-bottom:30px}
+.post-page__cols{display:block}
+.post-page__left{width:auto;padding:0}
+.post-page__right{width:auto}
+.post-info{margin:0 0 30px}
+.post-info__cols{margin:0 -15px 0 0;padding:0 0 4px;-webkit-justify-content:space-between;-ms-justify-content:space-between;justify-content:space-between}
+.post-info__col{margin:0;padding:0 15px 6px 0}
+.post-info__col:nth-child(1){-webkit-box-ordinal-group:1;-webkit-order:1;-ms-flex-order:1;order:1}
+.post-info__col:nth-child(2){width:100%;-webkit-box-ordinal-group:3;-webkit-order:3;-ms-flex-order:3;order:3}
+.post-info__col:nth-child(3){-webkit-box-ordinal-group:2;-webkit-order:2;-ms-flex-order:2;order:2}
+.post-info__col:last-child{padding-right:15px}
+.post-info__col:after{display:none}
+.post-info__author{font-size:14px;bottom:auto}
+.post-header__subtitle{padding:0 0 10px}
+.post-header__title{padding:0 0 27px;font-size:24px;line-height:30px}
+.post-header__banner{margin:0 0 26px}
+.post-content{padding:0}
+.post-content img{margin:0 0 38px}
+.post-bottom{margin:0 0 45px}
+.post-nav{margin:0 -12px 0 0}
+.post-nav__item{padding:3px 12px 3px 8px}
+.socials_flex{margin:0 -8px}
+.socials__col{padding:3px 8px}
+.about-author{margin:0 0 42px;padding:28px 20px 12px}
+.about-author__left{width:120px}
+.prev-next{margin:0 0 30px}
+.post-mini__left{display:block}
+.add-comment{padding:0 0 25px}
+.add-comment__title{font-size:24px;line-height:30px}
+.add-comment__text{padding:0 0 15px}
+.add-comment__cols{margin:0 -10px}
+.add-comment__col{padding:0 10px}
+.newsletter-block{margin:0 0 40px;padding:39px 20px 20px}
+.newsletter-block__title{font-size:26px;line-height:32px}
+.faq-page{padding-top:0;padding-bottom:30px}
+.faq-page__cols{display:block}
+.faq-page__left{width:auto;margin-top:-30px;padding:0 0 15px}
+.faq-page__right{width:auto}
+.faq-page__right .sale-banner{margin-bottom:40px}
+.faq__title{font:16px/20px 'Josefin Sans',sans-serif}
+.login-page{padding:0 20px 50px}
+.login-form{padding:40px 20px 50px}
+.login-form__top{padding:0 0 13px}
+.login-form__bottom,.login-form__cols{margin:0 -10px}
+.login-form__col{padding:0 10px}
+.login-form__title{font-size:28px;line-height:32px}
+.login-form__bottom{padding:4px 0 22px}
+.page-404{padding-top:0;padding-bottom:30px}
+.page-404__cols{margin:0;padding:0;display:block;text-align:center}
+.page-404__left{width:auto;max-width:400px;margin:auto}
+.page-404__right{width:auto;right:auto;bottom:10px}
+.page-404__title{font-size:40px}
+.page-404__subtitle{font-size:28px;line-height:32px}
+.page-404__text{font-size:17px;line-height:28px;padding:0 0 30px}
+.contacts-page{padding:0}
+.contacts-page__main{margin:0}
+.contacts-page__vector{display:none}
+.contacts-page__cols{display:block}
+.contacts-page__left{width:auto;max-width:none;padding:0 0 50px}
+.contacts-page__right{width:auto;max-width:280px;margin:auto;padding:0 0 12px}
+.contacts-page__map{height:360px}
+.contacts-form{padding:40px 20px 50px}
+.contacts-form__top{padding:0 0 13px}
+.contacts-form__cols{margin:0 -10px}
+.contacts-form__col{width:50%;padding:0 10px}
+.contacts-form__title{font-size:28px;line-height:32px}
+.contacts__left{width:80px;padding:0 15px 20px 0}
+.contacts__right{padding:0 0 20px;display:table-cell;vertical-align:top}
+.contacts__title{padding:2px 0 0;font:16px/20px 'Josefin Sans',sans-serif}
+.contacts__number{margin:0 0 5px}
+.collections-page{margin-top:0;padding-top:0;padding-bottom:15px}
+.wishlist-page{padding-top:0;padding-bottom:35px}
+.wishlist-page__bottom{margin:0 -20px 0 0}
+.wishlist-page__col{padding:0 20px 20px 0}
+.wishlist{padding:0 0 40px}
+.wishlist__left{width:110px}
+.wishlist__bottom{-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}
+.wishlist__bottom .wishlist__col:nth-child(1){width:auto;-webkit-box-ordinal-group:1;-webkit-order:1;-ms-flex-order:1;order:1}
+.wishlist__bottom .wishlist__col:nth-child(2){width:100%;-webkit-box-ordinal-group:3;-webkit-order:3;-ms-flex-order:3;order:3}
+.wishlist__bottom .wishlist__col:nth-child(3){width:auto;-webkit-box-ordinal-group:2;-webkit-order:2;-ms-flex-order:2;order:2}
+.wishlist__image-link{width:90px;height:100px}
+.wishlist__top{min-height:0;padding:11px 0 8px}
+.wishlist__title{font:18px/22px 'Josefin Sans',sans-serif}
+.wishlist__price{font-size:18px}
+.wishlist__price_total{font-size:20px}
+.wishlist__remove{bottom:3px!important}
+.wishlist__top_cart{padding:0 0 12px}
+.wishlist__cart-col:nth-child(2){padding-top:13px}
+.profile-page{padding-top:0;padding-bottom:30px}
+.profile-page__cols{display:block}
+.profile-page__left{width:auto;padding:0 0 30px}
+.profile-page__right{width:auto;padding:0}
+.profile-page__right .sale-banner{margin-bottom:40px}
+.profile-nav__list{margin-bottom:-10px;padding:0;-webkit-justify-content:center;-ms-justify-content:center;justify-content:center}
+.profile-tab__bottom{margin:0 -20px 0 0;-webkit-justify-content:center;-ms-justify-content:center;justify-content:center}
+.profile-tab__col{padding:0 20px 20px 0}
+.order-header__number{font-size:15px}
+.order-header__col{margin:0 15px 0 0;padding:2px 17px 2px 0}
+.orders{padding:0 0 40px}
+.order__content{padding:15px 0 0}
+.order-table{padding:0 0 5px}
+.order-status,.order-table__text,.order-table__title{font-size:15px}
+.cart-page{padding-top:0;padding-bottom:50px}
+.cart-page__cols{display:block}
+.cart-page__left{width:auto;padding:0 0 15px}
+.cart-page__right{width:auto}
+.cart-table{margin:0 0 45px;padding:0 0 8px}
+.promo{text-align:center}
+.promo__title{padding:0 0 15px;font-size:26px;line-height:32px}
+.promo__text{margin:auto;padding:0 0 5px}
+.promo-form{margin:auto}
+.cart-socials{padding:0 0 5px;text-align:center}
+.cart-socials__list{-webkit-justify-content:center;-ms-justify-content:center;justify-content:center}
+.your-order{padding:39px 20px 20px}
+.your-order__title{font-size:26px;line-height:32px}
+.your-order__price{top:auto;font-size:18px}
+.your-order__bottom-text{font:18px/26px 'Be Vietnam Pro',sans-serif}
+.your-order__bottom-price{top:auto;font:22px/26px 'Josefin Sans',sans-serif}
+.checkout-page{padding-top:0;padding-bottom:60px}
+.checkout-page__cols{display:block}
+.checkout-page__left{width:auto;padding:0 0 30px}
+.checkout-page__right{width:auto}
+.checkout-nav{margin:0 -20px;padding:0 0 40px}
+.checkout-nav__item{padding:4px 20px}
+.checkout-nav__item:nth-child(1){width:32.5%}
+.checkout-nav__item:nth-child(2){width:38.5%}
+.checkout-nav__item:nth-child(3){width:29%}
+.checkout-nav__item:nth-child(3):after{right:20px}
+.checkout-nav__item.active{padding-right:50px}
+.checkout-form{padding:0 0 5px;text-align:center}
+.checkout-form__title{padding:0 0 15px;font-size:28px;line-height:32px}
+.checkout-form__buttons{-webkit-justify-content:center;-ms-justify-content:center;justify-content:center}
+.radio__label{min-height:24px;padding:0 0 0 28px;font-size:18px}
+.radio__icon{top:3px}
+.payment{margin:0 0 40px}
+.payment__list{margin:0 -12px;padding:0 0 12px;-webkit-justify-content:center;-ms-justify-content:center;justify-content:center}
+.payment__radio{padding:0 12px 12px}
+.card{margin:0 auto 40px}
+.card__left{padding:39px 20px 9px}
+.card__right{padding:40px 20px 30px}
+.card-form__cols{margin:0 -10px}
+.card-form__col{padding:0 10px}
+.thanks{margin:0 0 -10px;text-align:center}
+.thanks__top{padding:0 0 5px}
+.thanks__title{font-size:28px;line-height:32px}
+.thanks__top-text{margin:auto;font-size:17px;line-height:28px}
+}
+@media screen and (max-width:700px) {
+.footer__bottom .footer__cols{display:block;text-align:center}
+.footer__left{padding-bottom:12px}
+.payments{-webkit-justify-content:center;-ms-justify-content:center;justify-content:center}
+.first-screen__mob-cols{-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}
+.first-screen__mob-col:nth-child(1){width:auto;-webkit-box-ordinal-group:1;-webkit-order:1;-ms-flex-order:1;order:1}
+.first-screen__mob-col:nth-child(2){-webkit-box-ordinal-group:3;-webkit-order:3;-ms-flex-order:3;order:3}
+.first-screen__mob-col:nth-child(3){width:auto;-webkit-box-ordinal-group:2;-webkit-order:2;-ms-flex-order:2;order:2}
+.side-socials{padding:16px 0 0;-webkit-justify-content:center;-ms-justify-content:center;justify-content:center}
+.main-catalog__list .short-item{width:50%}
+.short-item__image-bg{height:360px}
+.deal-block__image{height:420px}
+.blog .short-post{width:100%}
+.inner-deal__image{height:420px}
+.inner-catalog .short-item{width:50%}
+.post-mini__left{display:none}
+}
+@media screen and (max-width:600px) {
+.collection{width:100%}
+.short-item__image-bg{height:300px}
+.deal-block__image{height:390px}
+.brands{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:center;-ms-justify-content:center;justify-content:center;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}
+.brands__item{width:33.333%}
+.brands__logo{margin:auto}
+.inner-deal__image{height:390px}
+.shop-panel{margin:0;padding:0 0 11px;display:block}
+.shop-panel__left{width:auto;padding:5px 0 0}
+.shop-panel__right{width:auto;padding:0}
+.shop-panel__text{padding:0 0 10px;font:16px/24px 'Be Vietnam Pro',sans-serif;text-align:center}
+.sale-banner__image{width:548px;margin:0 0 0 -274px;left:50%}
+.product__vector{display:none}
+.review__top{margin-bottom:18px}
+.review__col{width:100%;padding-right:0}
+.review__col:after{display:none}
+.review__author{padding:0 0 3px}
+.login-form__bottom,.login-form__cols{display:block}
+.login-form__col{width:auto}
+.login-form__small-text{line-height:24px}
+.contacts-form__bottom,.contacts-form__cols{display:block}
+.contacts-form__col{width:auto}
+.wishlist__top{padding-top:0}
+.wishlist__bottom .wishlist__col:nth-child(1){width:100%}
+.wishlist__bottom .wishlist__col:nth-child(2){width:100%;margin-bottom:-5px}
+.wishlist__bottom .wishlist__col:nth-child(3){width:100%;padding-top:6px;padding-bottom:6px;text-align:left}
+.checkout-nav{margin:0 -15px;padding:0 0 24px;-webkit-justify-content:center;-ms-justify-content:center;justify-content:center;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}
+.checkout-nav__item{width:auto!important;margin:0 15px 10px;padding:0 0 4px!important;border:none;font:18px/24px 'Be Vietnam Pro',sans-serif}
+.checkout-nav__item:after{right:0!important}
+.checkout-nav__item.current{padding-right:60px!important;font-weight:500;border-bottom:2px solid #95ccb5}
+}
+@media screen and (max-width:479px) {
+.user-nav__text{min-width:16px;height:16px;margin:0;padding:0 2px;position:absolute;top:-8px;right:-10px;font:bold 12px/16px 'Be Vietnam Pro',sans-serif;border-radius:8px}
+.user-nav{margin:0 -6px}
+.user-nav__item{padding:0 6px;position:relative}
+.footer{text-align:center}
+.footer__col{width:100%!important}
+.footer__col:nth-child(1){padding-bottom:10px}
+.footer__top{padding:0 0 20px}
+.footer-logo{margin:0 0 15px;display:inline-block}
+.socials__list{-webkit-justify-content:center;-ms-justify-content:center;justify-content:center}
+.footer-nav{-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}
+.footer-nav__col{width:50%;padding-top:5px}
+.footer-nav__link{padding:0;display:inline-block}
+.footer-nav__link:before{display:none}
+.products-nav{max-width:280px;margin:auto}
+.main-catalog__list .short-item{width:100%}
+.deal-block__image,.short-item__image-bg{height:360px}
+.advantages+.newsletter{margin-top:5px}
+.advantage{width:100%;text-align:center}
+.advantage__icon-wrap{margin:0 0 18px}
+.advantage__icon{margin:auto}
+.advantage__line{max-width:none}
+.advantage__text{margin:auto}
+.advantage__bg{width:110px;height:110px;top:18px;right:5px}
+.short-post{min-height:0}
+.short-post__image-link{height:250px;display:block;position:relative;top:auto;left:auto}
+.short-post__row{width:auto;display:block}
+.short-post__cell{height:auto;display:block}
+.short-post__bg{max-width:none;padding:33px 0 0;display:block}
+.short-post__title-wrap{margin:0 0 15px}
+.short-post__title{height:auto;display:block}
+.short-post__date{padding:0 0 7px}
+.newsletter__text{padding:0 0 15px}
+.newsletter__vector{top:-8px}
+.newsletter-form{display:block}
+.newsletter-form__left{width:auto;padding:0 0 10px}
+.newsletter-form__button{width:100%}
+.brands{max-width:360px;margin:auto}
+.brands__item{width:auto;padding:0 14px 20px}
+.inner-deal__image{height:360px}
+.inner-catalog .short-item{width:100%}
+.product-slider.loaded,.product-slider__link{height:330px}
+.review_reply{margin-left:0}
+.about-author{display:block;text-align:center}
+.about-author__left{width:auto;padding:0}
+.about-author__photo{margin:0 auto 20px}
+.arrow-button__hide-mob{display:none}
+.add-comment__cols{margin:0;display:block}
+.add-comment__col{width:auto;padding:0}
+.contacts-page__map{height:330px}
+.wishlist-page__bottom{-webkit-justify-content:center;-ms-justify-content:center;justify-content:center}
+.wishlist__cols{display:block;position:relative}
+.wishlist__col{text-align:center!important}
+.wishlist__left,.wishlist__right{width:auto}
+.wishlist__image-link{width:130px;height:140px;margin:0 auto 22px}
+.wishlist__top{-webkit-justify-content:center;-ms-justify-content:center;justify-content:center}
+.wishlist__top .wishlist__col:nth-child(2){position:absolute;top:3px;right:-5px}
+.wishlist__count{margin:auto}
+.wishlist-info{-webkit-justify-content:center;-ms-justify-content:center;justify-content:center}
+.wishlist__cart-col{text-align:center}
+.wishlist__cart-col:nth-child(1){width:100%;-webkit-box-ordinal-group:1;-webkit-order:1;-ms-flex-order:1;order:1}
+.wishlist__cart-col:nth-child(2){padding-top:11px;padding-bottom:14px;-webkit-box-ordinal-group:2;-webkit-order:2;-ms-flex-order:2;order:2}
+.wishlist__cart-col:nth-child(3){width:100%;-webkit-box-ordinal-group:3;-webkit-order:3;-ms-flex-order:3;order:3;text-align:center}
+.order-header__col:nth-child(2):after{display:none}
+.order-header__col:nth-child(3){width:100%}
+.order-table__cols{margin:0 -15px 0 0}
+.order-table__col{padding:0 15px 0 0}
+.checkout-form__cols{display:block}
+.checkout-form__col{width:auto}
+.checkout-nav__item{width:100%!important}
+.checkout-nav__item.current{width:auto!important}
+}
+@media screen and (max-width:400px) {
+.short-item__image-bg{height:330px}
+.brands{margin:0 -12px}
+.brands__item{padding:0 12px 20px}
+}
+@media screen and (max-width:359px) {
+.payments{display:block}
+.payments__text{padding:0 0 12px;font:14px/20px 'Be Vietnam Pro',sans-serif}
+.payments__list{padding:0 0 5px;-webkit-justify-content:center;-ms-justify-content:center;justify-content:center}
+.footer-nav__col{width:100%}
+.collection__image,.deal-block__image{height:330px}
+.short-post__image-link{height:220px}
+.brands{margin:0 -8px}
+.brands__item{padding:0 8px 20px}
+.about-stats__vector{margin:0 0 0 -146px}
+.inner-deal__image{height:280px}
+}
+.text__message{text-align:center;margin:20px auto;padding:10px;font-weight:600;background-color:#faebd7}
+a{cursor:pointer}
+
+.modal-open{overflow:hidden}
+.modal-open .modal{overflow-x:hidden;overflow-y:auto}
+.modal{position:fixed;top:0;left:0;z-index:1050;display:none;width:100%;height:100%;overflow:hidden;outline:0}
+.modal-dialog{position:relative;width:auto;margin:.5rem;pointer-events:none}
+.modal.fade .modal-dialog{transition:-webkit-transform .3s ease-out;transition:transform .3s ease-out;transition:transform .3s ease-out,-webkit-transform .3s ease-out;-webkit-transform:translate(0,-50px);transform:translate(0,-50px)}
+@media (prefers-reduced-motion: reduce) {
+.modal.fade .modal-dialog{transition:none}
+}
+.modal.show .modal-dialog{-webkit-transform:none;transform:none}
+.modal-dialog-scrollable{display:-ms-flexbox;display:flex;max-height:calc(100% - 1rem)}
+.modal-dialog-scrollable .modal-content{max-height:calc(100vh - 1rem);overflow:hidden}
+.modal-dialog-scrollable .modal-header,.modal-dialog-scrollable .modal-footer{-ms-flex-negative:0;flex-shrink:0}
+.modal-dialog-scrollable .modal-body{overflow-y:auto}
+.modal-dialog-centered{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;min-height:calc(100% - 1rem)}
+.modal-dialog-centered::before{display:block;height:calc(100vh - 1rem);content:""}
+.modal-dialog-centered.modal-dialog-scrollable{-ms-flex-direction:column;flex-direction:column;-ms-flex-pack:center;justify-content:center;height:100%}
+.modal-dialog-centered.modal-dialog-scrollable .modal-content{max-height:none}
+.modal-dialog-centered.modal-dialog-scrollable::before{content:none}
+.modal-content{position:relative;display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;width:100%;pointer-events:auto;background-color:#fff;background-clip:padding-box;border:1px solid rgba(0,0,0,0.2);border-radius:.3rem;outline:0}
+.modal-backdrop{position:fixed;top:0;left:0;z-index:1040;width:100vw;height:100vh;background-color:#000}
+.modal-backdrop.fade{opacity:0}
+.modal-backdrop.show{opacity:.5}
+.modal-header{display:-ms-flexbox;display:flex;-ms-flex-align:start;align-items:flex-start;-ms-flex-pack:justify;justify-content:space-between;padding:1rem;border-bottom:1px solid #dee2e6;border-top-left-radius:.3rem;border-top-right-radius:.3rem}
+.modal-header .close{padding:1rem;margin:-1rem -1rem -1rem auto}
+.modal-title{margin-bottom:0;line-height:1.5}
+.modal-body{position:relative;-ms-flex:1 1 auto;flex:1 1 auto;padding:1rem}
+.modal-footer{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:end;justify-content:flex-end;padding:1rem;border-top:1px solid #dee2e6;border-bottom-right-radius:.3rem;border-bottom-left-radius:.3rem}
+.modal-footer > :not(:first-child){margin-left:.25rem}
+.modal-footer > :not(:last-child){margin-right:.25rem}
+.modal-scrollbar-measure{position:absolute;top:-9999px;width:50px;height:50px;overflow:scroll}
+@media (min-width: 576px) {
+.modal-dialog{max-width:500px;margin:1.75rem auto}
+.modal-dialog-scrollable{max-height:calc(100% - 3.5rem)}
+.modal-dialog-scrollable .modal-content{max-height:calc(100vh - 3.5rem)}
+.modal-dialog-centered{min-height:calc(100% - 3.5rem)}
+.modal-dialog-centered::before{height:calc(100vh - 3.5rem)}
+.modal-sm{max-width:300px}
+}
+@media (min-width: 992px) {
+.modal-lg,.modal-xl{max-width:800px}
+}
+@media (min-width: 1200px) {
+.modal-xl{max-width:1140px}
+}
+
+.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;padding:.375rem .75rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}
+@media (prefers-reduced-motion: reduce) {
+.btn{-webkit-transition:.3s ease-out;-ms-transition:.3s ease-out;transition:.3s ease-out;}
+}
+.btn:hover{color:#212529;text-decoration:none}
+.btn:focus,.btn.focus{outline:0;box-shadow:0 0 0 .2rem rgba(0,123,255,0.25)}
+a.btn.disabled,fieldset:disabled a.btn{pointer-events:none}
+.btn-yes{color:#fff;background-color:#000;border-color:#000}
+.btn-yes:hover{color:#fff;background-color:#0aad70;border-color:#0aad70}
+.btn-yes:focus,.btn-yes.focus{box-shadow:0 0 0 .2rem rgba(38,143,255,0.5)}
+.btn-no{color:#fff;background-color:#84788d;border-color:#84788d}
+.btn-no:hover{color:#fff;background-color:#0aad70;border-color:#0aad70}
+.btn-no:focus,.btn-no.focus{box-shadow:0 0 0 .2rem rgba(130,138,145,0.5)}
+
+.text-white{color:#fff!important}
+.text-primary{color:#007bff!important}
+a.text-primary:hover,a.text-primary:focus{color:#0056b3!important}
+.text-secondary{color:#6c757d!important}
+a.text-secondary:hover,a.text-secondary:focus{color:#494f54!important}
+.text-success{color:#28a745!important}
+a.text-success:hover,a.text-success:focus{color:#19692c!important}
+.text-info{color:#17a2b8!important}
+a.text-info:hover,a.text-info:focus{color:#0f6674!important}
+.text-warning{color:#ffc107!important}
+a.text-warning:hover,a.text-warning:focus{color:#ba8b00!important}
+.text-danger{color:#dc3545!important}
+a.text-danger:hover,a.text-danger:focus{color:#a71d2a!important}
+.text-light{color:#f8f9fa!important}
+a.text-light:hover,a.text-light:focus{color:#cbd3da!important}
+.text-dark{color:#343a40!important}
+a.text-dark:hover,a.text-dark:focus{color:#121416!important}
+
+.loaded .load-icon{display:block}
+.loaded *{-webkit-transition:none;-ms-transition:none;transition:none}
+.load-icon{width:100%;height:100%;margin:0;padding:0;display:none;z-index:99999;position:absolute;top:0;left:0;background:#fff}
+.load-icon:before{content:"";width:64px;height:64px;margin:-32px 0 0 -32px;position:absolute;top:50%;left:50%;background:url(/assets/img/loader.gif) no-repeat left top}
+.login-form__small-text-center{margin-top:50px;text-align:center;display:block;font:14px/16px 'Be Vietnam Pro',sans-serif}

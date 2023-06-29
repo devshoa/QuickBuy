@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/* STYLE */
+@import url("/assetss/plugins/datatables/dataTables.bootstrap4.min.css");
+@import url("/assetss/plugins/datatables/buttons.bootstrap4.min.css");
+@import url("/assetss/plugins/datatables/responsive.bootstrap4.min.css");
+
+/* ICONS */
+/* Font Awesome Free 5.15.4 */
+@import url("https://use.fontawesome.com/releases/v5.15.4/css/all.css");
+/* MaterialDesignIcons 2.5.94 */
+@import url("https://cdn.jsdelivr.net/npm/@mdi/font@2.5.94/css/materialdesignicons.min.css");
+/* Ionicons 1.5.0 */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/ionicons/1.5.0/css/ionicons.min.css");
+/* Themify 0.1.2 */
+@import url("https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css");
+/* Dripicons 2.0.0 */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/dripicons/2.0.0/webfont.min.css");
